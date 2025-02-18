@@ -4,7 +4,7 @@ using Pathfinding;
 public class NPCNavigation : MonoBehaviour
 {
     [Header("Settings")]
-    [SerializeField] private Vector2 _targetDestination;
+    [SerializeField] Transform _targetDestination;
     [Range (0f, 5f)][SerializeField] private float _nextWaypointDistance = 3f;
     [Range (0f, 3f)][SerializeField] private float _stoppingDistance = 1f;
     [SerializeField] private bool _isChasing = true;
@@ -26,10 +26,7 @@ public class NPCNavigation : MonoBehaviour
         _seeker ??= GetComponent<Seeker>();
         _rigidbody2D ??= GetComponent<Rigidbody2D>();
         _unitMovementController ??= GetComponent<UnitMovementController>();
-        if (_targetDestination != null)
-        {
-            UpdatePath();
-        }
+        
 
         InvokeRepeating("UpdatePath", 0f, .5f);
     }
@@ -81,7 +78,7 @@ public class NPCNavigation : MonoBehaviour
     {
         if (_seeker.IsDone())
         {
-            _seeker.StartPath(_rigidbody2D.position, _targetDestination, OnPathComplete);
+            _seeker.StartPath(_rigidbody2D.position, _targetDestination.position, OnPathComplete);
         }
     }
 
@@ -95,9 +92,8 @@ public class NPCNavigation : MonoBehaviour
         return _direction;
     }
 
-    public void SetNewDestination(Vector2 newDestination)
+    public void SetNewDestination(Transform newDestination)
     {
         _targetDestination = newDestination;
-        UpdatePath();
     }
 }
