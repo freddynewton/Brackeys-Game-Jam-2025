@@ -32,8 +32,11 @@ public class UnitAnimator : MonoBehaviour
             _animator.transform.localScale = new Vector2(_isLookingLeft ? -1 : 1, 1);
         }
 
-        _animator.SetFloat(_verticalHash, input.x);
-        _animator.SetFloat(_horizontalHash, input.y);
+        if (input.magnitude > 0)
+        {
+            _animator.SetFloat(_verticalHash, input.x);
+            _animator.SetFloat(_horizontalHash, input.y);
+        }
         _animator.SetFloat(_speedHash, input.magnitude);
 
     }
