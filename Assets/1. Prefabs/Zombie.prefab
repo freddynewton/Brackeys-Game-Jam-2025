@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1381368913925375461}
   - component: {fileID: 4149040138154074182}
   - component: {fileID: 9194301607683953209}
+  - component: {fileID: -6090216116401060093}
   m_Layer: 3
   m_Name: Zombie
   m_TagString: Player
@@ -140,8 +141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc5049df68df6ea41802d9f164d481b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 4
+  _moveSpeed: 2
   _rigidbody2D: {fileID: 3099737260177543144}
+  _unitAnimator: {fileID: 0}
 --- !u!114 &9194301607683953209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,6 +164,18 @@ MonoBehaviour:
   _rigidbody2D: {fileID: 3099737260177543144}
   _unitMovementController: {fileID: 0}
   _goingToExit: 0
+--- !u!114 &-6090216116401060093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362407784181840407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07a2dc5ce442af04b9f4b2bcd1b703d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7038058095555650782
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,6 +185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1712858222213653308}
+  - component: {fileID: 6697169226186608327}
   - component: {fileID: 2564990732749003498}
   m_Layer: 6
   m_Name: Graphics
@@ -194,6 +209,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8996393451910729307}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &6697169226186608327
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7038058095555650782}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fe40fe2db4f4f4343ab30ed1f209b9f1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &2564990732749003498
 SpriteRenderer:
   m_ObjectHideFlags: 0

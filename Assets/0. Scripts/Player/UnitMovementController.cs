@@ -7,6 +7,7 @@ public class UnitMovementController : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private Rigidbody2D _rigidbody2D;
+    [SerializeField] private UnitAnimator _unitAnimator;
 
     private Vector2 _movementInput;
 
@@ -19,12 +20,14 @@ public class UnitMovementController : MonoBehaviour
     private void Awake()
     {
         _rigidbody2D ??= GetComponent<Rigidbody2D>();
+        _unitAnimator ??= GetComponent<UnitAnimator>();
     }
 
     public void ApplyInput(Vector2 movementInput)
     {
         _movementInput = movementInput;
         ApplyInput(movementInput.x, movementInput.y);
+        _unitAnimator.ApplyInput(movementInput);
     }
 
     private void ApplyInput(float x, float y)
