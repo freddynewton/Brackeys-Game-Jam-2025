@@ -492,6 +492,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1712858222213653308, guid: f60582a99a7bb384297715e385bb3774, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4711905457096391597, guid: f60582a99a7bb384297715e385bb3774, type: 3}
       propertyPath: m_Radius
       value: 0.5
