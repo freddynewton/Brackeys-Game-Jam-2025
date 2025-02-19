@@ -45,5 +45,8 @@ TagManager:
   - name: BloodParticleLayer
     uniqueID: 2728175797
     locked: 0
+  - name: ColliderSortingLayer
+    uniqueID: 2949739895
+    locked: 0
   m_RenderingLayers:
   - Default
