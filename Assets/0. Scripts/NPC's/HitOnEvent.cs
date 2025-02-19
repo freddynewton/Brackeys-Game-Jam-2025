@@ -2,15 +2,18 @@ using UnityEngine;
 
 public class HitOnEvent : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private IDamageable _damageable;
+    [SerializeField] private int _damage = 1;
+
+
+
+    public void Hit()
     {
-        
+        _damageable.TakeDamage(_damage);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetDamageable(IDamageable damageable)
     {
-        
+        _damageable = damageable;
     }
 }

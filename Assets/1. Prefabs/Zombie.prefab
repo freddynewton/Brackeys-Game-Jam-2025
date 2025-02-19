@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4149040138154074182}
   - component: {fileID: 9194301607683953209}
   - component: {fileID: -6090216116401060093}
+  - component: {fileID: 4423285422601805607}
   m_Layer: 6
   m_Name: Zombie
   m_TagString: Zombie
@@ -50,8 +51,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 6
-  m_LinearDamping: 0
+  m_Mass: 1
+  m_LinearDamping: 0.65
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -141,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc5049df68df6ea41802d9f164d481b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 2
+  _moveSpeed: 1
   _rigidbody2D: {fileID: 3099737260177543144}
   _unitAnimator: {fileID: -6090216116401060093}
 --- !u!114 &9194301607683953209
@@ -156,14 +157,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bb2263ad408c3048a1b9ed989bdaa19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetDestination: {fileID: 0}
-  _nextWaypointDistance: 3
+  _targetDestination: {x: 0, y: 0}
+  _nextWaypointDistance: 0.1
   _stoppingDistance: 1
   _isChasing: 1
   _seeker: {fileID: 1381368913925375461}
   _rigidbody2D: {fileID: 3099737260177543144}
   _unitMovementController: {fileID: 4149040138154074182}
-  _goingToExit: 0
 --- !u!114 &-6090216116401060093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,6 +176,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a2dc5ce442af04b9f4b2bcd1b703d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4423285422601805607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362407784181840407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1b6daf555e0264d9cadb88d1a78c81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHp: 4
+  zombieShuffleRange: 4
 --- !u!1 &7038058095555650782
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,6 +201,7 @@ GameObject:
   - component: {fileID: 1712858222213653308}
   - component: {fileID: 6697169226186608327}
   - component: {fileID: 2564990732749003498}
+  - component: {fileID: 8266011618780626351}
   m_Layer: 10
   m_Name: Graphics
   m_TagString: Untagged
@@ -286,3 +301,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8266011618780626351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7038058095555650782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66759c6df896f6e42ad7419e18cae343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 1
