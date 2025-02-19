@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8268672244057964404}
   - component: {fileID: 8398401068434943339}
   m_Layer: 9
-  m_Name: BloodParticle
+  m_Name: VFX_BigDirectionalBloodSplatterParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
