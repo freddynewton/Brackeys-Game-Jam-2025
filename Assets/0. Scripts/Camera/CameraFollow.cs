@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
@@ -7,8 +8,17 @@ public class CameraFollow : MonoBehaviour
     private float _timePassed;
  
     [Header("References")]
-    [SerializeField] private Transform _playerPosition; 
+    [SerializeField] private Transform _playerPosition;
 
+    void Start()
+    {
+        _playerPosition = GameObject.FindWithTag("Player").transform;
+
+        if (_playerPosition == null)
+        {
+            Console.WriteLine("Could not find Player or Player Tag");
+        }
+    }
 
     void FixedUpdate()
     {
