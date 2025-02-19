@@ -243,7 +243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3212777543309115487, guid: e82e130d521638549b3816f33cb179bd, type: 3}
       propertyPath: data.dataString
-      value: UEsDBBQAAAgIAAAAIewbs3jFXAIAABQFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzqWDgQxJb61DSA9JmNBOLr4s1hprkCWPPgIkw3/vSraxS6cnlrdvd99+yJ9MKFtj7rRZGcGfNEf2bcSCzb6MeucjHmGn1UZ8YMd5E9yVgQSR8wpOaMKTEGZ1hc6I/LvayUCeEOiVKLSplnyHqbbOElyAtEguo12IVgR9jtiRfsZ3IeRE1nQRrA+y7iajM5k5Koemp3bEjtawvMolVDXyILknT2ctO2loipppGUF4rqUUtlXC3KmOnaZQW099EIELoM5i+cnXGwJKFLvShczD8JeisOhaUQZO98LQiJq87Idu5laB3TfK3kH6KGF6G1U1SZ/+8Y+T6C6Mrh67uskk1HClyPevcMrBusFgh/B9Lz2JAzqA3MNW4luJ6lmvjPaKk9MZH0K9xel9//fSWlpivu/xRuoV6Ov/ryf0cI7dH1Mpqm2c5LwBNlLHicflo6Hd/CTB8TRsm4LQoOK3xV+wG95Q63gQxjpytV2qIG+rvQlUtowzC914l2qjMMKt6BoVSHdaUxp3vcIr36DslecBwmtpi7e+7hFchUS4508mV661PlyWZUt9eEJbvngnhcJedHA805xSrVRzYcOZdGEbbwrIB2E7L/jfp8VghvOb+YLnwPldwZPx7RS3C9jyxWw2X9wWCYu3JxT1CXLdCG3HQ1tTfXJFd9Z9REYrA3W8dm7gsBIflR6MXKhCb3KDqF6aDBfhaKgIvUu+5IIGtEHnhIr7Zp8ZkzrfI88uibLY6fLoDGR9lozV4l27gGQsjV+NjAX4cstrg+8CD6F4l+zMzn8AUEsDBBQAAAgIAAAAIezQc2OmbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrRSonGqiamJeUpyYkqKZVqKoa6FUWqSeWJSirmxsYm5RZqhUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAAIewbs3jFXAIAABQFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAAIezQc2OmbQAAAHgAAAAJACQAAAAAAAAAAAAAAKkCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAYQMAAAAA
+      value: UEsDBBQAAAgIAAAIIewbs3jFXAIAABQFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzqWDgQxJb61DSA9JmNBOLr4s1hprkCWPPgIkw3/vSraxS6cnlrdvd99+yJ9MKFtj7rRZGcGfNEf2bcSCzb6MeucjHmGn1UZ8YMd5E9yVgQSR8wpOaMKTEGZ1hc6I/LvayUCeEOiVKLSplnyHqbbOElyAtEguo12IVgR9jtiRfsZ3IeRE1nQRrA+y7iajM5k5Koemp3bEjtawvMolVDXyILknT2ctO2loipppGUF4rqUUtlXC3KmOnaZQW099EIELoM5i+cnXGwJKFLvShczD8JeisOhaUQZO98LQiJq87Idu5laB3TfK3kH6KGF6G1U1SZ/+8Y+T6C6Mrh67uskk1HClyPevcMrBusFgh/B9Lz2JAzqA3MNW4luJ6lmvjPaKk9MZH0K9xel9//fSWlpivu/xRuoV6Ov/ryf0cI7dH1Mpqm2c5LwBNlLHicflo6Hd/CTB8TRsm4LQoOK3xV+wG95Q63gQxjpytV2qIG+rvQlUtowzC914l2qjMMKt6BoVSHdaUxp3vcIr36DslecBwmtpi7e+7hFchUS4508mV661PlyWZUt9eEJbvngnhcJedHA805xSrVRzYcOZdGEbbwrIB2E7L/jfp8VghvOb+YLnwPldwZPx7RS3C9jyxWw2X9wWCYu3JxT1CXLdCG3HQ1tTfXJFd9Z9REYrA3W8dm7gsBIflR6MXKhCb3KDqF6aDBfhaKgIvUu+5IIGtEHnhIr7Zp8ZkzrfI88uibLY6fLoDGR9lozV4l27gGQsjV+NjAX4cstrg+8CD6F4l+zMzn8AUEsDBBQAAAgIAAAIIezQc2OmbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrRSonGqiamJeUpyYkqKZVqKoa6FUWqSeWJSirmxsYm5RZqhUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAIIewbs3jFXAIAABQFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAIIezQc2OmbQAAAHgAAAAJACQAAAAAAAAAAAAAAKkCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAYQMAAAAA
       objectReference: {fileID: 0}
     - target: {fileID: 4236371206439406851, guid: e82e130d521638549b3816f33cb179bd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -714,7 +714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
       propertyPath: orthographic size
-      value: 4
+      value: 4.15625
       objectReference: {fileID: 0}
     - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
@@ -722,15 +722,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0
+      value: 0.0018726592
       objectReference: {fileID: 0}
     - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 1
+      value: 0.9989462
       objectReference: {fileID: 0}
     - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.9962547
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
