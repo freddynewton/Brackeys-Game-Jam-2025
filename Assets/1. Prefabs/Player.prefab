@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5433245093471353687}
   - component: {fileID: 4149040138154074182}
   - component: {fileID: 5919051104637971776}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -113,7 +113,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _unitMovementController: {fileID: 4149040138154074182}
-  _unitAnimator: {fileID: 0}
 --- !u!114 &4149040138154074182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,6 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 5
   _rigidbody2D: {fileID: 3099737260177543144}
+  _unitAnimator: {fileID: 0}
 --- !u!114 &5919051104637971776
 MonoBehaviour:
   m_ObjectHideFlags: 0
