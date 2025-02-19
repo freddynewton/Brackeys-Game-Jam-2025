@@ -421,11 +421,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1206851228746883592, guid: e82e130d521638549b3816f33cb179bd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3212777543309115487, guid: e82e130d521638549b3816f33cb179bd, type: 3}
+      propertyPath: maxFrameTime
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3212777543309115487, guid: e82e130d521638549b3816f33cb179bd, type: 3}
       propertyPath: data.dataString
-      value: UEsDBBQAAAgIAAAIIewbs3jFXAIAABQFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzqWDgQxJb61DSA9JmNBOLr4s1hprkCWPPgIkw3/vSraxS6cnlrdvd99+yJ9MKFtj7rRZGcGfNEf2bcSCzb6MeucjHmGn1UZ8YMd5E9yVgQSR8wpOaMKTEGZ1hc6I/LvayUCeEOiVKLSplnyHqbbOElyAtEguo12IVgR9jtiRfsZ3IeRE1nQRrA+y7iajM5k5Koemp3bEjtawvMolVDXyILknT2ctO2loipppGUF4rqUUtlXC3KmOnaZQW099EIELoM5i+cnXGwJKFLvShczD8JeisOhaUQZO98LQiJq87Idu5laB3TfK3kH6KGF6G1U1SZ/+8Y+T6C6Mrh67uskk1HClyPevcMrBusFgh/B9Lz2JAzqA3MNW4luJ6lmvjPaKk9MZH0K9xel9//fSWlpivu/xRuoV6Ov/ryf0cI7dH1Mpqm2c5LwBNlLHicflo6Hd/CTB8TRsm4LQoOK3xV+wG95Q63gQxjpytV2qIG+rvQlUtowzC914l2qjMMKt6BoVSHdaUxp3vcIr36DslecBwmtpi7e+7hFchUS4508mV661PlyWZUt9eEJbvngnhcJedHA805xSrVRzYcOZdGEbbwrIB2E7L/jfp8VghvOb+YLnwPldwZPx7RS3C9jyxWw2X9wWCYu3JxT1CXLdCG3HQ1tTfXJFd9Z9REYrA3W8dm7gsBIflR6MXKhCb3KDqF6aDBfhaKgIvUu+5IIGtEHnhIr7Zp8ZkzrfI88uibLY6fLoDGR9lozV4l27gGQsjV+NjAX4cstrg+8CD6F4l+zMzn8AUEsDBBQAAAgIAAAIIezQc2OmbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrRSonGqiamJeUpyYkqKZVqKoa6FUWqSeWJSirmxsYm5RZqhUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAIIewbs3jFXAIAABQFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAIIezQc2OmbQAAAHgAAAAJACQAAAAAAAAAAAAAAKkCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAYQMAAAAA
+      value: UEsDBBQAAAgIAAAIIeym3eAqXgIAABgFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VEtz2jAQ/iuMzk3G5jGQ3lqHkB4ITGgmF1+EtcYaZMmjB68M/70r2cYunZ5Yvv1299uH/EW4NBVkVumF5mypGJDvA+Jt8m3QOV/hRHdKbvgFWs4nZ7bwJBo479RyhXjsw4wqwWqe/ZA74ckRgk7yXOlyznaQKGMNwjkVBtCllfXREqGvATnhz8OTDzmjNZx664LWUzS4opmBtKA7aktsaTXLyUzQsgLmJXfkeNLS0QpEie00nOhx5PMrIbhp1BB7rkK3Ca2Mw16QwDjF7oKE6HGCQAF8V1ivtR++ynMDthGm6fmZaxxTnZf8VPXsSmr2tboDFc5XioezoKtOuvzH/xAHd65V+drWjSNfwxY827/Tc0aN7Q23Dz930uMwpCMVe7oV8FmAfFMLrZxk6LTa+VBnYPjc/b21lhSQ7Tu8lnoHuur/K/I9XEP3p0TwchsmOa6BjVBh4uEAQON2fqHgcB6mSYGoV/Fh4Dfd9e+ocbxwbSy6mi6ll7dVTnsqmYeZ+W6cTZSWEOBGdAWSCnteYxp7v8I7X6/sneeF+hfTFG987UO4Cwlwx4+iO9daHW/LMoU6LsEUK2cFl9CJ9o43nFOipKwvrD+TNmzjdE6zXtjOcfb3aRE6gvFkPGUZZewpZ/HDbAjbKd2y6Wg0ns7ymITb4xL7pGJdC23Gg1uTXXKJd9Z+SAYLTatw7UzT44JfStUbOZe52mQaQK7qDDfhoLEIvkw2ZxwHtAFruQz7Jl8pESrbA0tvidLQ6fxkNU27LCmp+EFZj6QkCV+OlHj4dstrDQcOR1+8TXYl1z9QSwMEFAAACAgAAAgh7NBzY6ZtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tFKicaqJqYl5SnJiSoplWoqhroVRapJ5YlKKubGxiblFmqFSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAAgh7Kbd4CpeAgAAGAUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAAgh7NBzY6ZtAAAAeAAAAAkAJAAAAAAAAAAAAAAAqwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABjAwAAAAA=
       objectReference: {fileID: 0}
     - target: {fileID: 4236371206439406851, guid: e82e130d521638549b3816f33cb179bd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -771,18 +775,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: VendingMachine (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 6871169738718062472, guid: 79ae44803c59cde4eb6f8c555661a56a, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6871169738718062472, guid: 79ae44803c59cde4eb6f8c555661a56a, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6871169738718062472, guid: 79ae44803c59cde4eb6f8c555661a56a, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7157212877095156600, guid: 79ae44803c59cde4eb6f8c555661a56a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3
@@ -846,40 +838,12 @@ PrefabInstance:
       value: Zombie
       objectReference: {fileID: 0}
     - target: {fileID: 1362407784181840407, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362407784181840407, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2564990732749003498, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2564990732749003498, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2564990732749003498, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2564990732749003498, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2564990732749003498, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2564990732749003498, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4149040138154074182, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
       propertyPath: _moveSpeed
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8996393451910729307, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -922,10 +886,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9194301607683953209, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
-      propertyPath: _rigidbody2D
-      value: 
-      objectReference: {fileID: 1027496598}
-    - target: {fileID: 9194301607683953209, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
       propertyPath: _targetDestination
       value: 
       objectReference: {fileID: 533283811}
@@ -934,11 +894,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
---- !u!50 &1027496598 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 3099737260177543144, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
-  m_PrefabInstance: {fileID: 1027496597}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1027496599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8996393451910729307, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
@@ -1049,7 +1004,7 @@ GameObject:
   - component: {fileID: 1414474708}
   - component: {fileID: 1414474707}
   - component: {fileID: 1414474709}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: On Top - Layer 11 - w Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3482,7 +3437,7 @@ GameObject:
   - component: {fileID: 2111227537}
   - component: {fileID: 2111227536}
   - component: {fileID: 2111227538}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Walls - Layer 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4559,22 +4514,6 @@ PrefabInstance:
     - target: {fileID: 3698484041910463408, guid: 79ae44803c59cde4eb6f8c555661a56a, type: 3}
       propertyPath: m_Name
       value: VendingMachine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6871169738718062472, guid: 79ae44803c59cde4eb6f8c555661a56a, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6871169738718062472, guid: 79ae44803c59cde4eb6f8c555661a56a, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6871169738718062472, guid: 79ae44803c59cde4eb6f8c555661a56a, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6871169738718062472, guid: 79ae44803c59cde4eb6f8c555661a56a, type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7157212877095156600, guid: 79ae44803c59cde4eb6f8c555661a56a, type: 3}
       propertyPath: m_LocalPosition.x
