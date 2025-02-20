@@ -102,6 +102,6 @@ public class NPCNavigation : MonoBehaviour
     public void Stop()
     {
         _reachedEndOfPath = true;
-        _path = null;
+        _unitMovementController.ApplyInput(Vector2.zero);
     }
 }

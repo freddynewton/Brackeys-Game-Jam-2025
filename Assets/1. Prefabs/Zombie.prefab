@@ -189,14 +189,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerPosition: {fileID: 0}
-  _maxHp: 4
   _attackDamage: 1
   _detectionRange: 4
-  _attackRange: 1.5
+  _attackRange: 1
+  _timeBetweenAttack: 2.5
   _detectionMask:
     serializedVersion: 2
     m_Bits: 64
-  zombieShuffleRange: 4
+  zombieShuffleRange: 1.5
   standStillTime: 4
 --- !u!114 &915588006707206046
 MonoBehaviour:

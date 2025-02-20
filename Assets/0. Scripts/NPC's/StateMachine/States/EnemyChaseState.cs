@@ -25,8 +25,6 @@ public class EnemyChaseState : EnemyState
     public override void Exitstate()
     {
         base.Exitstate();
-
-        _nPCNavigation.Stop();
     }
 
     public override void FrameUpdate()
@@ -41,6 +39,7 @@ public class EnemyChaseState : EnemyState
         }
         if (enemyInformation.IsAttackRange())
         {
+            _nPCNavigation.Stop();
             enemyInformation.stateMachine.ChangeState(enemyInformation.attackState);
         }
 

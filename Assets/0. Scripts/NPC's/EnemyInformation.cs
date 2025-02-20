@@ -8,12 +8,13 @@ public class EnemyInformation : MonoBehaviour
 
     #region General Settings
     [Header("General Settings")]
-    [SerializeField] private int _maxHp = 4;
-    private int _currentHp;
     [SerializeField] private int _attackDamage = 1;
-    [Range(0.1f, 10f)][SerializeField] float _detectionRange = 4f;
+    [Range(0.1f, 10f)][SerializeField] private float _detectionRange = 4f;
     [Range(0.1f, 5f)][SerializeField] private float _attackRange = 1.5f;
+    [Range(1f, 5f)][SerializeField] private float _timeBetweenAttack = 2.5f;
     [SerializeField] private LayerMask _detectionMask;
+
+    private bool _isInAnimation;
     #endregion
 
     #region Idle Variables
@@ -38,8 +39,6 @@ public class EnemyInformation : MonoBehaviour
         {
             Console.WriteLine("Could not find Player or Player Tag");
         }
-
-        _currentHp = _maxHp;
     }
 
     private void Awake()
@@ -106,4 +105,23 @@ public class EnemyInformation : MonoBehaviour
         return false;
     }
     #endregion
+
+    public bool GetIsInAnimation()
+    {
+        return _isInAnimation;
+    }
+    public void SetIsInAnimation(bool animation)
+    {
+         _isInAnimation = animation;
+    }
+
+    public int GetEnemyDamagePerAttack()
+    {
+        return _attackDamage;
+    }
+
+    public float GetAttackTime()
+    {
+        return _timeBetweenAttack;
+    }
 }
