@@ -15,6 +15,8 @@ public class InputManager : Singleton<InputManager>
     [HideInInspector] public UnityEvent OnInteractStarted = new UnityEvent();
     [HideInInspector] public UnityEvent OnInteractPerformed = new UnityEvent();
     [HideInInspector] public UnityEvent OnInteractCanceled = new UnityEvent();
+    [HideInInspector] public UnityEvent OnPrimaryInteractPerformed = new UnityEvent();
+    [HideInInspector] public UnityEvent OnSecondaryInteractPerformed = new UnityEvent();
 
     // Serialized field to reference the InputActionAsset
     [SerializeField] private InputActionAsset _inputActions;
@@ -24,6 +26,8 @@ public class InputManager : Singleton<InputManager>
     private InputAction _moveAction;
     private InputAction _lookAction;
     private InputAction _interactAction;
+    private InputAction _primaryInteractAction;
+    private InputAction _secondaryInteractAction;
 
     private bool _isInitialized;
 
@@ -60,6 +64,8 @@ public class InputManager : Singleton<InputManager>
         _moveAction = _playerInputActionMap.FindAction("Move");
         _lookAction = _playerInputActionMap.FindAction("Look");
         _interactAction = _playerInputActionMap.FindAction("Interact");
+        _primaryInteractAction = _playerInputActionMap.FindAction("PrimaryInteract");
+        _secondaryInteractAction = _playerInputActionMap.FindAction("SecondaryInteract");
 
         _moveAction.performed += ctx => MoveInput = ctx.ReadValue<Vector2>();
         _moveAction.canceled += ctx => MoveInput = Vector2.zero;
@@ -70,6 +76,9 @@ public class InputManager : Singleton<InputManager>
         _interactAction.started += ctx => OnInteractStarted?.Invoke();
         _interactAction.performed += ctx => OnInteractPerformed?.Invoke();
         _interactAction.canceled += ctx => OnInteractCanceled?.Invoke();
+
+        _primaryInteractAction.performed += ctx => OnPrimaryInteractPerformed?.Invoke();
+        _secondaryInteractAction.performed += ctx => OnSecondaryInteractPerformed?.Invoke();
 
         // Enable the player input actions
         _inputActions.Enable();

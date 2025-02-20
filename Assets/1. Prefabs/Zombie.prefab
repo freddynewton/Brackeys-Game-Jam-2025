@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 6697169226186608327}
   - component: {fileID: 2564990732749003498}
   - component: {fileID: 8266011618780626351}
+  - component: {fileID: 88783237117708408}
   m_Layer: 10
   m_Name: Graphics
   m_TagString: Untagged
@@ -318,3 +319,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 1
+--- !u!114 &88783237117708408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7038058095555650782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f857c8ac3c5c89d4c945b2d809d073a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
