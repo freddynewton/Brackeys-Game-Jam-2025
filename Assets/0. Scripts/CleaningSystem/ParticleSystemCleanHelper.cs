@@ -15,8 +15,8 @@ public class ParticleSystemCleanHelper : MonoBehaviour
     /// </summary>
     private List<ParticleSystem> particleSystems = new();
 
-    private LayerMask _beginLayerMask;
-    private LayerMask _endLayerMask;
+    private int _beginLayerMask;
+    private int _endLayerMask;
 
     #endregion
 
@@ -49,8 +49,8 @@ public class ParticleSystemCleanHelper : MonoBehaviour
             }
         }
 
-        _beginLayerMask = LayerMask.GetMask("OnlyEnvironmentInteractable");
-        _endLayerMask = LayerMask.GetMask("Environment");
+        _beginLayerMask = LayerMask.NameToLayer("OnlyEnvironmentInteractable");
+        _endLayerMask = LayerMask.NameToLayer("Environment");
 
         // Set the layer mask for the particle system and children
         SetLayerMask(particleSystems, _beginLayerMask);
@@ -63,7 +63,7 @@ public class ParticleSystemCleanHelper : MonoBehaviour
         }
     }
 
-    private void SetLayerMask(List<ParticleSystem> particleSystems, LayerMask layerMask)
+    private void SetLayerMask(List<ParticleSystem> particleSystems, int layerMask)
     {
         // Set the layer mask for the particle system and children
         foreach (var ps in particleSystems)
