@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -67,12 +68,37 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
         }
     }
 
-
     private void Death()
     {
         spriteRenderer.DOKill();
 
+        CreateDeathSprites();
+
         Destroy(gameObject);
+    }
+
+    private void CreateDeathSprites()
+    {
+        foreach (Sprite sprite in _deathSpriteList)
+        {
+            GameObject deathSprite = new GameObject("DeathSprite");
+            deathSprite.transform.position = transform.position;
+            deathSprite.transform.localScale = transform.localScale;
+            SpriteRenderer spriteRenderer = deathSprite.AddComponent<SpriteRenderer>();
+            spriteRenderer.sprite = sprite;
+            spriteRenderer.sortingOrder = 2;
+            Rigidbody2D rb = deathSprite.AddComponent<Rigidbody2D>();
+            rb.gravityScale = 0;
+            rb.linearDamping = 1.2f;
+            rb.angularDamping = 1.2f;
+            rb.mass = 2f;
+            CircleCollider2D collider = deathSprite.AddComponent<CircleCollider2D>();
+            collider.radius = 0.1f;
+
+            rb.AddForce(new Vector2(UnityEngine.Random.Range(-1f, 1f) * 3f, UnityEngine.Random.Range(-1f, 1f)) * 3f, ForceMode2D.Impulse);
+
+            Destroy(deathSprite, 300f);
+        }
     }
 
     private void StartFlickering()

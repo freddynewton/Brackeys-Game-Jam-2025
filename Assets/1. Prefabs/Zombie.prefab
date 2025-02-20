@@ -101,8 +101,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Offset: {x: 0, y: -0.2}
+  m_Radius: 0.2
 --- !u!114 &1381368913925375461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a2dc5ce442af04b9f4b2bcd1b703d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsLookingLeft: 0
 --- !u!114 &4423285422601805607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,7 +208,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHp: 4
-  _deathSpriteList: []
+  _deathSpriteList:
+  - {fileID: 439993849, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: -1710343655, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: 1248847017, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: 471657045, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
   _freezeTime: 0.15
   _spriteFlashTime: 0.1
   _spriteFlashLoops: 2
