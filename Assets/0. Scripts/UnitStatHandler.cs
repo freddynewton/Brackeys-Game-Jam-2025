@@ -32,8 +32,8 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
         // Instantiate hit VFX
         GameObject hitVfx = Instantiate(_hitVfx, transform.position, Quaternion.identity);
 
-        // Set the rotation of the hit VFX to face the attacker
-        Vector3 direction = attackerTransformPosition - transform.position;
+        // Set the rotation of the hit VFX to face the attacker, assume the current direction of the Vfx is right
+        Vector3 direction = transform.position - attackerTransformPosition;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         hitVfx.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 

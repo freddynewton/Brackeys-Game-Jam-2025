@@ -56,6 +56,11 @@ public class ParticleSystemCleanHelper : MonoBehaviour
         SetLayerMask(particleSystems, _beginLayerMask);
 
         Invoke(nameof(SetEndLayerMask), 1f);
+
+        foreach (var ps in particleSystems)
+        {
+            ps.Play();
+        }
     }
 
     private void SetLayerMask(List<ParticleSystem> particleSystems, LayerMask layerMask)
