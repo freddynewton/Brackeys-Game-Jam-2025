@@ -172,7 +172,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -194,7 +194,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -216,7 +216,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -234,11 +234,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 270
+        y: 302
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -256,11 +256,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 270
+        y: 302
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -277,12 +277,12 @@ TextureImporter:
       name: environmentsheet-export_5
       rect:
         serializedVersion: 2
-        x: 224
+        x: 160
         y: 302
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: environmentsheet-export_6
       rect:
         serializedVersion: 2
-        x: 256
+        x: 192
         y: 302
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -321,12 +321,12 @@ TextureImporter:
       name: environmentsheet-export_7
       rect:
         serializedVersion: 2
-        x: 288
+        x: 224
         y: 302
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -343,12 +343,12 @@ TextureImporter:
       name: environmentsheet-export_8
       rect:
         serializedVersion: 2
-        x: 320
+        x: 256
         y: 302
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -365,13 +365,13 @@ TextureImporter:
       name: environmentsheet-export_9
       rect:
         serializedVersion: 2
-        x: 352
+        x: 288
         y: 286
         width: 32
         height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -387,13 +387,13 @@ TextureImporter:
       name: environmentsheet-export_10
       rect:
         serializedVersion: 2
-        x: 384
+        x: 320
         y: 286
         width: 32
         height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -409,13 +409,13 @@ TextureImporter:
       name: environmentsheet-export_11
       rect:
         serializedVersion: 2
-        x: 416
+        x: 352
         y: 286
         width: 32
         height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -436,7 +436,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -458,7 +458,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -480,7 +480,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -497,12 +497,12 @@ TextureImporter:
       name: environmentsheet-export_15
       rect:
         serializedVersion: 2
-        x: 224
+        x: 160
         y: 270
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -519,12 +519,12 @@ TextureImporter:
       name: environmentsheet-export_16
       rect:
         serializedVersion: 2
-        x: 256
+        x: 192
         y: 270
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -538,37 +538,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: environmentsheet-export_20
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 238
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93f98460406ede34f8c5f5b176c5b215
-      internalID: 1932409117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: environmentsheet-export_21
       rect:
         serializedVersion: 2
-        x: 32
-        y: 238
+        x: 352
+        y: 302
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -585,12 +563,12 @@ TextureImporter:
       name: environmentsheet-export_22
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 238
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -607,12 +585,12 @@ TextureImporter:
       name: environmentsheet-export_23
       rect:
         serializedVersion: 2
-        x: 0
-        y: 206
+        x: 32
+        y: 238
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -629,12 +607,12 @@ TextureImporter:
       name: environmentsheet-export_24
       rect:
         serializedVersion: 2
-        x: 32
-        y: 206
+        x: 64
+        y: 238
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -651,12 +629,12 @@ TextureImporter:
       name: environmentsheet-export_25
       rect:
         serializedVersion: 2
-        x: 64
-        y: 206
+        x: 192
+        y: 238
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -673,13 +651,13 @@ TextureImporter:
       name: environmentsheet-export_26
       rect:
         serializedVersion: 2
-        x: 0
-        y: 174
+        x: 224
+        y: 238
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 17}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -695,13 +673,13 @@ TextureImporter:
       name: environmentsheet-export_27
       rect:
         serializedVersion: 2
-        x: 32
-        y: 174
+        x: 256
+        y: 238
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 17}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -717,13 +695,13 @@ TextureImporter:
       name: environmentsheet-export_28
       rect:
         serializedVersion: 2
-        x: 64
-        y: 174
+        x: 288
+        y: 238
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 17}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -739,13 +717,13 @@ TextureImporter:
       name: environmentsheet-export_29
       rect:
         serializedVersion: 2
-        x: 96
-        y: 174
+        x: 0
+        y: 206
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 17}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -761,13 +739,13 @@ TextureImporter:
       name: environmentsheet-export_30
       rect:
         serializedVersion: 2
-        x: 128
-        y: 174
+        x: 32
+        y: 206
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 17}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -783,13 +761,13 @@ TextureImporter:
       name: environmentsheet-export_31
       rect:
         serializedVersion: 2
-        x: 160
-        y: 174
+        x: 64
+        y: 206
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 17}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -805,12 +783,12 @@ TextureImporter:
       name: environmentsheet-export_17
       rect:
         serializedVersion: 2
-        x: 96
-        y: 238
+        x: 224
+        y: 270
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -827,12 +805,12 @@ TextureImporter:
       name: environmentsheet-export_18
       rect:
         serializedVersion: 2
-        x: 128
-        y: 238
+        x: 256
+        y: 270
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -841,6 +819,512 @@ TextureImporter:
       bones: []
       spriteID: 56ceb7e7a899be340a397ff4b18b079c
       internalID: -1178350436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 206
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f03b019a70ff947b5dcc6bdc75601c
+      internalID: 1335239727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_33
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 206
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644edcc7103d555489d351477816d404
+      internalID: 814891928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 206
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164c880d3808a6f4e9558e9aa62c2f2d
+      internalID: 511607426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_35
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 206
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c073df2be72314e4f9ee75591453402a
+      internalID: 797750112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_36
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 206
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2ca6119c82eba4d85c75bd6eb93ce6
+      internalID: -1153654809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_37
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 206
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c10c63d76e4bce41b073129e6f15128
+      internalID: -1222755206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_38
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 206
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5312a14e070b5146aa1bc4138e2e132
+      internalID: -1138029892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 174
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c03312063629649a58417b867e8358
+      internalID: 1342023542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_40
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 174
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308a71882f92f454bb433a5095ab7dfb
+      internalID: 221515323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 174
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca25e4a9372bf574abdf5fc66ab2e745
+      internalID: -2129575101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_42
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 174
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01fc98f67269024ebb00ad12b3908dc
+      internalID: -166205843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_43
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 174
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740836de05717644ba6d8934bfeea8ed
+      internalID: -586347921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_44
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 174
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c1e2daf0e353e409f60e59f8aeeaa5
+      internalID: -725860094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_45
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 174
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a0ce92d038e7547b39242f0f34d5f9
+      internalID: 26968847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_46
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 174
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc91176cf7c266e4eacf4bfaf58a1180
+      internalID: 957429913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_47
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 174
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a141811eb29b648bd51e605ae4059e
+      internalID: -2095726345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_48
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 174
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0573155d681bc418769c2dcbe46004
+      internalID: 1156100864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_49
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 174
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0dc8cfe1673e924a936d7130cb7494f
+      internalID: 552592992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_50
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 174
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39dff98685415594c8b6b76e55f06da2
+      internalID: -1294814730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_51
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 174
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a94ff04f9a6e5843a28bb59a814210d
+      internalID: -1380797428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_52
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 174
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa579e2a1fa010147b6d8be45017b441
+      internalID: 1524994492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 142
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4504f0667ba0ab14187a502d1094a612
+      internalID: 705898847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmentsheet-export_54
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 142
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c941d0b21224eb9418f7cdeba447c264
+      internalID: -755476478
       vertices: []
       indices: 
       edges: []
@@ -886,8 +1370,30 @@ TextureImporter:
       environmentsheet-export_30: -247941698
       environmentsheet-export_31: 450236580
       environmentsheet-export_32: 1335239727
+      environmentsheet-export_33: 814891928
+      environmentsheet-export_34: 511607426
+      environmentsheet-export_35: 797750112
+      environmentsheet-export_36: -1153654809
+      environmentsheet-export_37: -1222755206
+      environmentsheet-export_38: -1138029892
+      environmentsheet-export_39: 1342023542
       environmentsheet-export_4: 9183054837742058854
+      environmentsheet-export_40: 221515323
+      environmentsheet-export_41: -2129575101
+      environmentsheet-export_42: -166205843
+      environmentsheet-export_43: -586347921
+      environmentsheet-export_44: -725860094
+      environmentsheet-export_45: 26968847
+      environmentsheet-export_46: 957429913
+      environmentsheet-export_47: -2095726345
+      environmentsheet-export_48: 1156100864
+      environmentsheet-export_49: 552592992
       environmentsheet-export_5: -1885446077
+      environmentsheet-export_50: -1294814730
+      environmentsheet-export_51: -1380797428
+      environmentsheet-export_52: 1524994492
+      environmentsheet-export_53: 705898847
+      environmentsheet-export_54: -755476478
       environmentsheet-export_6: -572460568
       environmentsheet-export_7: -1803303153
       environmentsheet-export_8: -29702913

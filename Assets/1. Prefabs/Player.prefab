@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5919051104637971776}
   - component: {fileID: 7519222824059598688}
   - component: {fileID: 5985316651160174942}
+  - component: {fileID: 1375326317118237785}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -100,8 +101,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.3
+  m_Offset: {x: 0, y: -0.1}
+  m_Radius: 0.2
 --- !u!114 &5433245093471353687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a2dc5ce442af04b9f4b2bcd1b703d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsLookingLeft: 0
 --- !u!114 &7519222824059598688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,6 +176,22 @@ MonoBehaviour:
   _spriteFlashLoops: 2
   _hitColor: {r: 1, g: 0, b: 0, a: 1}
   spriteRenderer: {fileID: 2564990732749003498}
+  _hitVfx: {fileID: 0}
+  _deathVfx: {fileID: 0}
+--- !u!114 &1375326317118237785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362407784181840407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00ab89edf0a914941965927b9b208dad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTransform: {fileID: 2865991975001419137}
+  _clampAngle: 80
 --- !u!1 &3368299535330036714
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,14 +219,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3368299535330036714}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.000000014901159, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.5543362, w: 0.83229285}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 688798393164801595}
   m_Father: {fileID: 8431299852010885420}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -67.33}
 --- !u!212 &7029080225330779812
 SpriteRenderer:
   m_ObjectHideFlags: 0
