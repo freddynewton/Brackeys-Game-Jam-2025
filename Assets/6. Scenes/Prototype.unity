@@ -798,6 +798,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1712858222213653308, guid: f60582a99a7bb384297715e385bb3774, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865991975001419137, guid: f60582a99a7bb384297715e385bb3774, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.83229285
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865991975001419137, guid: f60582a99a7bb384297715e385bb3774, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865991975001419137, guid: f60582a99a7bb384297715e385bb3774, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865991975001419137, guid: f60582a99a7bb384297715e385bb3774, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5543362
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865991975001419137, guid: f60582a99a7bb384297715e385bb3774, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -67.33
+      objectReference: {fileID: 0}
     - target: {fileID: 4711905457096391597, guid: f60582a99a7bb384297715e385bb3774, type: 3}
       propertyPath: m_Radius
       value: 0.2
@@ -872,7 +896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTransform: {fileID: 731054189}
-  _clampAngle: 60
+  _clampAngle: 80
 --- !u!1001 &611714062
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -33,6 +33,6 @@ public class ItemHolderLerpPosition : MonoBehaviour
             transform.position = newPosition;
         }
 
-        transform.localScale = _playerGraphics.localScale;
+        transform.localScale = new Vector3(1, _playerGraphics.localScale.x);
     }
 }

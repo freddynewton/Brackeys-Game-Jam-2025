@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class UnitAnimator : MonoBehaviour
 {
+    [HideInInspector] public bool IsLookingLeft;
     private Animator _animator;
-
 
     private int _verticalHash;
     private int _horizontalHash;
     private int _speedHash;
 
     private bool _isInitialized;
-    private bool _isLookingLeft;
+
+    private bool _isPlayer;
 
     void Awake()
     {
@@ -19,20 +20,36 @@ public class UnitAnimator : MonoBehaviour
         _verticalHash = Animator.StringToHash("Vertical");
         _speedHash = Animator.StringToHash("Speed");
         _isInitialized = true;
+
+        _isPlayer = gameObject.layer == LayerMask.NameToLayer("Player");
     }
 
     public void ApplyInput(Vector2 input)
     {
         if (!_isInitialized) { return; }
 
-        if (input.x != 0)
+        if (_isPlayer)
         {
-            _isLookingLeft = input.x < 0 ? true : false;
+            // Get the mouse position in screen coordinates
+            Vector3 mouseScreenPosition = Input.mousePosition;
 
-            _animator.transform.localScale = new Vector2(_isLookingLeft ? -1 : 1, 1);
+            // Convert the screen position to world position
+            Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouseScreenPosition);
 
-                //Debug.Log(_isLookingLeft);
+            // Set _isLookingLeft based on the comparison between mouse position x and transform.position.x
+            IsLookingLeft = mouseWorldPosition.x < transform.position.x;
 
+            // Update the animator's transform scale based on _isLookingLeft
+            _animator.transform.localScale = new Vector2(IsLookingLeft ? -1 : 1, 1);
+        }
+        else
+        {
+            if (input.x != 0)
+            {
+                IsLookingLeft = input.x < 0 ? true : false;
+
+                _animator.transform.localScale = new Vector2(IsLookingLeft ? -1 : 1, 1);
+            }
         }
 
         if (input.magnitude > 0)
@@ -40,9 +57,7 @@ public class UnitAnimator : MonoBehaviour
             _animator.SetFloat(_verticalHash, input.x);
             _animator.SetFloat(_horizontalHash, input.y);
         }
+
         _animator.SetFloat(_speedHash, input.magnitude);
-
     }
-
-
 }
