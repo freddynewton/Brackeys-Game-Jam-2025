@@ -5,8 +5,9 @@ public class EnemyIdleState : EnemyState
     private Vector2 _targetPos;
     private NPCNavigation _nPCNavigation;
 
-    public EnemyIdleState(EnemyInformation enemy, EnemyStateMachine stateMachine) : base(enemy, stateMachine)
+    public EnemyIdleState(EnemyInformation enemyInformation, EnemyStateMachine stateMachine) : base(enemyInformation, stateMachine)
     {
+        _nPCNavigation = enemyInformation.gameObject.GetComponent<NPCNavigation>();
     }
 
     public override void EnterState()
@@ -14,7 +15,7 @@ public class EnemyIdleState : EnemyState
         base.EnterState();
 
         _targetPos = GetRandomPointInCircle();
-        _nPCNavigation = enemyInformation.gameObject.GetComponent<NPCNavigation>();
+        //_nPCNavigation = enemyInformation.gameObject.GetComponent<NPCNavigation>();
         if (_nPCNavigation != null)
         {
             _nPCNavigation.SetNewDestination(_targetPos);
@@ -30,11 +31,16 @@ public class EnemyIdleState : EnemyState
     {
         base.FrameUpdate();
 
-        /*if(_nPCNavigation != null && _nPCNavigation.HasStopped())
+        if(_nPCNavigation != null && _nPCNavigation.HasStopped())
         {
             _targetPos = GetRandomPointInCircle();
             _nPCNavigation.SetNewDestination(_targetPos);
-        }*/
+        }
+
+        if (enemyInformation.IsAggroRange())
+        {
+            enemyInformation.stateMachine.ChangeState(enemyInformation.chaseState);
+        }
     }
 
     private Vector2 GetRandomPointInCircle()

@@ -188,7 +188,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc1b6daf555e0264d9cadb88d1a78c81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerPosition: {fileID: 0}
   _maxHp: 4
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 192
   zombieShuffleRange: 4
 --- !u!1 &7038058095555650782
 GameObject:
