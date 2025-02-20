@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class EnemyInformation : MonoBehaviour, IDamageable
+public class EnemyInformation : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Transform _playerPosition;
@@ -57,22 +57,6 @@ public class EnemyInformation : MonoBehaviour, IDamageable
     {
         stateMachine.currentEnemyState.FrameUpdate();
     }
-
-    #region Damage and Death
-    public void TakeDamage(int damage)
-    {
-        _currentHp -= damage;
-        if (_currentHp <= 0)
-        {
-            Death();
-        }
-    }
-    
-    private void Death()
-    {
-
-    }
-    #endregion
 
     #region Detection
     private bool DetectionCast()

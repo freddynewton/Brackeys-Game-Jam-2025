@@ -9,6 +9,6 @@ public class BroomMeleeWeaponBehaviour : MeleeWeaponItem
 
     public override void SecondaryInteract()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("Secondary interact");
     }
 }

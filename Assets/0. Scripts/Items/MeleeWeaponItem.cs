@@ -1,17 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
 public abstract class MeleeWeaponItem : WeaponItem
 {
-    protected Collider2D _collider;
+    [Header("Melee Weapon Item")]
+    [SerializeField] private LayerMask _ignoreLayerMask;
 
     private List<IDamageable> _hittedDamageableCache = new();
     private float _cacheTime = 0.3f;
+    private Collider2D _collider;
 
-    protected void OnCollisionEnter2D(Collision2D collision)
+    public void ToggleCollider()
     {
+        if (!_collider.enabled)
+        {
+            ClearHitCache();
+        }
+
+        _collider.enabled = !_collider.enabled;
+    }
+
+    protected void OnTriggerEnter2D(Collider2D collision)
+    {
+
         if (collision.gameObject.TryGetComponent(out IDamageable damageable))
         {
             if (_hittedDamageableCache.Contains(damageable))
@@ -29,7 +43,22 @@ public abstract class MeleeWeaponItem : WeaponItem
 
     protected void ClearHitCache()
     {
+        if (_hittedDamageableCache == null)
+        {
+            _hittedDamageableCache = new List<IDamageable>();
+        }
+
         _hittedDamageableCache.Clear();
+    }
+
+  
+    protected override void Awake()
+    {
+        base.Awake();
+
+        _collider ??= GetComponent<Collider2D>();
+        _collider.enabled = false;
+        _collider.isTrigger = true;
     }
 
     private IEnumerator DelayedRemoveOfCache(IDamageable damageable)
@@ -37,13 +66,5 @@ public abstract class MeleeWeaponItem : WeaponItem
         yield return new WaitForSeconds(_cacheTime);
 
         _hittedDamageableCache.Remove(damageable);
-    }
-
-    protected override void Awake()
-    {
-        base.Awake();
-
-        _collider ??= GetComponent<Collider2D>();
-        _collider.enabled = false;
     }
 }
