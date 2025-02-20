@@ -14,7 +14,7 @@ public class SpriteSorting : MonoBehaviour
         UpdateSortingOrder();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         UpdateSortingOrder();
     }
