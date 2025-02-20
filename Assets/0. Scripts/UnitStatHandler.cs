@@ -19,7 +19,31 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
 
     [Header("References")]
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private GameObject _hitVfx;
+
+    [SerializeField] private GameObject _deathVfx;
+
     private int _currentHp;
+
+    public void TakeDamage(int damage, Vector3 attackerTransformPosition)
+    {
+        StartFlickering();
+
+        // Instantiate hit VFX
+        GameObject hitVfx = Instantiate(_hitVfx, transform.position, Quaternion.identity);
+
+        // Set the rotation of the hit VFX to face the attacker
+        Vector3 direction = attackerTransformPosition - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        hitVfx.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+        _currentHp -= damage;
+
+        if (_currentHp <= 0)
+        {
+            Death();
+        }
+    }
 
     private void Awake()
     {
@@ -33,22 +57,11 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
         }
     }
 
-    public void TakeDamage(int damage)
-    {
-        Debug.Log("Hit " + name);
-
-        StartFlickering();
-
-        _currentHp -= damage;
-
-        if (_currentHp <= 0)
-        {
-            Death();
-        }
-    }
 
     private void Death()
     {
+        spriteRenderer.DOKill();
+
         Destroy(gameObject);
     }
 

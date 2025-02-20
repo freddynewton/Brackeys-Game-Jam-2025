@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System;
 
 /// <summary>
 /// Helper class to manage the registration and unregistration of particle systems with the ParticleCleanManager.
@@ -13,6 +14,9 @@ public class ParticleSystemCleanHelper : MonoBehaviour
     /// List of particle systems found in the children and itself.
     /// </summary>
     private List<ParticleSystem> particleSystems = new();
+
+    private LayerMask _beginLayerMask;
+    private LayerMask _endLayerMask;
 
     #endregion
 
@@ -44,6 +48,28 @@ public class ParticleSystemCleanHelper : MonoBehaviour
                 ParticleCleanManager.Instance.RegisterParticleSystem(ps);
             }
         }
+
+        _beginLayerMask = LayerMask.GetMask("OnlyEnvironmentInteractable");
+        _endLayerMask = LayerMask.GetMask("Environment");
+
+        // Set the layer mask for the particle system and children
+        SetLayerMask(particleSystems, _beginLayerMask);
+
+        Invoke(nameof(SetEndLayerMask), 1f);
+    }
+
+    private void SetLayerMask(List<ParticleSystem> particleSystems, LayerMask layerMask)
+    {
+        // Set the layer mask for the particle system and children
+        foreach (var ps in particleSystems)
+        {
+            ps.gameObject.layer = layerMask;
+        }
+    }
+
+    private void SetEndLayerMask()
+    {
+        SetLayerMask(particleSystems, _endLayerMask);
     }
 
     /// <summary>

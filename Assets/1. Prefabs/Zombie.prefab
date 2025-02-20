@@ -160,8 +160,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetDestination: {x: 0, y: 0}
   _nextWaypointDistance: 0.5
-  _stoppingDistance: 1
-  _isChasing: 1
   _seeker: {fileID: 1381368913925375461}
   _rigidbody2D: {fileID: 3099737260177543144}
   _unitMovementController: {fileID: 4149040138154074182}
@@ -195,6 +193,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 192
   zombieShuffleRange: 4
+  standStillTime: 4
 --- !u!114 &915588006707206046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,6 +213,8 @@ MonoBehaviour:
   _spriteFlashLoops: 2
   _hitColor: {r: 1, g: 0, b: 0, a: 1}
   spriteRenderer: {fileID: 2564990732749003498}
+  _hitVfx: {fileID: 935142836550693993, guid: d601df50e7fc7e9459ec45b0dd2ee057, type: 3}
+  _deathVfx: {fileID: 0}
 --- !u!1 &7038058095555650782
 GameObject:
   m_ObjectHideFlags: 0

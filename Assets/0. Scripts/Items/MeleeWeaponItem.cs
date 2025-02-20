@@ -33,7 +33,7 @@ public abstract class MeleeWeaponItem : WeaponItem
                 return;
             }
 
-            damageable.TakeDamage(_damage);
+            damageable.TakeDamage(_damage, transform.position);
 
             _hittedDamageableCache.Add(damageable);
 

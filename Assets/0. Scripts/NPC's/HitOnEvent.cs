@@ -9,7 +9,7 @@ public class HitOnEvent : MonoBehaviour
 
     public void Hit()
     {
-        _damageable.TakeDamage(_damage);
+        _damageable.TakeDamage(_damage, transform.position);
     }
 
     public void SetDamageable(IDamageable damageable)
