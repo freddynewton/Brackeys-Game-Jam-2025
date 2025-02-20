@@ -98,4 +98,10 @@ public class NPCNavigation : MonoBehaviour
         _targetDestination = newDestination;
         UpdatePath();
     }
+
+    public void Stop()
+    {
+        _reachedEndOfPath = true;
+        _path = null;
+    }
 }

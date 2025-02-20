@@ -10,12 +10,10 @@ public class EnemyInformation : MonoBehaviour, IDamageable
     [Header("General Settings")]
     [SerializeField] private int _maxHp = 4;
     private int _currentHp;
-    [SerializeField] private int _attackDamage { get; } = 1;
-    [Range(0.1f, 10f)][SerializeField] float detectionRange { get; } = 4f;
-    [Range(0.1f, 5f)][SerializeField] private float _attackRange { get; } = 1f;
-    [SerializeField] private LayerMask layerMask;
-    private bool isAggroed;
-    private bool isInRange;
+    [SerializeField] private int _attackDamage = 1;
+    [Range(0.1f, 10f)][SerializeField] float _detectionRange = 4f;
+    [Range(0.1f, 5f)][SerializeField] private float _attackRange = 1.5f;
+    [SerializeField] private LayerMask _detectionMask;
     #endregion
 
     #region Idle Variables
@@ -80,7 +78,7 @@ public class EnemyInformation : MonoBehaviour, IDamageable
     #region Detection
     private bool DetectionCast()
     {
-        Collider2D[] collderArray = Physics2D.OverlapCircleAll(transform.position, detectionRange, layerMask);
+        Collider2D[] collderArray = Physics2D.OverlapCircleAll(transform.position, _detectionRange, _detectionMask);
         foreach(Collider2D collider2D in collderArray)
         {
             if (collider2D.gameObject.tag == "Player")
@@ -93,7 +91,7 @@ public class EnemyInformation : MonoBehaviour, IDamageable
     }
     private bool AttackCast()
     {
-        RaycastHit2D ray = Physics2D.Raycast(transform.position, _playerPosition.position - transform.position, layerMask);
+        RaycastHit2D ray = Physics2D.Raycast(transform.position, _playerPosition.position - transform.position, _detectionRange, _detectionMask);
         if(ray.collider != null)
         {
             return ray.collider.CompareTag("Player");

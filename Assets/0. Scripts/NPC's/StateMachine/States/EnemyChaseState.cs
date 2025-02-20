@@ -25,6 +25,8 @@ public class EnemyChaseState : EnemyState
     public override void Exitstate()
     {
         base.Exitstate();
+
+        _nPCNavigation.Stop();
     }
 
     public override void FrameUpdate()
