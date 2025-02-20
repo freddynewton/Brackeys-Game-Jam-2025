@@ -233,6 +233,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4423285422601805607, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
+      propertyPath: StandStillTime
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423285422601805607, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
+      propertyPath: standStillTime
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423285422601805607, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
       propertyPath: zombieShuffleRange
       value: 4
       objectReference: {fileID: 0}
@@ -398,6 +406,14 @@ PrefabInstance:
     - target: {fileID: 1712858222213653308, guid: f60582a99a7bb384297715e385bb3774, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2564990732749003498, guid: f60582a99a7bb384297715e385bb3774, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2564990732749003498, guid: f60582a99a7bb384297715e385bb3774, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4711905457096391597, guid: f60582a99a7bb384297715e385bb3774, type: 3}
       propertyPath: m_Radius

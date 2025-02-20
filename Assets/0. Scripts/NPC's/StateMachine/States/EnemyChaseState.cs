@@ -41,9 +41,5 @@ public class EnemyChaseState : EnemyState
                 enemyInformation.stateMachine.ChangeState(enemyInformation.attackState);
             }
         }
-        else
-        {
-            enemyInformation.stateMachine.ChangeState(enemyInformation.idleState);
-        }
     }
 }

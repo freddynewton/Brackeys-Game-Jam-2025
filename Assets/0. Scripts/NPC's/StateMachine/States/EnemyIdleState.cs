@@ -31,15 +31,14 @@ public class EnemyIdleState : EnemyState
     {
         base.FrameUpdate();
 
-        if(_nPCNavigation != null && _nPCNavigation.HasStopped())
-        {
-            _targetPos = GetRandomPointInCircle();
-            _nPCNavigation.SetNewDestination(_targetPos);
-        }
-
         if (enemyInformation.IsAggroRange())
         {
             enemyInformation.stateMachine.ChangeState(enemyInformation.chaseState);
+        }
+
+        if (_nPCNavigation != null && _nPCNavigation.HasStopped())
+        {
+            enemyInformation.stateMachine.ChangeState(enemyInformation.standState);
         }
     }
 
