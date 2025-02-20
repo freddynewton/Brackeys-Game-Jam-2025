@@ -455,8 +455,8 @@ TextureImporter:
         y: 288
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 0.48359966, y: 0.44920254}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -477,8 +477,8 @@ TextureImporter:
         y: 288
         width: 32
         height: 32
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.54024124, y: 0.47585583}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -495,12 +495,12 @@ TextureImporter:
       name: brackeycharactershee_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
+        x: 320
+        y: 288
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.17807388, y: 0.2505064}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -517,8 +517,8 @@ TextureImporter:
       name: brackeycharactershee_11
       rect:
         serializedVersion: 2
-        x: 32
-        y: 256
+        x: 352
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -539,8 +539,8 @@ TextureImporter:
       name: brackeycharactershee_12
       rect:
         serializedVersion: 2
-        x: 64
-        y: 256
+        x: 384
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -561,8 +561,8 @@ TextureImporter:
       name: brackeycharactershee_13
       rect:
         serializedVersion: 2
-        x: 96
-        y: 256
+        x: 416
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -583,7 +583,7 @@ TextureImporter:
       name: brackeycharactershee_14
       rect:
         serializedVersion: 2
-        x: 128
+        x: 0
         y: 256
         width: 32
         height: 32
@@ -605,7 +605,7 @@ TextureImporter:
       name: brackeycharactershee_15
       rect:
         serializedVersion: 2
-        x: 160
+        x: 32
         y: 256
         width: 32
         height: 32
@@ -627,7 +627,7 @@ TextureImporter:
       name: brackeycharactershee_16
       rect:
         serializedVersion: 2
-        x: 192
+        x: 64
         y: 256
         width: 32
         height: 32
@@ -649,7 +649,7 @@ TextureImporter:
       name: brackeycharactershee_17
       rect:
         serializedVersion: 2
-        x: 224
+        x: 96
         y: 256
         width: 32
         height: 32
@@ -671,7 +671,7 @@ TextureImporter:
       name: brackeycharactershee_18
       rect:
         serializedVersion: 2
-        x: 256
+        x: 128
         y: 256
         width: 32
         height: 32
@@ -693,7 +693,7 @@ TextureImporter:
       name: brackeycharactershee_19
       rect:
         serializedVersion: 2
-        x: 288
+        x: 160
         y: 256
         width: 32
         height: 32
@@ -715,7 +715,7 @@ TextureImporter:
       name: brackeycharactershee_20
       rect:
         serializedVersion: 2
-        x: 320
+        x: 192
         y: 256
         width: 32
         height: 32
@@ -737,7 +737,7 @@ TextureImporter:
       name: brackeycharactershee_21
       rect:
         serializedVersion: 2
-        x: 352
+        x: 224
         y: 256
         width: 32
         height: 32
@@ -759,12 +759,12 @@ TextureImporter:
       name: brackeycharactershee_22
       rect:
         serializedVersion: 2
-        x: 384
+        x: 256
         y: 256
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.17807388, y: 0.17807388}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -781,8 +781,8 @@ TextureImporter:
       name: brackeycharactershee_23
       rect:
         serializedVersion: 2
-        x: 0
-        y: 224
+        x: 288
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -803,8 +803,8 @@ TextureImporter:
       name: brackeycharactershee_24
       rect:
         serializedVersion: 2
-        x: 32
-        y: 224
+        x: 320
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -825,8 +825,8 @@ TextureImporter:
       name: brackeycharactershee_25
       rect:
         serializedVersion: 2
-        x: 64
-        y: 224
+        x: 352
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -847,8 +847,8 @@ TextureImporter:
       name: brackeycharactershee_26
       rect:
         serializedVersion: 2
-        x: 96
-        y: 224
+        x: 384
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -869,8 +869,8 @@ TextureImporter:
       name: brackeycharactershee_27
       rect:
         serializedVersion: 2
-        x: 128
-        y: 224
+        x: 416
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -891,7 +891,7 @@ TextureImporter:
       name: brackeycharactershee_28
       rect:
         serializedVersion: 2
-        x: 160
+        x: 0
         y: 224
         width: 32
         height: 32
@@ -913,7 +913,7 @@ TextureImporter:
       name: brackeycharactershee_29
       rect:
         serializedVersion: 2
-        x: 192
+        x: 32
         y: 224
         width: 32
         height: 32
@@ -935,7 +935,7 @@ TextureImporter:
       name: brackeycharactershee_30
       rect:
         serializedVersion: 2
-        x: 224
+        x: 64
         y: 224
         width: 32
         height: 32
@@ -957,7 +957,7 @@ TextureImporter:
       name: brackeycharactershee_31
       rect:
         serializedVersion: 2
-        x: 288
+        x: 96
         y: 224
         width: 32
         height: 32
@@ -979,7 +979,7 @@ TextureImporter:
       name: brackeycharactershee_32
       rect:
         serializedVersion: 2
-        x: 320
+        x: 128
         y: 224
         width: 32
         height: 32
@@ -1001,7 +1001,7 @@ TextureImporter:
       name: brackeycharactershee_33
       rect:
         serializedVersion: 2
-        x: 352
+        x: 160
         y: 224
         width: 32
         height: 32
@@ -1023,7 +1023,7 @@ TextureImporter:
       name: brackeycharactershee_34
       rect:
         serializedVersion: 2
-        x: 384
+        x: 192
         y: 224
         width: 32
         height: 32
@@ -1045,8 +1045,8 @@ TextureImporter:
       name: brackeycharactershee_35
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
+        x: 224
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -1067,8 +1067,8 @@ TextureImporter:
       name: brackeycharactershee_36
       rect:
         serializedVersion: 2
-        x: 32
-        y: 192
+        x: 256
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -1089,8 +1089,8 @@ TextureImporter:
       name: brackeycharactershee_37
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
+        x: 288
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -1111,8 +1111,8 @@ TextureImporter:
       name: brackeycharactershee_38
       rect:
         serializedVersion: 2
-        x: 96
-        y: 192
+        x: 320
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -1133,8 +1133,8 @@ TextureImporter:
       name: brackeycharactershee_39
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
+        x: 352
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -1155,8 +1155,8 @@ TextureImporter:
       name: brackeycharactershee_40
       rect:
         serializedVersion: 2
-        x: 160
-        y: 192
+        x: 384
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -1177,8 +1177,8 @@ TextureImporter:
       name: brackeycharactershee_41
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
+        x: 416
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -1199,12 +1199,12 @@ TextureImporter:
       name: brackeycharactershee_42
       rect:
         serializedVersion: 2
-        x: 224
+        x: 0
         y: 192
-        width: 32
+        width: 64
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.16097547, y: 0.23702097}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1218,37 +1218,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brackeycharactershee_43
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8531f0775c21474b80ec876f7daffe6
-      internalID: 1605537910
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: brackeycharactershee_44
       rect:
         serializedVersion: 2
-        x: 288
+        x: 64
         y: 192
-        width: 32
+        width: 64
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.1648581, y: 0.25255108}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1262,7 +1240,73 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brackeycharactershee_45
+      name: brackeycharactershee_46
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 32
+      alignment: 9
+      pivot: {x: 0.14156318, y: 0.22149086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d668ca4ec3e17c48b97a11ec25c6067
+      internalID: -397916854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 32
+      alignment: 9
+      pivot: {x: 0.1221509, y: 0.2680807}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3e8f71abb2d5a4cbe72a829ea344dc
+      internalID: 297890986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_50
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 32
+      alignment: 9
+      pivot: {x: 0.12603283, y: 0.29914093}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c3b11cf3a87324784828da60cb826b
+      internalID: 1197587726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_52
       rect:
         serializedVersion: 2
         x: 320
@@ -1277,14 +1321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 229a0226e5b9bd145bea7e65f6198a43
-      internalID: 859014466
+      spriteID: c3c338876bcb85e4bb47caa149c91cef
+      internalID: 1785095201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brackeycharactershee_46
+      name: brackeycharactershee_53
       rect:
         serializedVersion: 2
         x: 352
@@ -1299,14 +1343,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d668ca4ec3e17c48b97a11ec25c6067
-      internalID: -397916854
+      spriteID: 9eac823d1b8ac77449be5b5a4e980e88
+      internalID: 239439588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brackeycharactershee_47
+      name: brackeycharactershee_54
       rect:
         serializedVersion: 2
         x: 384
@@ -1321,14 +1365,212 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57198b357bfd9ad48a5149d39086fe88
-      internalID: -1183965593
+      spriteID: 1de1784ee47e948449d526b5404bf3e4
+      internalID: -1289908669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brackeycharactershee_48
+      name: brackeycharactershee_55
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3052afac2de927142b6bc11229c185c1
+      internalID: 1864209653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: befaa51bb5f101e43a22ed351705d4f0
+      internalID: 1708897450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_57
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ffac46c13c16164b907f70e149ae6b7
+      internalID: -536048492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_58
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4302623f41f9da64aaa4e90f8a3a1d47
+      internalID: -1132424390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_59
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069732341167e2948ade0047b757289b
+      internalID: -753482518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_60
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d710a319796ae49479f27654f3b087cb
+      internalID: 2126361170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_61
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffa7f5fdadcf1c4384cdacf47212e58
+      internalID: -1943233597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_62
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1018c134a35fa70409cf71f4f38287fc
+      internalID: -1014443232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_63
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15475a4a9e10f5248a0dd0c9fec7d1ff
+      internalID: -563666893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_64
       rect:
         serializedVersion: 2
         x: 256
@@ -1343,14 +1585,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d3e8f71abb2d5a4cbe72a829ea344dc
-      internalID: 297890986
+      spriteID: a25f84030766a0145827e03bbd00a91b
+      internalID: -1586787144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brackeycharactershee_49
+      name: brackeycharactershee_65
       rect:
         serializedVersion: 2
         x: 288
@@ -1365,14 +1607,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08369321ae5995547a58474b86ea0b90
-      internalID: 90986729
+      spriteID: 18df1684d55a6b84bad48f46f2bfe4d8
+      internalID: -2030239280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brackeycharactershee_50
+      name: brackeycharactershee_66
       rect:
         serializedVersion: 2
         x: 320
@@ -1387,14 +1629,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46c3b11cf3a87324784828da60cb826b
-      internalID: 1197587726
+      spriteID: f4b5712de739758419179cd40ad59a1e
+      internalID: 900835464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brackeycharactershee_51
+      name: brackeycharactershee_67
       rect:
         serializedVersion: 2
         x: 352
@@ -1409,14 +1651,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3775d4a286fabea469e6c4b126506a4f
-      internalID: 856194819
+      spriteID: e4ac92a90a82a124ea5be8bcda62d16b
+      internalID: 512237725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brackeycharactershee_52
+      name: brackeycharactershee_68
       rect:
         serializedVersion: 2
         x: 384
@@ -1431,8 +1673,1570 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3c338876bcb85e4bb47caa149c91cef
-      internalID: 1785095201
+      spriteID: b0c08c0075a8aa04694ec206ef52fd98
+      internalID: -1647605272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_69
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a88f7cb29552334e8fa297ebfa56f69
+      internalID: 792487850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b5c63d04bcf5e42844aeb582671faf
+      internalID: -526071917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_71
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e168b5995398645b7f68681d45150c
+      internalID: 1747486687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_72
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225ebbf917e04ad4ba6cce759f16807a
+      internalID: -1464905747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_73
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1760b9f840a3d42bc1f119a1489ecb
+      internalID: 476978125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_74
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9603912c07e5144b91db0c88dddad63
+      internalID: -556536547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_75
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff2bfd0db8e6164681feb5556a62c4d
+      internalID: -1871451895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6b41740daa08245bd471fe2764c002
+      internalID: 701117280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_77
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc0400c9203f0b4f87f80b4f24e924c
+      internalID: -1162486823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_78
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ce5226c15820d41b51b1d9df749e15
+      internalID: 897115279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_79
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8d20333d7ae5444895c2a64837040e
+      internalID: 2036206851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_80
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5b5f7084ffd894b86be4a4e1b30225
+      internalID: 1652594242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_81
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833f06533808df6499932ba8ac7a4323
+      internalID: 657052932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_82
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86f46f9afa87d645961cc3ab5f7449b
+      internalID: -626730126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_83
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60062aac356c93d4d85781a7cc5739d0
+      internalID: 1242206248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6390e1f4d1cde54594391d716ee4d36
+      internalID: 2128912733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_85
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c99f8529db8f3340931813d1be9fdc9
+      internalID: -430941856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_86
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e95f515751fe884ebaf1ea9ebc6ecd8
+      internalID: 1868094689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_87
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab949d84bba087049a2bbb1d65bc9d00
+      internalID: -1450522566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f88a7197b820e45abd91ccfe30cafd
+      internalID: 473138115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_89
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057df66847595e54aac33fda7c342e51
+      internalID: 2037016673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_90
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed0a7faecd6c364dbccbbef685c638e
+      internalID: 573746623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_91
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c3d8d619419f34ba24cd27d6d237f2
+      internalID: -957930943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11b08373e9dd3348ad86f1d0749e9bb
+      internalID: 1164711201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_93
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d972f3bb1145044879259f1eb0945e
+      internalID: -2146541079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_94
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c4f2154ec357d40b992ba45fec6a44
+      internalID: -1528066528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_95
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0175da4922498448a523f4ff3dc33ea
+      internalID: 1105126327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_96
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d38701b4cc8d774b9688f0a2a95c30f
+      internalID: -1461722255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_97
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7dc51858c873934a9206430cc8e2be4
+      internalID: 407743063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af220987e3b8294ab9efc348e49289f
+      internalID: 311414981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_99
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961ccd2935a82744e84dce5fa8d1f524
+      internalID: 381135562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_100
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da56f3d8da1e8b4390539c92b282fe3
+      internalID: 1175162573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_101
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f712b5626aab8a45841421bbf61a4a1
+      internalID: 1908372050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_102
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2b47747873ca44aa5d581098eac551
+      internalID: -406387206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_103
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1a68784ff5f054c9962689b1077afd
+      internalID: -309589578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_104
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0371ee21373e5cb49962b657d871d19a
+      internalID: -1134918741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_105
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb09ea1d02a46914291e1bb6e4c3106b
+      internalID: -1204306718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_106
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26473ede8620864380336a4d94b91ea
+      internalID: -1399391454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_107
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e8f8dcd39bb124791819e66ecb5b64
+      internalID: 1702480571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_108
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7749d521ee88914448147ae3d6e6e451
+      internalID: 1105995788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_109
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e826ec77b9a1026479af34823d6a24d4
+      internalID: -2060360555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_110
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d6284e2fe44714aba10c27d5e9c8e0
+      internalID: -211436149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_111
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c46184a8b14104eb06747fe4a6cc1f
+      internalID: -1924719479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bb80551420cd340bd2836cc01409b3
+      internalID: 1050833226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_113
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c483235c72514d64e90e717f4131d513
+      internalID: -1003757127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_114
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4ff61e44a15a94a91586f6440dd933
+      internalID: 368052733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_115
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4880595ddad507641a0a139bd6ff3661
+      internalID: -2132720263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_116
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9352625232143cd4d97bc9307cedac28
+      internalID: 2118150832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_117
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ae0242bcad74240a31f3b2bb458dcf
+      internalID: -459981527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_118
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e566ba881258b746b78bf0cd51d4fa6
+      internalID: -1200505419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_119
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dda63c6312f76b438a556479f88dffb
+      internalID: 1778980145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_120
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0024e85461fb8f942ad3e8d28675ec7a
+      internalID: 203939556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_121
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147c9a9f41f198140b8884392f44fc72
+      internalID: 1515482819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_122
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8708f551e830deb48b9c7d063859f2a9
+      internalID: 491551597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_123
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077de47c22fbd3c41b2adef3c86206c5
+      internalID: 229072915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_124
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3671b6183ea23474a9b7496e2c40d1ae
+      internalID: 2102106868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_125
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f9da1842bf6a644b40e04ea8839398
+      internalID: 761252085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553c47016b4d8c14ba3ee78b2a346fda
+      internalID: 1428243826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_127
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7959d03e91b8fc46a22192eba1b8dfd
+      internalID: 497448370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_128
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c0ab4e29453884c8feeb84f9c78b82
+      internalID: 505190529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_129
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422782cccd25cc740935296af7ae5bea
+      internalID: 1825716967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_130
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71fd7ffcea795ed4bb6542d42964374b
+      internalID: -1662832224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_131
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c99bdcf7a71f142a8e873d1dc4d4a5
+      internalID: -1287042415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_132
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b99d217d477be4ba6968f853aae4eb
+      internalID: -1334404114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_133
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046aa60347bf21148b6053d0b4ba77d2
+      internalID: 1987355687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_134
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30283c4a05aa7a94aa4e60034020b5fc
+      internalID: -458254679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_135
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922ad56b2de1fdd43a8576c3b98ba893
+      internalID: 426959555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_136
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf2487f71c6991498109781e5333d68
+      internalID: -92496658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_137
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5434412b84ad8043b0bf0c23aeb036c
+      internalID: 115105256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_138
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64b4ebc832e8a7489cc130c37c69f9f
+      internalID: -172028568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brackeycharactershee_139
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475598f7928d61e44b102e7133b99205
+      internalID: -422460662
       vertices: []
       indices: 
       edges: []
@@ -1454,9 +3258,49 @@ TextureImporter:
       brackeycharactershee_0: -5757012263054345278
       brackeycharactershee_1: 2076394481115405098
       brackeycharactershee_10: -1628762498257837958
+      brackeycharactershee_100: 1175162573
+      brackeycharactershee_101: 1908372050
+      brackeycharactershee_102: -406387206
+      brackeycharactershee_103: -309589578
+      brackeycharactershee_104: -1134918741
+      brackeycharactershee_105: -1204306718
+      brackeycharactershee_106: -1399391454
+      brackeycharactershee_107: 1702480571
+      brackeycharactershee_108: 1105995788
+      brackeycharactershee_109: -2060360555
       brackeycharactershee_11: -6155603406097495657
+      brackeycharactershee_110: -211436149
+      brackeycharactershee_111: -1924719479
+      brackeycharactershee_112: 1050833226
+      brackeycharactershee_113: -1003757127
+      brackeycharactershee_114: 368052733
+      brackeycharactershee_115: -2132720263
+      brackeycharactershee_116: 2118150832
+      brackeycharactershee_117: -459981527
+      brackeycharactershee_118: -1200505419
+      brackeycharactershee_119: 1778980145
       brackeycharactershee_12: 5189173039334006113
+      brackeycharactershee_120: 203939556
+      brackeycharactershee_121: 1515482819
+      brackeycharactershee_122: 491551597
+      brackeycharactershee_123: 229072915
+      brackeycharactershee_124: 2102106868
+      brackeycharactershee_125: 761252085
+      brackeycharactershee_126: 1428243826
+      brackeycharactershee_127: 497448370
+      brackeycharactershee_128: 505190529
+      brackeycharactershee_129: 1825716967
       brackeycharactershee_13: 5648630013636106137
+      brackeycharactershee_130: -1662832224
+      brackeycharactershee_131: -1287042415
+      brackeycharactershee_132: -1334404114
+      brackeycharactershee_133: 1987355687
+      brackeycharactershee_134: -458254679
+      brackeycharactershee_135: 426959555
+      brackeycharactershee_136: -92496658
+      brackeycharactershee_137: 115105256
+      brackeycharactershee_138: -172028568
+      brackeycharactershee_139: -422460662
       brackeycharactershee_14: -557543652719202725
       brackeycharactershee_15: 2904479044258136388
       brackeycharactershee_16: -4773789086472738212
@@ -1500,10 +3344,57 @@ TextureImporter:
       brackeycharactershee_50: 1197587726
       brackeycharactershee_51: 856194819
       brackeycharactershee_52: 1785095201
+      brackeycharactershee_53: 239439588
+      brackeycharactershee_54: -1289908669
+      brackeycharactershee_55: 1864209653
+      brackeycharactershee_56: 1708897450
+      brackeycharactershee_57: -536048492
+      brackeycharactershee_58: -1132424390
+      brackeycharactershee_59: -753482518
       brackeycharactershee_6: 1279854511313262455
+      brackeycharactershee_60: 2126361170
+      brackeycharactershee_61: -1943233597
+      brackeycharactershee_62: -1014443232
+      brackeycharactershee_63: -563666893
+      brackeycharactershee_64: -1586787144
+      brackeycharactershee_65: -2030239280
+      brackeycharactershee_66: 900835464
+      brackeycharactershee_67: 512237725
+      brackeycharactershee_68: -1647605272
+      brackeycharactershee_69: 792487850
       brackeycharactershee_7: -5617633044014846355
+      brackeycharactershee_70: -526071917
+      brackeycharactershee_71: 1747486687
+      brackeycharactershee_72: -1464905747
+      brackeycharactershee_73: 476978125
+      brackeycharactershee_74: -556536547
+      brackeycharactershee_75: -1871451895
+      brackeycharactershee_76: 701117280
+      brackeycharactershee_77: -1162486823
+      brackeycharactershee_78: 897115279
+      brackeycharactershee_79: 2036206851
       brackeycharactershee_8: 1966846618321514054
+      brackeycharactershee_80: 1652594242
+      brackeycharactershee_81: 657052932
+      brackeycharactershee_82: -626730126
+      brackeycharactershee_83: 1242206248
+      brackeycharactershee_84: 2128912733
+      brackeycharactershee_85: -430941856
+      brackeycharactershee_86: 1868094689
+      brackeycharactershee_87: -1450522566
+      brackeycharactershee_88: 473138115
+      brackeycharactershee_89: 2037016673
       brackeycharactershee_9: 427564025258149313
+      brackeycharactershee_90: 573746623
+      brackeycharactershee_91: -957930943
+      brackeycharactershee_92: 1164711201
+      brackeycharactershee_93: -2146541079
+      brackeycharactershee_94: -1528066528
+      brackeycharactershee_95: 1105126327
+      brackeycharactershee_96: -1461722255
+      brackeycharactershee_97: 407743063
+      brackeycharactershee_98: 311414981
+      brackeycharactershee_99: 381135562
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
