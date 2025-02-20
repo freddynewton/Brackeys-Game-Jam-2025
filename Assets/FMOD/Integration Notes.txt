@@ -1,0 +1,9 @@
+Fmod Integration Notes
+"Event Name" - purpose of script
+----------------------
+"Hit sound" - Triggers when player hits zombie
+"Broom Swoosh" - Triggers when player attacks
+"Ambient Groan" - Start Event when a regular type zombie is alive, stop in any other instance (Will play randomly, probability increases the more zombies are present, currently maxing at 8)
+"Killshot" - Triggers when a player kills a zombie with a broom hit
+"Normal Growl" - Triggers when regular type zombie gets close, distance up to you (Will only play sound some of the time)
+"Player footsteps" - Start event when player is walking, stop in any other event (Let me know when this one is implemented so I can fine tune the speed)
