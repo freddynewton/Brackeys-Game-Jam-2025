@@ -24,8 +24,12 @@ public class EnemyStandState : EnemyState
     {
         base.FrameUpdate();
 
-        _waitTime =- Time.deltaTime;
-        Debug.Log(_waitTime);
+        if (enemyInformation.IsAggroRange())
+        {
+            enemyInformation.stateMachine.ChangeState(enemyInformation.chaseState);
+        }
+
+        _waitTime -= Time.deltaTime;
         if (_waitTime <= 0)
         {
             enemyInformation.stateMachine.ChangeState(enemyInformation.idleState);

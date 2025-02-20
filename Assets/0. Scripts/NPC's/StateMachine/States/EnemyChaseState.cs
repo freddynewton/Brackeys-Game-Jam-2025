@@ -1,9 +1,13 @@
+using System.Threading;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class EnemyChaseState : EnemyState
 {
     private Transform _playerTransform;
     private NPCNavigation _nPCNavigation;
+    private float _waypointTime = 0.5f;
+    private float _currentTime;
 
     public EnemyChaseState(EnemyInformation enemyInformation, EnemyStateMachine StateMachine) : base(enemyInformation, StateMachine)
     {
@@ -15,11 +19,7 @@ public class EnemyChaseState : EnemyState
     {
         base.EnterState();
 
-        //_nPCNavigation = enemyInformation.gameObject.GetComponent<NPCNavigation>();
-        if (_nPCNavigation != null)
-        {
-            _nPCNavigation.SetNewDestination(_playerTransform.position);
-        }
+        _currentTime = _waypointTime;
     }
 
     public override void Exitstate()
@@ -30,16 +30,25 @@ public class EnemyChaseState : EnemyState
     public override void FrameUpdate()
     {
         base.FrameUpdate();
-        if (_nPCNavigation != null && _nPCNavigation.HasStopped())
+
+        _currentTime -= Time.deltaTime;
+        if (_currentTime <= 0)
+        {
+            SetDestination();
+            _currentTime = _waypointTime;
+        }
+        if (enemyInformation.IsAttackRange())
+        {
+            enemyInformation.stateMachine.ChangeState(enemyInformation.attackState);
+        }
+
+    }
+
+    private void SetDestination()
+    {
+        if(_nPCNavigation != null)
         {
             _nPCNavigation.SetNewDestination(_playerTransform.position);
-        }
-        if (enemyInformation.IsAggroRange())
-        {
-            if (enemyInformation.IsAttackRange())
-            {
-                enemyInformation.stateMachine.ChangeState(enemyInformation.attackState);
-            }
         }
     }
 }

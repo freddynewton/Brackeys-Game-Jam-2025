@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetDestination: {x: 0, y: 0}
-  _nextWaypointDistance: 0.1
+  _nextWaypointDistance: 0.5
   _stoppingDistance: 1
   _isChasing: 1
   _seeker: {fileID: 1381368913925375461}
@@ -194,6 +194,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 192
   zombieShuffleRange: 4
+  standStillTime: 4
 --- !u!1 &7038058095555650782
 GameObject:
   m_ObjectHideFlags: 0
