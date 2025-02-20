@@ -30,6 +30,9 @@ public class UnitAnimator : MonoBehaviour
             _isLookingLeft = input.x < 0 ? true : false;
 
             _animator.transform.localScale = new Vector2(_isLookingLeft ? -1 : 1, 1);
+
+                //Debug.Log(_isLookingLeft);
+
         }
 
         if (input.magnitude > 0)

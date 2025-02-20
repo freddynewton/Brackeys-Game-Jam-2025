@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetDestination: {x: 0, y: 0}
-  _nextWaypointDistance: 0.1
+  _nextWaypointDistance: 0.5
   _stoppingDistance: 1
   _isChasing: 1
   _seeker: {fileID: 1381368913925375461}

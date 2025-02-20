@@ -21,11 +21,13 @@ public class EnemyInformation : MonoBehaviour
     #region Idle Variables
     [Header("Idle Settings")]
     [Range(0f, 20f)] public float zombieShuffleRange = 4f;
+    [Range(0f, 20)] public float standStillTime = 4f;
 
     #endregion
 
     public EnemyStateMachine stateMachine { get; set; }
     public EnemyIdleState idleState { get; set; }
+    public EnemyStandState standState { get; set; }
     public EnemyChaseState chaseState { get; set; }
     public EnemyAttackState attackState { get; set; }
 
@@ -47,6 +49,7 @@ public class EnemyInformation : MonoBehaviour
         stateMachine = new EnemyStateMachine();
 
         idleState = new EnemyIdleState(this, stateMachine);
+        standState = new EnemyStandState(this, stateMachine);
         chaseState = new EnemyChaseState(this, stateMachine);
         attackState = new EnemyAttackState(this, stateMachine);
 
