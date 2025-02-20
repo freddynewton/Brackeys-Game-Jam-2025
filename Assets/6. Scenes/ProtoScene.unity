@@ -212,9 +212,21 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3099737260177543144, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3099737260177543144, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4149040138154074182, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
       propertyPath: _moveSpeed
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423285422601805607, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
+      propertyPath: zombieShuffleRange
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8996393451910729307, guid: 032896112a2def64ca3be1f1bdbfe5c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -494,7 +506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
       propertyPath: orthographic size
-      value: 4.15625
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
       propertyPath: m_NormalizedViewPortRect.x

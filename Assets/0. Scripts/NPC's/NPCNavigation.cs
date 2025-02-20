@@ -4,8 +4,8 @@ using Pathfinding;
 public class NPCNavigation : MonoBehaviour
 {
     [Header("Settings")]
-    [SerializeField] Transform _targetDestination;
-    [Range (0f, 5f)][SerializeField] private float _nextWaypointDistance = 3f;
+    [SerializeField] Vector2 _targetDestination;
+    [Range (0f, 5f)][SerializeField] private float _nextWaypointDistance = 0.1f;
     [Range (0f, 3f)][SerializeField] private float _stoppingDistance = 1f;
     [SerializeField] private bool _isChasing = true;
 
@@ -13,8 +13,6 @@ public class NPCNavigation : MonoBehaviour
     [SerializeField] private Seeker _seeker;
     [SerializeField] private Rigidbody2D _rigidbody2D;
     [SerializeField] private UnitMovementController _unitMovementController;
-
-    [HideInInspector] public bool _goingToExit = false;
 
     private Path _path;
     private int _currentWaypoint = 0;
@@ -28,10 +26,9 @@ public class NPCNavigation : MonoBehaviour
         _unitMovementController ??= GetComponent<UnitMovementController>();
         
 
-        InvokeRepeating("UpdatePath", 0f, .5f);
+        //InvokeRepeating("UpdatePath", 0f, .5f);
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         Pathfinding();
@@ -44,6 +41,7 @@ public class NPCNavigation : MonoBehaviour
             _path = p;
             _currentWaypoint = 0;
         }
+
     }
 
     private void Pathfinding()
@@ -56,7 +54,7 @@ public class NPCNavigation : MonoBehaviour
         if(_currentWaypoint >= _path.vectorPath.Count)
         {
             _reachedEndOfPath = true;
-            _direction = Vector2.zero;
+            _unitMovementController.ApplyInput(Vector2.zero);
             return;
         }
         else
@@ -67,18 +65,19 @@ public class NPCNavigation : MonoBehaviour
         _direction = ((Vector2)_path.vectorPath[_currentWaypoint] - _rigidbody2D.position).normalized;
         _unitMovementController.ApplyInput(_direction);
 
-        float distance = Vector2.Distance(_rigidbody2D.position, _path.vectorPath[_currentWaypoint]);
+        float distance = Vector2.Distance(transform.position, _path.vectorPath[_currentWaypoint]);
         if (distance < _nextWaypointDistance)
         {
             _currentWaypoint++;
         }
+
     }
 
     private void UpdatePath()
     {
         if (_seeker.IsDone())
         {
-            _seeker.StartPath(_rigidbody2D.position, _targetDestination.position, OnPathComplete);
+            _seeker.StartPath(_rigidbody2D.position, _targetDestination, OnPathComplete);
         }
     }
 
@@ -92,8 +91,9 @@ public class NPCNavigation : MonoBehaviour
         return _direction;
     }
 
-    public void SetNewDestination(Transform newDestination)
+    public void SetNewDestination(Vector2 newDestination)
     {
         _targetDestination = newDestination;
+        UpdatePath();
     }
 }
