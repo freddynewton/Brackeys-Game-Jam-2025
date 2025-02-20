@@ -29,13 +29,7 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
     {
         StartFlickering();
 
-        // Instantiate hit VFX
-        GameObject hitVfx = Instantiate(_hitVfx, transform.position, Quaternion.identity);
-
-        // Set the rotation of the hit VFX to face the attacker, assume the current direction of the Vfx is right
-        Vector3 direction = transform.position - attackerTransformPosition;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        hitVfx.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        PlayHitVfx(attackerTransformPosition);
 
         _currentHp -= damage;
 
@@ -43,6 +37,22 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
         {
             Death();
         }
+    }
+
+    private void PlayHitVfx(Vector3 attackerTransformPosition)
+    {
+        if (_hitVfx == null)
+        {
+            return;
+        }
+
+        // Instantiate hit VFX
+        GameObject hitVfx = Instantiate(_hitVfx, transform.position, Quaternion.identity);
+
+        // Set the rotation of the hit VFX to face the attacker, assume the current direction of the Vfx is right
+        Vector3 direction = transform.position - attackerTransformPosition;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        hitVfx.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
     private void Awake()
