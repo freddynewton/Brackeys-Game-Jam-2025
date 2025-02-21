@@ -1,11 +1,12 @@
 using UnityEngine;
 
-public class EnemyStandState : EnemyState
+public class CrawlerStillState : EnemyState
 {
     private float _waitTime;
 
-    public EnemyStandState(ZombieInformation enemyInformation, EnemyStateMachine stateMachine) : base(enemyInformation, stateMachine)
+    public CrawlerStillState(CrawlerInformation enemyInformation, EnemyStateMachine stateMachine) : base(enemyInformation, stateMachine)
     {
+
     }
 
     public override void EnterState()
@@ -26,7 +27,7 @@ public class EnemyStandState : EnemyState
 
         if (enemyInformation.IsAggroRange())
         {
-            enemyInformation.stateMachine.ChangeState(enemyInformation.chaseState);
+            enemyInformation.stateMachine.ChangeState(enemyInformation.moveAwayState);
         }
 
         _waitTime -= Time.deltaTime;
@@ -36,3 +37,4 @@ public class EnemyStandState : EnemyState
         }
     }
 }
+

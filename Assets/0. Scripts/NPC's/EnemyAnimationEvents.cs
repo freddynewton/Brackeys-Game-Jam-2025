@@ -14,7 +14,7 @@ public class EnemyAnimationEvents : MonoBehaviour
         _damagePosition = playerTarget.transform; 
         SetDamageable(playerTarget);
 
-        _enemyDamage = gameObject.GetComponentInParent<EnemyInformation>().GetEnemyDamagePerAttack();
+        _enemyDamage = gameObject.GetComponentInParent<ZombieInformation>().GetEnemyDamagePerAttack();
     }
 
 

@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class EnemyIdleState : EnemyState
+public class CrawlerIdleState : EnemyState
 {
     private Vector2 _targetPos;
     private NPCNavigation _nPCNavigation;
 
-    public EnemyIdleState(ZombieInformation enemy, EnemyStateMachine stateMachine) : base(enemy, stateMachine)
+    public CrawlerIdleState(EnemyInformation enemy, EnemyStateMachine stateMachine) : base(enemy, stateMachine)
     {
         _nPCNavigation = enemyInformation.gameObject.GetComponent<NPCNavigation>();
     }
@@ -33,7 +33,7 @@ public class EnemyIdleState : EnemyState
 
         if (enemyInformation.IsAggroRange())
         {
-            enemyInformation.stateMachine.ChangeState(enemyInformation.chaseState);
+            enemyInformation.stateMachine.ChangeState(enemyInformation.moveAwayState);
         }
 
         if (_nPCNavigation != null && _nPCNavigation.HasStopped())
@@ -47,4 +47,3 @@ public class EnemyIdleState : EnemyState
         return enemyInformation.transform.position + (Vector3)(Random.insideUnitCircle * enemyInformation.zombieShuffleRange);
     }
 }
-
