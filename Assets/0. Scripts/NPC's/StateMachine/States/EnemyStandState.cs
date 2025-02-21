@@ -4,7 +4,7 @@ public class EnemyStandState : EnemyState
 {
     private float _waitTime;
 
-    public EnemyStandState(EnemyInformation enemyInformation, EnemyStateMachine stateMachine) : base(enemyInformation, stateMachine)
+    public EnemyStandState(ZombieInformation enemyInformation, EnemyStateMachine stateMachine) : base(enemyInformation, stateMachine)
     {
     }
 

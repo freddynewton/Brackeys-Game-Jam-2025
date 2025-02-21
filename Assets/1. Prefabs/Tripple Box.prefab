@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6205179241571914094}
   - component: {fileID: 6752212543101869106}
   - component: {fileID: 4677509927550725613}
-  m_Layer: 10
+  m_Layer: 7
   m_Name: Tripple Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,6 +178,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 7940623261217251752}
   _hitVfx: {fileID: 2772245458158379256, guid: b21b12457a6583f4097cb8918d6480b2, type: 3}
   _deathVfx: {fileID: 0}
+  isZombie: 0
 --- !u!50 &4677509927550725613
 Rigidbody2D:
   serializedVersion: 5

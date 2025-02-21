@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8854851433112863492}
   - component: {fileID: 4568646011403875996}
   - component: {fileID: 4455686446075750872}
-  m_Layer: 10
+  m_Layer: 7
   m_Name: RedGameMachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,6 +197,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 6015269401185929302}
   _hitVfx: {fileID: 2772245458158379256, guid: cc8f0f872a4df0149a66a627e676b28f, type: 3}
   _deathVfx: {fileID: 0}
+  isZombie: 0
   _states:
   - Health: 0
     Sprite: {fileID: -1153654809, guid: 5a38dd19700f0904f9cca02d49014881, type: 3}

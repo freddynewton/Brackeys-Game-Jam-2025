@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9194140341398486657}
   - component: {fileID: 3339926027404336130}
   - component: {fileID: 652371387951695556}
-  m_Layer: 10
+  m_Layer: 7
   m_Name: BigBox Type B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,6 +178,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 6130060121435817553}
   _hitVfx: {fileID: 2772245458158379256, guid: b21b12457a6583f4097cb8918d6480b2, type: 3}
   _deathVfx: {fileID: 0}
+  isZombie: 0
 --- !u!50 &652371387951695556
 Rigidbody2D:
   serializedVersion: 5

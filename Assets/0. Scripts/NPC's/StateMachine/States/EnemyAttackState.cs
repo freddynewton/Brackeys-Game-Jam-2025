@@ -7,7 +7,7 @@ public class EnemyAttackState : EnemyState
     private float _attackTime;
     private float _currentTime;
 
-    public EnemyAttackState(EnemyInformation enemyInformation, EnemyStateMachine StateMachine) : base(enemyInformation, StateMachine)
+    public EnemyAttackState(ZombieInformation enemy, EnemyStateMachine StateMachine) : base(enemy, StateMachine)
     {
         _animator = enemyInformation.gameObject.GetComponentInChildren<Animator>();
         _attackTime = enemyInformation.GetAttackTime();
@@ -20,7 +20,8 @@ public class EnemyAttackState : EnemyState
 
         _animator.SetTrigger("Attack");
         _currentTime = _attackTime;
-        Debug.Log("bite attack");
+
+        SoundManager.Instance.PlayNormalGrowl(_animator.gameObject);
     }
 
     public override void Exitstate()
