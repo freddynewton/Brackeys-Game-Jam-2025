@@ -34,11 +34,7 @@ public class ParticleCleanTriggerController : MonoBehaviour
         // Ensure the collider is set
         _collider ??= GetComponent<Collider2D>();
 
-        // Register this trigger with the ParticleCleanManager if not already registered
-        if (!ParticleCleanManager.Instance.IsParticleCleanTriggerRegistered(this))
-        {
-            ParticleCleanManager.Instance.RegisterParticleCleanTrigger(this);
-        }
+        ParticleCleanManager.Instance.RegisterParticleCleanTrigger(this);
     }
 
     /// <summary>
@@ -47,11 +43,7 @@ public class ParticleCleanTriggerController : MonoBehaviour
     /// </summary>
     private void OnDestroy()
     {
-        // Unregister this trigger from the ParticleCleanManager if it is registered
-        if (ParticleCleanManager.Instance.IsParticleCleanTriggerRegistered(this))
-        {
-            ParticleCleanManager.Instance.UnregisterParticleCleanTrigger(this);
-        }
+        ParticleCleanManager.Instance.UnregisterParticleCleanTrigger(this);
     }
 
     #endregion

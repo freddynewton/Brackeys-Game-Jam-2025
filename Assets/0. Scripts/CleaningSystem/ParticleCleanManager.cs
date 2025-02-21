@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 /// <summary>
@@ -38,10 +39,25 @@ public class ParticleCleanManager : Singleton<ParticleCleanManager>
     /// <param name="particleSystem">The particle system to register.</param>
     public void RegisterParticleSystem(ParticleSystem particleSystem)
     {
+        if (IsParticleSystemRegistered(particleSystem))
+        {
+            return;
+        }
+
         _particleSystemsList.Add(particleSystem);
+
+        if (_particleCleanTriggersList.Count == 0)
+        {
+            // Search All using Linq 
+            _particleCleanTriggersList = FindObjectsByType<ParticleCleanTriggerController>(FindObjectsInactive.Include, FindObjectsSortMode.None).ToList();
+        }
 
         foreach (ParticleCleanTriggerController particleCleanTrigger in _particleCleanTriggersList)
         {
+            var triggerSyestem = particleSystem.trigger;
+
+            triggerSyestem.AddCollider(particleCleanTrigger.Collider);
+
             particleSystem.trigger.AddCollider(particleCleanTrigger.Collider);
         }
     }
@@ -62,6 +78,11 @@ public class ParticleCleanManager : Singleton<ParticleCleanManager>
     /// <param name="particleCleanTrigger">The particle clean trigger to register.</param>
     public void RegisterParticleCleanTrigger(ParticleCleanTriggerController particleCleanTrigger)
     {
+        if (IsParticleCleanTriggerRegistered(particleCleanTrigger))
+        {
+            return;
+        }
+
         _particleCleanTriggersList.Add(particleCleanTrigger);
 
         foreach (ParticleSystem particleSystem in _particleSystemsList)
@@ -76,6 +97,11 @@ public class ParticleCleanManager : Singleton<ParticleCleanManager>
     /// <param name="particleCleanTrigger">The particle clean trigger to unregister.</param>
     public void UnregisterParticleCleanTrigger(ParticleCleanTriggerController particleCleanTrigger)
     {
+        if (!IsParticleCleanTriggerRegistered(particleCleanTrigger))
+        {
+            return;
+        }
+
         _particleCleanTriggersList.Remove(particleCleanTrigger);
     }
 

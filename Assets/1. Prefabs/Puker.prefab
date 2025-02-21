@@ -220,9 +220,9 @@ MonoBehaviour:
   _spriteFlashTime: 0.1
   _spriteFlashLoops: 2
   _hitColor: {r: 1, g: 0, b: 0, a: 1}
-  spriteRenderer: {fileID: 2564990732749003498}
-  _hitVfx: {fileID: 935142836550693993, guid: d601df50e7fc7e9459ec45b0dd2ee057, type: 3}
-  _deathVfx: {fileID: 0}
+  _spriteRenderer: {fileID: 2564990732749003498}
+  _hitVfx: {fileID: 935142836550693993, guid: 67b8f8e11280a574d94d8cf7f4f5fbb6, type: 3}
+  _deathVfx: {fileID: 935142836550693993, guid: 68f7a1171225ed441b0971524cb7bbf8, type: 3}
 --- !u!1 &7038058095555650782
 GameObject:
   m_ObjectHideFlags: 0

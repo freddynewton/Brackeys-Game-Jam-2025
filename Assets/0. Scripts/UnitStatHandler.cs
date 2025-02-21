@@ -9,7 +9,7 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
     [SerializeField] private int _maxHp = 4;
 
     [Header("Death Sprites")]
-    [Tooltip("Sprites that will fly around after a thing gets destroyed")] 
+    [Tooltip("Sprites that will fly around after a thing gets destroyed")]
     [SerializeField] private List<Sprite> _deathSpriteList = new();
 
     [Header("Hit Animation Effects")]
@@ -19,65 +19,69 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
     [SerializeField] private Color _hitColor = Color.red;
 
     [Header("References")]
-    [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private GameObject _hitVfx;
+    [SerializeField] protected SpriteRenderer _spriteRenderer;
+    [SerializeField] protected GameObject _hitVfx;
+    [SerializeField] protected GameObject _deathVfx;
 
-    [SerializeField] private GameObject _deathVfx;
+    protected int _currentHp;
 
-    private int _currentHp;
-
-    public void TakeDamage(int damage, Vector3 attackerTransformPosition)
+    public virtual void TakeDamage(int damage, Vector3 attackerTransformPosition)
     {
         StartFlickering();
 
-        PlayHitVfx(attackerTransformPosition);
 
         _currentHp -= damage;
 
         if (_currentHp <= 0)
         {
             Death();
+
+            return;
         }
+
+        PlayVfx(_hitVfx, attackerTransformPosition);
     }
 
-    private void PlayHitVfx(Vector3 attackerTransformPosition)
+    protected void PlayVfx(GameObject vfx, Vector3 attackerTransformPosition)
     {
-        if (_hitVfx == null)
+        if (vfx == null)
         {
             return;
         }
 
         // Instantiate hit VFX
-        GameObject hitVfx = Instantiate(_hitVfx, transform.position, Quaternion.identity);
+        GameObject vfxObject = Instantiate(vfx, transform.position, Quaternion.identity);
 
         // Set the rotation of the hit VFX to face the attacker, assume the current direction of the Vfx is right
         Vector3 direction = transform.position - attackerTransformPosition;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        hitVfx.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        vfxObject.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
     private void Awake()
     {
         _currentHp = _maxHp;
 
-        spriteRenderer ??= GetComponent<SpriteRenderer>();
+        _spriteRenderer ??= GetComponent<SpriteRenderer>();
 
-        if (spriteRenderer == null)
+        if (_spriteRenderer == null)
         {
             Debug.LogError("SpriteRenderer not assigned", gameObject);
         }
     }
 
-    private void Death()
+    protected virtual void Death()
     {
-        spriteRenderer.DOKill();
+        _spriteRenderer.DOKill();
 
         CreateDeathSprites();
+
+        PlayVfx(_deathVfx, transform.position);
 
         Destroy(gameObject);
     }
 
-    private void CreateDeathSprites()
+    protected void CreateDeathSprites()
     {
         foreach (Sprite sprite in _deathSpriteList)
         {
@@ -95,17 +99,17 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
             CircleCollider2D collider = deathSprite.AddComponent<CircleCollider2D>();
             collider.radius = 0.1f;
 
-            rb.AddForce(new Vector2(UnityEngine.Random.Range(-1f, 1f) * 3f, UnityEngine.Random.Range(-1f, 1f)) * 3f, ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(UnityEngine.Random.Range(-3f, 3f) * 3f, UnityEngine.Random.Range(-3f, 3f)) * 3f, ForceMode2D.Impulse);
 
             Destroy(deathSprite, 300f);
         }
     }
 
-    private void StartFlickering()
+    protected void StartFlickering()
     {
-        spriteRenderer.DOKill();
+        _spriteRenderer.DOKill();
 
         // Using DoTween for sprite flickering
-        spriteRenderer.DOColor(_hitColor, _spriteFlashTime).OnComplete(() => spriteRenderer.DOColor(Color.white, _spriteFlashTime)).SetLoops(_spriteFlashLoops);
+        _spriteRenderer.DOColor(_hitColor, _spriteFlashTime).OnComplete(() => _spriteRenderer.DOColor(Color.white, _spriteFlashTime)).SetLoops(_spriteFlashLoops);
     }
 }

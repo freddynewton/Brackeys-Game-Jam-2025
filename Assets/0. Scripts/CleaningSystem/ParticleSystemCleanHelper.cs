@@ -31,19 +31,13 @@ public class ParticleSystemCleanHelper : MonoBehaviour
         // Add all particle systems to the ParticleCleanManager
         foreach (var ps in particleSystems)
         {
-            if (!ParticleCleanManager.Instance.IsParticleSystemRegistered(ps))
-            {
-                var triggerModule = ps.trigger;
-                triggerModule.enabled = true;
+            var triggerModule = ps.trigger;
+            triggerModule.enabled = true;
 
-                triggerModule.outside = ParticleSystemOverlapAction.Ignore;
-                triggerModule.inside = ParticleSystemOverlapAction.Kill;
-                triggerModule.enter = ParticleSystemOverlapAction.Ignore;
-                triggerModule.exit = ParticleSystemOverlapAction.Ignore;
-
-                // Register the particle system with the ParticleCleanManager
-                ParticleCleanManager.Instance.RegisterParticleSystem(ps);
-            }
+            triggerModule.outside = ParticleSystemOverlapAction.Ignore;
+            triggerModule.inside = ParticleSystemOverlapAction.Kill;
+            triggerModule.enter = ParticleSystemOverlapAction.Ignore;
+            triggerModule.exit = ParticleSystemOverlapAction.Ignore;
         }
 
         // Set the collision quality to High initially
@@ -70,6 +64,13 @@ public class ParticleSystemCleanHelper : MonoBehaviour
     private void SetEndCollisionQuality()
     {
         SetCollisionQuality(particleSystems, ParticleSystemCollisionQuality.High);
+
+        // Add all particle systems to the ParticleCleanManager
+        foreach (var ps in particleSystems)
+        {
+            // Register the particle system with the ParticleCleanManager
+            ParticleCleanManager.Instance.RegisterParticleSystem(ps);
+        }
     }
 
     /// <summary>
