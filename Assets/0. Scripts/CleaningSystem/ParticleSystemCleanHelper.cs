@@ -15,9 +15,6 @@ public class ParticleSystemCleanHelper : MonoBehaviour
     /// </summary>
     private List<ParticleSystem> particleSystems = new();
 
-    private int _beginLayerMask;
-    private int _endLayerMask;
-
     #endregion
 
     #region Unity Methods
@@ -49,13 +46,10 @@ public class ParticleSystemCleanHelper : MonoBehaviour
             }
         }
 
-        _beginLayerMask = LayerMask.NameToLayer("OnlyEnvironmentInteractable");
-        _endLayerMask = LayerMask.NameToLayer("Environment");
+        // Set the collision quality to High initially
+        SetCollisionQuality(particleSystems, ParticleSystemCollisionQuality.Medium);
 
-        // Set the layer mask for the particle system and children
-        SetLayerMask(particleSystems, _beginLayerMask);
-
-        Invoke(nameof(SetEndLayerMask), 1f);
+        Invoke(nameof(SetEndCollisionQuality), 1f);
 
         foreach (var ps in particleSystems)
         {
@@ -63,18 +57,19 @@ public class ParticleSystemCleanHelper : MonoBehaviour
         }
     }
 
-    private void SetLayerMask(List<ParticleSystem> particleSystems, int layerMask)
+    private void SetCollisionQuality(List<ParticleSystem> particleSystems, ParticleSystemCollisionQuality quality)
     {
-        // Set the layer mask for the particle system and children
+        // Set the collision quality for the particle system and children
         foreach (var ps in particleSystems)
         {
-            ps.gameObject.layer = layerMask;
+            var collisionModule = ps.collision;
+            collisionModule.quality = quality;
         }
     }
 
-    private void SetEndLayerMask()
+    private void SetEndCollisionQuality()
     {
-        SetLayerMask(particleSystems, _endLayerMask);
+        SetCollisionQuality(particleSystems, ParticleSystemCollisionQuality.High);
     }
 
     /// <summary>

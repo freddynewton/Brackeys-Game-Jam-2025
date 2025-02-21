@@ -3,7 +3,9 @@ Fmod Integration Notes
 ----------------------
 "Hit sound" - Triggers when player hits zombie
 "Broom Swoosh" - Triggers when player attacks
-"Ambient Groan" - Start Event when a regular type zombie is alive, stop in any other instance (Will play randomly, probability increases the more zombies are present, currently maxing at 8)
+"Ambient Groan" - Start Event when a regular type zombie is alive, stop in any other instance (Allow multiple instances, the event should trigger once for every zombie alive. This also uses distance attenuation which shouldn't be too difficult to code, It just means you have to attach the parameter to the zombie gameobject)
 "Killshot" - Triggers when a player kills a zombie with a broom hit
 "Normal Growl" - Triggers when regular type zombie gets close, distance up to you (Will only play sound some of the time)
 "Player footsteps" - Start event when player is walking, stop in any other event (Let me know when this one is implemented so I can fine tune the speed)
+"Zombie attack" - Trigger when zombie attacks
+"Level Music 1" - Start event when level begins, upon level completion set parameter "Level Won" to 1
