@@ -223,6 +223,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 2564990732749003498}
   _hitVfx: {fileID: 935142836550693993, guid: 67b8f8e11280a574d94d8cf7f4f5fbb6, type: 3}
   _deathVfx: {fileID: 935142836550693993, guid: d601df50e7fc7e9459ec45b0dd2ee057, type: 3}
+  isZombie: 1
 --- !u!1 &7038058095555650782
 GameObject:
   m_ObjectHideFlags: 0

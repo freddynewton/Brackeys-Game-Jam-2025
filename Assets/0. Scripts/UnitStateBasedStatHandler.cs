@@ -28,6 +28,8 @@ public class UnitStateBasedStatHandler : UnitStatHandler
         {
             UpdateSprite();
         }
+
+        SoundManager.Instance.PlayHitSound();
     }
 
     private void UpdateSprite()

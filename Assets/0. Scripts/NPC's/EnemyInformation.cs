@@ -4,7 +4,7 @@ using UnityEngine;
 public class EnemyInformation : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private Transform _playerPosition;
+    [SerializeField] private Transform _playerTransform;
 
     #region General Settings
     [Header("General Settings")]
@@ -30,11 +30,13 @@ public class EnemyInformation : MonoBehaviour
     public EnemyChaseState chaseState { get; set; }
     public EnemyAttackState attackState { get; set; }
 
+    public Transform PlayerTransform { get => _playerTransform; private set => _playerTransform = value; }
+
     private void Awake()
     {
-        _playerPosition = GameObject.FindFirstObjectByType<PlayerMainManager>().transform;
+        _playerTransform = GameObject.FindFirstObjectByType<PlayerItemController>().transform;
 
-        if (_playerPosition == null)
+        if (_playerTransform == null)
         {
             Console.WriteLine("Could not find Player or Player Tag");
         }
@@ -70,12 +72,12 @@ public class EnemyInformation : MonoBehaviour
     }
     private bool AttackCast()
     {
-        if (_playerPosition == null)
+        if (_playerTransform == null)
         {
             return false;
         }
 
-        RaycastHit2D ray = Physics2D.Raycast(transform.position, _playerPosition.position - transform.position, _detectionRange, _detectionMask);
+        RaycastHit2D ray = Physics2D.Raycast(transform.position, _playerTransform.position - transform.position, _detectionRange, _detectionMask);
         if(ray.collider != null)
         {
             return ray.collider.CompareTag("Player");
@@ -85,12 +87,12 @@ public class EnemyInformation : MonoBehaviour
 
     private float CheckDistance()
     {
-        if (_playerPosition == null)
+        if (_playerTransform == null)
         {
             return 0;
         }
 
-        return Vector2.Distance(transform.position, _playerPosition.position);
+        return Vector2.Distance(transform.position, _playerTransform.position);
     }
 
     public bool IsAggroRange()

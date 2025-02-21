@@ -23,11 +23,19 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
     [SerializeField] protected GameObject _hitVfx;
     [SerializeField] protected GameObject _deathVfx;
 
+    [Header("SFX Settings")]
+    [SerializeField] private bool isZombie = false;
+
     protected int _currentHp;
 
     public virtual void TakeDamage(int damage, Vector3 attackerTransformPosition)
     {
         StartFlickering();
+
+        if (isZombie)
+        {
+            SoundManager.Instance.PlayHitSound();
+        }
 
 
         _currentHp -= damage;
@@ -77,6 +85,11 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
         CreateDeathSprites();
 
         PlayVfx(_deathVfx, transform.position);
+
+        if (isZombie)
+        {
+            SoundManager.Instance.PlayKillshot();
+        }
 
         Destroy(gameObject);
     }

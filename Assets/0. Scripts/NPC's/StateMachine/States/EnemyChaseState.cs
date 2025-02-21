@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class EnemyChaseState : EnemyState
 {
-    private Transform _playerTransform;
     private NPCNavigation _nPCNavigation;
     private float _waypointTime = 0.5f;
     private float _currentTime;
 
     public EnemyChaseState(EnemyInformation enemyInformation, EnemyStateMachine StateMachine) : base(enemyInformation, StateMachine)
     {
-        _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         _nPCNavigation = enemyInformation.gameObject.GetComponent<NPCNavigation>();
     }
 
@@ -29,6 +27,11 @@ public class EnemyChaseState : EnemyState
 
     public override void FrameUpdate()
     {
+        if (enemyInformation.PlayerTransform == null)
+        {
+            return;
+        }
+
         base.FrameUpdate();
 
         _currentTime -= Time.deltaTime;
@@ -49,7 +52,7 @@ public class EnemyChaseState : EnemyState
     {
         if(_nPCNavigation != null)
         {
-            _nPCNavigation.SetNewDestination(_playerTransform.position);
+            _nPCNavigation.SetNewDestination(enemyInformation.PlayerTransform.position);
         }
     }
 }

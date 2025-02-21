@@ -20,7 +20,8 @@ public class EnemyAttackState : EnemyState
 
         _animator.SetTrigger("Attack");
         _currentTime = _attackTime;
-        Debug.Log("bite attack");
+
+        SoundManager.Instance.PlayNormalGrowl(_animator.gameObject);
     }
 
     public override void Exitstate()

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2525019512923295103}
   - component: {fileID: 471932247952955482}
   - component: {fileID: 4819835926982417084}
-  m_Layer: 10
+  m_Layer: 7
   m_Name: VendingMachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,6 +197,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 6871169738718062472}
   _hitVfx: {fileID: 2772245458158379256, guid: 983e839ece55c414ea558b75e3174cf7, type: 3}
   _deathVfx: {fileID: 0}
+  isZombie: 0
   _states:
   - Health: 4
     Sprite: {fileID: -394300797, guid: 5a38dd19700f0904f9cca02d49014881, type: 3}
