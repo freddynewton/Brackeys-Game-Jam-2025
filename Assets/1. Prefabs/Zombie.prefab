@@ -190,8 +190,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerPosition: {fileID: 0}
   _attackDamage: 1
-  _detectionRange: 4
-  _attackRange: 1
+  _detectionRange: 3
+  _attackRange: 1.2
   _timeBetweenAttack: 2.5
   _detectionMask:
     serializedVersion: 2
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damagePosition: {fileID: 0}
-  _damage: 1
+  _enemyDamage: 1
   _vFX: {fileID: 8323844564340149048, guid: 626504c2ca2564540b663dfb44987d71, type: 3}
 --- !u!114 &88783237117708408
 MonoBehaviour:
