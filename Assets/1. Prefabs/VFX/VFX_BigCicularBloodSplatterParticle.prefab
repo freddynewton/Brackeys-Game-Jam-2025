@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8268672244057964404}
   - component: {fileID: 8398401068434943339}
   m_Layer: 12
-  m_Name: VFX_BigDirectionalBloodSplatterParticle
+  m_Name: VFX_BigCicularBloodSplatterParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935142836550693993}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -35,7 +35,7 @@ Transform:
   - {fileID: 6480297082103081993}
   - {fileID: 3204284522493738325}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &3281045177093610832
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -172,8 +172,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 35
-      minScalar: -5
+      scalar: 10
+      minScalar: 5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -667,14 +667,14 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 4
+    type: 10
     angle: 24.56
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 90, z: -90}
+    m_Rotation: {x: 0, y: 0, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
@@ -751,10 +751,10 @@ ParticleSystem:
     m_TextureAlphaAffectsParticles: 1
     m_TextureBilinearFiltering: 0
     randomDirectionAmount: 0
-    sphericalDirectionAmount: 0
+    sphericalDirectionAmount: 1
     randomPositionAmount: 0
     radius:
-      value: 0.07
+      value: 0.5
       mode: 0
       spread: 0
       speed:
@@ -5092,7 +5092,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 15
-      minScalar: -15
+      minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5586,14 +5586,14 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 4
+    type: 10
     angle: 24.56
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: -90, z: -90}
+    m_Rotation: {x: 0, y: 0, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
@@ -5670,10 +5670,10 @@ ParticleSystem:
     m_TextureAlphaAffectsParticles: 1
     m_TextureBilinearFiltering: 0
     randomDirectionAmount: 0
-    sphericalDirectionAmount: 0
+    sphericalDirectionAmount: 1
     randomPositionAmount: 0
     radius:
-      value: 0.07
+      value: 1
       mode: 0
       spread: 0
       speed:
@@ -9855,6 +9855,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
+      propertyPath: ShapeModule.type
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
       propertyPath: UVModule.enabled
       value: 0
       objectReference: {fileID: 0}
@@ -9875,20 +9879,28 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
+      propertyPath: ShapeModule.m_Rotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
       propertyPath: ShapeModule.m_Rotation.y
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
       propertyPath: ShapeModule.m_Rotation.z
-      value: -90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
       propertyPath: ShapeModule.radius.value
-      value: 0.07
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
       propertyPath: CollisionModule.radiusScale
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
       propertyPath: TrailModule.sizeAffectsWidth
@@ -9900,7 +9912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 50
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
       propertyPath: TrailModule.sizeAffectsLifetime
@@ -9920,7 +9932,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
       propertyPath: InitialModule.startSpeed.minScalar
-      value: -10
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
+      propertyPath: ShapeModule.sphericalDirectionAmount
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
       propertyPath: InitialModule.startRotation.minMaxState
