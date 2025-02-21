@@ -1,14 +1,26 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyAttackState : EnemyState
 {
-    public EnemyAttackState(EnemyInformation enemy, EnemyStateMachine StateMachine) : base(enemy, StateMachine)
+    private Animator _animator;
+    private float _attackTime;
+    private float _currentTime;
+
+    public EnemyAttackState(EnemyInformation enemyInformation, EnemyStateMachine StateMachine) : base(enemyInformation, StateMachine)
     {
+        _animator = enemyInformation.gameObject.GetComponentInChildren<Animator>();
+        _attackTime = enemyInformation.GetAttackTime();
     }
 
     public override void EnterState()
     {
         base.EnterState();
+
+
+        _animator.SetTrigger("Attack");
+        _currentTime = _attackTime;
+        Debug.Log("bite attack");
     }
 
     public override void Exitstate()
@@ -19,5 +31,16 @@ public class EnemyAttackState : EnemyState
     public override void FrameUpdate()
     {
         base.FrameUpdate();
+        _currentTime -= Time.deltaTime;
+        if (!(enemyInformation.IsAttackRange()) && (_currentTime <= 0))
+        {
+            enemyInformation.stateMachine.ChangeState(enemyInformation.chaseState);
+        }
+        else if (enemyInformation.IsAttackRange() && _currentTime <= 0)
+        {
+            _animator.SetTrigger("Attack");
+            _currentTime = _attackTime;
+            Debug.Log("bite attack 2");
+        }
     }
 }

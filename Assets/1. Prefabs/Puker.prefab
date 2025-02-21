@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4423285422601805607}
   - component: {fileID: 915588006707206046}
   m_Layer: 10
-  m_Name: Zombie
+  m_Name: Puker
   m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -191,7 +191,7 @@ MonoBehaviour:
   _playerPosition: {fileID: 0}
   _attackDamage: 1
   _detectionRange: 4
-  _attackRange: 1
+  _attackRange: 3.5
   _timeBetweenAttack: 2.5
   _detectionMask:
     serializedVersion: 2
@@ -268,7 +268,7 @@ Animator:
   m_GameObject: {fileID: 7038058095555650782}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fe40fe2db4f4f4343ab30ed1f209b9f1, type: 2}
+  m_Controller: {fileID: 9100000, guid: 644dca66f54b0064cba760e81fa682ef, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -324,7 +324,7 @@ SpriteRenderer:
   m_SortingLayerID: 1697678743
   m_SortingLayer: 1
   m_SortingOrder: 2
-  m_Sprite: {fileID: -6115871640364947264, guid: 3a78bf9c34b631f498519ba21062b153, type: 3}
+  m_Sprite: {fileID: 3272773282774581525, guid: 3a78bf9c34b631f498519ba21062b153, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -347,9 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66759c6df896f6e42ad7419e18cae343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damagePosition: {fileID: 0}
   _damage: 1
-  _vFX: {fileID: 8323844564340149048, guid: 626504c2ca2564540b663dfb44987d71, type: 3}
 --- !u!114 &88783237117708408
 MonoBehaviour:
   m_ObjectHideFlags: 0

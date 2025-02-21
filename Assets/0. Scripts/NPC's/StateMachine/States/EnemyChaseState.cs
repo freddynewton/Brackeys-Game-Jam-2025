@@ -39,6 +39,7 @@ public class EnemyChaseState : EnemyState
         }
         if (enemyInformation.IsAttackRange())
         {
+            _nPCNavigation.Stop();
             enemyInformation.stateMachine.ChangeState(enemyInformation.attackState);
         }
 
