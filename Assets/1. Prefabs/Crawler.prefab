@@ -175,14 +175,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d14a3c933d735a94a99a30c56752d9d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerPosition: {fileID: 0}
+  _playerTransform: {fileID: 0}
   _detectionRange: 3
   _detectionMask:
     serializedVersion: 2
     m_Bits: 64
   zombieShuffleRange: 4
   standStillTime: 2
-  _timeBetweenAttack: 1.64
+  _moveAwayDistance: 2.5
 --- !u!114 &-6090216116401060093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,9 +218,10 @@ MonoBehaviour:
   _spriteFlashTime: 0.1
   _spriteFlashLoops: 2
   _hitColor: {r: 1, g: 0, b: 0, a: 1}
-  spriteRenderer: {fileID: 2564990732749003498}
-  _hitVfx: {fileID: 935142836550693993, guid: d601df50e7fc7e9459ec45b0dd2ee057, type: 3}
-  _deathVfx: {fileID: 0}
+  _spriteRenderer: {fileID: 2564990732749003498}
+  _hitVfx: {fileID: 935142836550693993, guid: 67b8f8e11280a574d94d8cf7f4f5fbb6, type: 3}
+  _deathVfx: {fileID: 935142836550693993, guid: 67b8f8e11280a574d94d8cf7f4f5fbb6, type: 3}
+  isZombie: 1
 --- !u!1 &7038058095555650782
 GameObject:
   m_ObjectHideFlags: 0
