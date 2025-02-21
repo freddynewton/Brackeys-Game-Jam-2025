@@ -19,14 +19,14 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
     [SerializeField] private Color _hitColor = Color.red;
 
     [Header("References")]
-    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] protected SpriteRenderer _spriteRenderer;
     [SerializeField] private GameObject _hitVfx;
 
     [SerializeField] private GameObject _deathVfx;
 
-    private int _currentHp;
+    protected int _currentHp;
 
-    public void TakeDamage(int damage, Vector3 attackerTransformPosition)
+    public virtual void TakeDamage(int damage, Vector3 attackerTransformPosition)
     {
         StartFlickering();
 
@@ -40,7 +40,7 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
         }
     }
 
-    private void PlayHitVfx(Vector3 attackerTransformPosition)
+    protected void PlayHitVfx(Vector3 attackerTransformPosition)
     {
         if (_hitVfx == null)
         {
@@ -60,24 +60,24 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
     {
         _currentHp = _maxHp;
 
-        spriteRenderer ??= GetComponent<SpriteRenderer>();
+        _spriteRenderer ??= GetComponent<SpriteRenderer>();
 
-        if (spriteRenderer == null)
+        if (_spriteRenderer == null)
         {
             Debug.LogError("SpriteRenderer not assigned", gameObject);
         }
     }
 
-    private void Death()
+    protected virtual void Death()
     {
-        spriteRenderer.DOKill();
+        _spriteRenderer.DOKill();
 
         CreateDeathSprites();
 
         Destroy(gameObject);
     }
 
-    private void CreateDeathSprites()
+    protected void CreateDeathSprites()
     {
         foreach (Sprite sprite in _deathSpriteList)
         {
@@ -95,17 +95,17 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
             CircleCollider2D collider = deathSprite.AddComponent<CircleCollider2D>();
             collider.radius = 0.1f;
 
-            rb.AddForce(new Vector2(UnityEngine.Random.Range(-1f, 1f) * 3f, UnityEngine.Random.Range(-1f, 1f)) * 3f, ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(UnityEngine.Random.Range(-3f, 3f) * 3f, UnityEngine.Random.Range(-3f, 3f)) * 3f, ForceMode2D.Impulse);
 
             Destroy(deathSprite, 300f);
         }
     }
 
-    private void StartFlickering()
+    protected void StartFlickering()
     {
-        spriteRenderer.DOKill();
+        _spriteRenderer.DOKill();
 
         // Using DoTween for sprite flickering
-        spriteRenderer.DOColor(_hitColor, _spriteFlashTime).OnComplete(() => spriteRenderer.DOColor(Color.white, _spriteFlashTime)).SetLoops(_spriteFlashLoops);
+        _spriteRenderer.DOColor(_hitColor, _spriteFlashTime).OnComplete(() => _spriteRenderer.DOColor(Color.white, _spriteFlashTime)).SetLoops(_spriteFlashLoops);
     }
 }

@@ -161,14 +161,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e668b822886f67942bc8e75747c9964b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHp: 4
-  _deathSpriteList: []
+  _maxHp: 2
+  _deathSpriteList:
+  - {fileID: 846145974, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: 876359107, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: -759915925, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: -1709868596, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: 846145974, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: 876359107, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: -759915925, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: -1709868596, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
   _freezeTime: 0.15
   _spriteFlashTime: 0.1
   _spriteFlashLoops: 2
   _hitColor: {r: 1, g: 0, b: 0, a: 1}
-  spriteRenderer: {fileID: 3935844754240448975}
-  _hitVfx: {fileID: 0}
+  _spriteRenderer: {fileID: 3935844754240448975}
+  _hitVfx: {fileID: 2772245458158379256, guid: b21b12457a6583f4097cb8918d6480b2, type: 3}
   _deathVfx: {fileID: 0}
 --- !u!50 &7767004576032718003
 Rigidbody2D:

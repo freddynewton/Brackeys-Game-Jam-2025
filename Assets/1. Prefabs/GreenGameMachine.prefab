@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6015269401185929302}
   - component: {fileID: 8736119853341097939}
   - component: {fileID: 8854851433112863492}
-  - component: {fileID: 4601113818249731116}
   - component: {fileID: 4568646011403875996}
+  - component: {fileID: 5268878657171460315}
   m_Layer: 10
   m_Name: GreenGameMachine
   m_TagString: Untagged
@@ -149,27 +149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f857c8ac3c5c89d4c945b2d809d073a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4601113818249731116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3265468547837306872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e668b822886f67942bc8e75747c9964b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxHp: 4
-  _deathSpriteList: []
-  _freezeTime: 0.15
-  _spriteFlashTime: 0.1
-  _spriteFlashLoops: 2
-  _hitColor: {r: 1, g: 0, b: 0, a: 1}
-  spriteRenderer: {fileID: 6015269401185929302}
-  _hitVfx: {fileID: 0}
-  _deathVfx: {fileID: 0}
 --- !u!50 &4568646011403875996
 Rigidbody2D:
   serializedVersion: 5
@@ -197,3 +176,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5268878657171460315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3265468547837306872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d5979fa537c27b458f681677bb4323a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHp: 2
+  _deathSpriteList: []
+  _freezeTime: 0.15
+  _spriteFlashTime: 0.1
+  _spriteFlashLoops: 2
+  _hitColor: {r: 1, g: 0, b: 0, a: 1}
+  _spriteRenderer: {fileID: 6015269401185929302}
+  _hitVfx: {fileID: 2772245458158379256, guid: 983e839ece55c414ea558b75e3174cf7, type: 3}
+  _deathVfx: {fileID: 0}
+  _states:
+  - Health: 0
+    Sprite: {fileID: -1222755206, guid: 5a38dd19700f0904f9cca02d49014881, type: 3}

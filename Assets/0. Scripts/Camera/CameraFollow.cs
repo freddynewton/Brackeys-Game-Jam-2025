@@ -22,6 +22,16 @@ public class CameraFollow : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (_playerPosition == null)
+        {
+            _playerPosition = FindFirstObjectByType<PlayerMainManager>().transform;
+        }
+
+        if (_playerPosition == null)
+        {
+            return;
+        }
+
         LerpFollowPlayer();
     }
 

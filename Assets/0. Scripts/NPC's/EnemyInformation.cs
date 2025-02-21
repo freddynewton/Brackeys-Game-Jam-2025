@@ -33,7 +33,7 @@ public class EnemyInformation : MonoBehaviour
 
     void Start()
     {
-        _playerPosition = GameObject.FindWithTag("Player").transform;
+        _playerPosition = GameObject.FindFirstObjectByType<PlayerMainManager>().transform;
 
         if (_playerPosition == null)
         {
