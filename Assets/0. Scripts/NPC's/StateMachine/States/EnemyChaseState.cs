@@ -29,6 +29,7 @@ public class EnemyChaseState : EnemyState
     {
         if (enemyInformation.PlayerTransform == null)
         {
+            Debug.Log("What the fuck");
             return;
         }
 

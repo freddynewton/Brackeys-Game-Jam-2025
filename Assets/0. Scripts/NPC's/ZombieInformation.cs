@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class ZombieInformation : EnemyInformation
@@ -9,6 +10,14 @@ public class ZombieInformation : EnemyInformation
 
     private void Awake()
     {
+        _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+
+        if (_playerTransform == null)
+        {
+
+            Console.WriteLine("Could not find Player or Player Tag");
+        }
+
         stateMachine = new EnemyStateMachine();
 
         idleState = new EnemyIdleState(this, stateMachine);

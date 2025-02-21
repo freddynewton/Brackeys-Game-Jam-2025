@@ -4,7 +4,7 @@ using UnityEngine;
 public abstract class EnemyInformation : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private Transform _playerTransform;
+    [SerializeField] protected Transform _playerTransform;
 
     #region General Settings
     [Header("General Settings")]
@@ -35,10 +35,11 @@ public abstract class EnemyInformation : MonoBehaviour
 
     private void Awake()
     {
-        _playerTransform = GameObject.FindFirstObjectByType<PlayerItemController>().transform;
+        _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
 
         if (_playerTransform == null)
         {
+
             Console.WriteLine("Could not find Player or Player Tag");
         }
     }
