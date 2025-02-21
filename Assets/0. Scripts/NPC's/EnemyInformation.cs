@@ -30,8 +30,7 @@ public class EnemyInformation : MonoBehaviour
     public EnemyChaseState chaseState { get; set; }
     public EnemyAttackState attackState { get; set; }
 
-
-    void Start()
+    private void Awake()
     {
         _playerPosition = GameObject.FindFirstObjectByType<PlayerMainManager>().transform;
 
@@ -39,10 +38,7 @@ public class EnemyInformation : MonoBehaviour
         {
             Console.WriteLine("Could not find Player or Player Tag");
         }
-    }
 
-    private void Awake()
-    {
         stateMachine = new EnemyStateMachine();
 
         idleState = new EnemyIdleState(this, stateMachine);

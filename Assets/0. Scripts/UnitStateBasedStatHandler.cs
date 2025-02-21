@@ -9,7 +9,6 @@ public class UnitStateBasedStatHandler : UnitStatHandler
 
     protected override void Death()
     {
-        base.Death();
     }
 
     public override void TakeDamage(int damage, Vector3 attackerTransformPosition)
@@ -21,7 +20,7 @@ public class UnitStateBasedStatHandler : UnitStatHandler
 
         StartFlickering();
 
-        PlayHitVfx(attackerTransformPosition);
+        PlayVfx(_hitVfx, attackerTransformPosition);
 
         _currentHp -= 1;
 

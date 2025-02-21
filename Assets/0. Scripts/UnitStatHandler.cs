@@ -9,7 +9,7 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
     [SerializeField] private int _maxHp = 4;
 
     [Header("Death Sprites")]
-    [Tooltip("Sprites that will fly around after a thing gets destroyed")] 
+    [Tooltip("Sprites that will fly around after a thing gets destroyed")]
     [SerializeField] private List<Sprite> _deathSpriteList = new();
 
     [Header("Hit Animation Effects")]
@@ -20,9 +20,8 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
 
     [Header("References")]
     [SerializeField] protected SpriteRenderer _spriteRenderer;
-    [SerializeField] private GameObject _hitVfx;
-
-    [SerializeField] private GameObject _deathVfx;
+    [SerializeField] protected GameObject _hitVfx;
+    [SerializeField] protected GameObject _deathVfx;
 
     protected int _currentHp;
 
@@ -30,30 +29,33 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
     {
         StartFlickering();
 
-        PlayHitVfx(attackerTransformPosition);
 
         _currentHp -= damage;
 
         if (_currentHp <= 0)
         {
             Death();
+
+            return;
         }
+
+        PlayVfx(_hitVfx, attackerTransformPosition);
     }
 
-    protected void PlayHitVfx(Vector3 attackerTransformPosition)
+    protected void PlayVfx(GameObject vfx, Vector3 attackerTransformPosition)
     {
-        if (_hitVfx == null)
+        if (vfx == null)
         {
             return;
         }
 
         // Instantiate hit VFX
-        GameObject hitVfx = Instantiate(_hitVfx, transform.position, Quaternion.identity);
+        GameObject vfxObject = Instantiate(vfx, transform.position, Quaternion.identity);
 
         // Set the rotation of the hit VFX to face the attacker, assume the current direction of the Vfx is right
         Vector3 direction = transform.position - attackerTransformPosition;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        hitVfx.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        vfxObject.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
     private void Awake()
@@ -73,6 +75,8 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
         _spriteRenderer.DOKill();
 
         CreateDeathSprites();
+
+        PlayVfx(_deathVfx, transform.position);
 
         Destroy(gameObject);
     }
