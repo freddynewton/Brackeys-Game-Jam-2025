@@ -1541,14 +1541,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -4411989525633323345, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
-      propertyPath: _lerpTime
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: -4411989525633323345, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4411989525633323345, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
       propertyPath: _playerPosition
       value: 
       objectReference: {fileID: 533283811}
@@ -1597,40 +1589,16 @@ PrefabInstance:
       value: Main Camera
       objectReference: {fileID: 0}
     - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
-      propertyPath: m_ClearFlags
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
       propertyPath: orthographic size
-      value: 3.125
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0.2264151
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0.21401449
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0.20612317
+      value: 4.5625
       objectReference: {fileID: 0}
     - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.0018656716
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
-      propertyPath: m_NormalizedViewPortRect.y
-      value: 0.0016583748
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.99626863
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
-      propertyPath: m_NormalizedViewPortRect.height
-      value: 0.99502486
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13405,6 +13373,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3040228500408554308, guid: 3804a0cede6939847b37629884cbee8f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8211138322203600355, guid: 055691a614492cc4ca21d0d5a1a66646, type: 3}
+    - target: {fileID: 3040228500408554308, guid: 3804a0cede6939847b37629884cbee8f, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3040228500408554308, guid: 3804a0cede6939847b37629884cbee8f, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3040228500408554308, guid: 3804a0cede6939847b37629884cbee8f, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3040228500408554308, guid: 3804a0cede6939847b37629884cbee8f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6630003154258913283, guid: 3804a0cede6939847b37629884cbee8f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
