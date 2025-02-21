@@ -803,7 +803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
       propertyPath: orthographic size
-      value: 2.90625
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -823,15 +823,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.0017825312
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.998997
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5894252095604916382, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.9946524
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6922190198352080356, guid: 663456c8f509d9d43a1d646b38e5369b, type: 3}
@@ -1940,6 +1940,7 @@ GameObject:
   - component: {fileID: 1936023387}
   - component: {fileID: 1936023389}
   - component: {fileID: 1936023388}
+  - component: {fileID: 1936023390}
   m_Layer: 7
   m_Name: Ground - Layer 0
   m_TagString: Untagged
@@ -3918,6 +3919,28 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!95 &1936023390
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936023386}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4360b7f179fa55a489a72e6313efffc1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2016990407
 PrefabInstance:
   m_ObjectHideFlags: 0
