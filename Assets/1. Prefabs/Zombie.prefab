@@ -191,7 +191,7 @@ MonoBehaviour:
   _playerPosition: {fileID: 0}
   _attackDamage: 1
   _detectionRange: 3
-  _attackRange: 1.2
+  _attackRange: 0.6
   _timeBetweenAttack: 2.5
   _detectionMask:
     serializedVersion: 2

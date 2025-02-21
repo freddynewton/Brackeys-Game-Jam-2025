@@ -19,6 +19,11 @@ public class ItemHolderLerpPosition : MonoBehaviour
 
     private void Update()
     {
+        if (_targetTransform == null)
+        {
+            return;
+        }
+
         // Calculate the direction from the item holder to the target transform
         Vector3 lerpDirection = _targetTransform.position - transform.position;
 

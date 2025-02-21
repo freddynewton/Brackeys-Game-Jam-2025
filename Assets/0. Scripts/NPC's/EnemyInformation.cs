@@ -74,6 +74,11 @@ public class EnemyInformation : MonoBehaviour
     }
     private bool AttackCast()
     {
+        if (_playerPosition == null)
+        {
+            return false;
+        }
+
         RaycastHit2D ray = Physics2D.Raycast(transform.position, _playerPosition.position - transform.position, _detectionRange, _detectionMask);
         if(ray.collider != null)
         {
@@ -84,6 +89,11 @@ public class EnemyInformation : MonoBehaviour
 
     private float CheckDistance()
     {
+        if (_playerPosition == null)
+        {
+            return 0;
+        }
+
         return Vector2.Distance(transform.position, _playerPosition.position);
     }
 
