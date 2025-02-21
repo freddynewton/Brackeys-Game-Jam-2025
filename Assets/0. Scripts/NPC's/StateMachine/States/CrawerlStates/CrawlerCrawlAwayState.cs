@@ -1,23 +1,21 @@
-using System.Threading;
-using System.Threading.Tasks;
 using UnityEngine;
 
-public class EnemyChaseState : EnemyState
+public class CrawlerCrawlAwayState : EnemyState
 {
+    private Transform _playerTransform;
     private NPCNavigation _nPCNavigation;
     private float _waypointTime = 0.5f;
     private float _currentTime;
 
-    public EnemyChaseState(ZombieInformation enemy, EnemyStateMachine StateMachine) : base(enemy, StateMachine)
+    public CrawlerCrawlAwayState(EnemyInformation enemy, EnemyStateMachine stateMachine) : base(enemy, stateMachine)
     {
+        _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         _nPCNavigation = enemyInformation.gameObject.GetComponent<NPCNavigation>();
     }
 
     public override void EnterState()
     {
         base.EnterState();
-
-        _currentTime = _waypointTime;
     }
 
     public override void Exitstate()
@@ -27,32 +25,28 @@ public class EnemyChaseState : EnemyState
 
     public override void FrameUpdate()
     {
-        if (enemyInformation.PlayerTransform == null)
-        {
-            return;
-        }
-
         base.FrameUpdate();
-
         _currentTime -= Time.deltaTime;
+
         if (_currentTime <= 0)
         {
             SetDestination();
             _currentTime = _waypointTime;
         }
-        if (enemyInformation.IsAttackRange())
-        {
-            _nPCNavigation.Stop();
-            enemyInformation.stateMachine.ChangeState(enemyInformation.attackState);
-        }
 
+        if(!enemyInformation.IsAggroRange())
+        {
+            enemyInformation.stateMachine.ChangeState(enemyInformation.idleState);
+        }
     }
 
     private void SetDestination()
     {
-        if(_nPCNavigation != null)
+        if (_nPCNavigation != null)
         {
-            _nPCNavigation.SetNewDestination(enemyInformation.PlayerTransform.position);
+            Vector2 OppesiteDirection = -(_playerTransform.position - enemyInformation.transform.position);
+
+            _nPCNavigation.SetNewDestination(enemyInformation.transform.position + (Vector3)OppesiteDirection * enemyInformation.GetMoveDistance());
         }
     }
 }

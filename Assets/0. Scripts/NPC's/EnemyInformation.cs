@@ -1,18 +1,18 @@
 using System;
 using UnityEngine;
 
-public class EnemyInformation : MonoBehaviour
+public abstract class EnemyInformation : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Transform _playerTransform;
 
     #region General Settings
     [Header("General Settings")]
-    [SerializeField] private int _attackDamage = 1;
-    [Range(0.1f, 10f)][SerializeField] private float _detectionRange = 4f;
-    [Range(0.1f, 5f)][SerializeField] private float _attackRange = 1.5f;
-    [Range(1f, 5f)][SerializeField] private float _timeBetweenAttack = 2.5f;
-    [SerializeField] private LayerMask _detectionMask;
+    //[SerializeField] private int _attackDamage = 1;
+    [Range(0.1f, 10f)][SerializeField] protected float _detectionRange = 4f;
+    //[Range(0.1f, 5f)][SerializeField] private float _attackRange = 1.5f;
+    //[Range(1f, 5f)][SerializeField] private float _timeBetweenAttack = 2.5f;
+    [SerializeField] protected LayerMask _detectionMask;
 
     private bool _isInAnimation;
     #endregion
@@ -25,10 +25,11 @@ public class EnemyInformation : MonoBehaviour
     #endregion
 
     public EnemyStateMachine stateMachine { get; set; }
-    public EnemyIdleState idleState { get; set; }
-    public EnemyStandState standState { get; set; }
-    public EnemyChaseState chaseState { get; set; }
-    public EnemyAttackState attackState { get; set; }
+    public  EnemyState idleState { get; set; }
+    public  EnemyState standState { get; set; }
+    public  EnemyState chaseState { get; set; }
+    public  EnemyState attackState { get; set; }
+    public EnemyState moveAwayState { get; set; }
 
     public Transform PlayerTransform { get => _playerTransform; private set => _playerTransform = value; }
 
@@ -40,7 +41,10 @@ public class EnemyInformation : MonoBehaviour
         {
             Console.WriteLine("Could not find Player or Player Tag");
         }
+    }
 
+    /*private void Awake()
+    {
         stateMachine = new EnemyStateMachine();
 
         idleState = new EnemyIdleState(this, stateMachine);
@@ -49,15 +53,15 @@ public class EnemyInformation : MonoBehaviour
         attackState = new EnemyAttackState(this, stateMachine);
 
         stateMachine.Initialize(idleState);
-    }
+    }*/
 
-    private void FixedUpdate()
+    protected void FixedUpdate()
     {
         stateMachine.currentEnemyState.FrameUpdate();
     }
 
     #region Detection
-    private bool DetectionCast()
+    protected bool DetectionCast()
     {
         Collider2D[] collderArray = Physics2D.OverlapCircleAll(transform.position, _detectionRange, _detectionMask);
         foreach(Collider2D collider2D in collderArray)
@@ -104,12 +108,8 @@ public class EnemyInformation : MonoBehaviour
         return false;
     }
 
-    public bool IsAttackRange()
+    public virtual bool IsAttackRange()
     {
-        if (CheckDistance() <= _attackRange && AttackCast())
-        {
-            return true;
-        }
         return false;
     }
     #endregion
@@ -122,14 +122,21 @@ public class EnemyInformation : MonoBehaviour
     {
          _isInAnimation = animation;
     }
-
-    public int GetEnemyDamagePerAttack()
+    
+    public virtual int GetEnemyDamagePerAttack()
     {
-        return _attackDamage;
+        return 0;
     }
 
-    public float GetAttackTime()
+
+    public virtual float GetAttackTime()
     {
-        return _timeBetweenAttack;
+        return 0f;
     }
+
+    public virtual float GetMoveDistance()
+    {
+        return 0;
+    }
+
 }

@@ -7,7 +7,7 @@ public class EnemyAttackState : EnemyState
     private float _attackTime;
     private float _currentTime;
 
-    public EnemyAttackState(EnemyInformation enemyInformation, EnemyStateMachine StateMachine) : base(enemyInformation, StateMachine)
+    public EnemyAttackState(ZombieInformation enemy, EnemyStateMachine StateMachine) : base(enemy, StateMachine)
     {
         _animator = enemyInformation.gameObject.GetComponentInChildren<Animator>();
         _attackTime = enemyInformation.GetAttackTime();
