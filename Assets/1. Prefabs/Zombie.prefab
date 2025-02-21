@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 1381368913925375461}
   - component: {fileID: 4149040138154074182}
   - component: {fileID: 9194301607683953209}
+  - component: {fileID: 6252163011938611539}
   - component: {fileID: -6090216116401060093}
-  - component: {fileID: 4423285422601805607}
   - component: {fileID: 915588006707206046}
   m_Layer: 10
   m_Name: Zombie
@@ -163,6 +163,28 @@ MonoBehaviour:
   _seeker: {fileID: 1381368913925375461}
   _rigidbody2D: {fileID: 3099737260177543144}
   _unitMovementController: {fileID: 4149040138154074182}
+--- !u!114 &6252163011938611539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362407784181840407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885c1243ddd0b2a4a9ce8c0b5d574b5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerPosition: {fileID: 0}
+  _detectionRange: 3
+  _detectionMask:
+    serializedVersion: 2
+    m_Bits: 64
+  zombieShuffleRange: 2
+  standStillTime: 3
+  _attackDamage: 1
+  _attackRange: 0.5
+  _timeBetweenAttack: 2.5
 --- !u!114 &-6090216116401060093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,28 +198,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsLookingLeft: 0
---- !u!114 &4423285422601805607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362407784181840407}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc1b6daf555e0264d9cadb88d1a78c81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerPosition: {fileID: 0}
-  _attackDamage: 1
-  _detectionRange: 3
-  _attackRange: 0.6
-  _timeBetweenAttack: 2.5
-  _detectionMask:
-    serializedVersion: 2
-    m_Bits: 64
-  zombieShuffleRange: 1.5
-  standStillTime: 4
 --- !u!114 &915588006707206046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,9 +220,9 @@ MonoBehaviour:
   _spriteFlashTime: 0.1
   _spriteFlashLoops: 2
   _hitColor: {r: 1, g: 0, b: 0, a: 1}
-  _spriteRenderer: {fileID: 2564990732749003498}
-  _hitVfx: {fileID: 935142836550693993, guid: 67b8f8e11280a574d94d8cf7f4f5fbb6, type: 3}
-  _deathVfx: {fileID: 935142836550693993, guid: d601df50e7fc7e9459ec45b0dd2ee057, type: 3}
+  spriteRenderer: {fileID: 2564990732749003498}
+  _hitVfx: {fileID: 935142836550693993, guid: d601df50e7fc7e9459ec45b0dd2ee057, type: 3}
+  _deathVfx: {fileID: 0}
 --- !u!1 &7038058095555650782
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,7 +324,7 @@ SpriteRenderer:
   m_SortingLayerID: 1697678743
   m_SortingLayer: 1
   m_SortingOrder: 2
-  m_Sprite: {fileID: -6115871640364947264, guid: 3a78bf9c34b631f498519ba21062b153, type: 3}
+  m_Sprite: {fileID: -1231764052, guid: de0f0f42ec0b82e45b59c7b76ff20101, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

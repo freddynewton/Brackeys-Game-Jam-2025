@@ -5,7 +5,7 @@ public class EnemyIdleState : EnemyState
     private Vector2 _targetPos;
     private NPCNavigation _nPCNavigation;
 
-    public EnemyIdleState(EnemyInformation enemyInformation, EnemyStateMachine stateMachine) : base(enemyInformation, stateMachine)
+    public EnemyIdleState(ZombieInformation enemy, EnemyStateMachine stateMachine) : base(enemy, stateMachine)
     {
         _nPCNavigation = enemyInformation.gameObject.GetComponent<NPCNavigation>();
     }

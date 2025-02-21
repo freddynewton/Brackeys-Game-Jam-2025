@@ -9,7 +9,7 @@ public class EnemyChaseState : EnemyState
     private float _waypointTime = 0.5f;
     private float _currentTime;
 
-    public EnemyChaseState(EnemyInformation enemyInformation, EnemyStateMachine StateMachine) : base(enemyInformation, StateMachine)
+    public EnemyChaseState(ZombieInformation enemy, EnemyStateMachine StateMachine) : base(enemy, StateMachine)
     {
         _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         _nPCNavigation = enemyInformation.gameObject.GetComponent<NPCNavigation>();
