@@ -1,6 +1,4 @@
-using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class ZombieInformation : EnemyInformation
 {
@@ -23,7 +21,7 @@ public class ZombieInformation : EnemyInformation
 
     protected bool AttackCast()
     {
-        RaycastHit2D ray = Physics2D.Raycast(transform.position, _playerPosition.position - transform.position, _detectionRange, _detectionMask);
+        RaycastHit2D ray = Physics2D.Raycast(transform.position, PlayerTransform.position - transform.position, _detectionRange, _detectionMask);
         if (ray.collider != null)
         {
             return ray.collider.CompareTag("Player");
@@ -33,7 +31,7 @@ public class ZombieInformation : EnemyInformation
 
     protected float CheckDistance()
     {
-        return Vector2.Distance(transform.position, _playerPosition.position);
+        return Vector2.Distance(transform.position, PlayerTransform.position);
     }
 
     public override bool IsAttackRange()
