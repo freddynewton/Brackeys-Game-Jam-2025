@@ -25,6 +25,14 @@ public class UnitStateBasedStatHandler : UnitStatHandler
 
         _currentHp -= 1;
 
+        if (_states.Exists(state => state.Health == _currentHp))
+        {
+            UpdateSprite();
+        }
+    }
+
+    private void UpdateSprite()
+    {
         // Get Sprite based on current health based on the Health property of the StatState using Linq
         Sprite sprite = _states.Find(state => state.Health == _currentHp).Sprite;
 

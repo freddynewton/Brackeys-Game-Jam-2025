@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1948056462915112813}
   - component: {fileID: 1337479515552252801}
   m_Layer: 12
-  m_Name: VFX_Glass
+  m_Name: VFX_GlassSmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -288,7 +288,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1
+      scalar: 0.5
       minScalar: 0.1
       maxCurve:
         serializedVersion: 2
@@ -981,8 +981,8 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 3
-        scalar: 15
-        minScalar: 12
+        scalar: 8
+        minScalar: 4
         maxCurve:
           serializedVersion: 2
           m_Curve:

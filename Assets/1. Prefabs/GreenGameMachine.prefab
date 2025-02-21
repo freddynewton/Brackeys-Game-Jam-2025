@@ -195,7 +195,7 @@ MonoBehaviour:
   _spriteFlashLoops: 2
   _hitColor: {r: 1, g: 0, b: 0, a: 1}
   _spriteRenderer: {fileID: 6015269401185929302}
-  _hitVfx: {fileID: 2772245458158379256, guid: 983e839ece55c414ea558b75e3174cf7, type: 3}
+  _hitVfx: {fileID: 2772245458158379256, guid: cc8f0f872a4df0149a66a627e676b28f, type: 3}
   _deathVfx: {fileID: 0}
   _states:
   - Health: 0
