@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class CrawlerInformation : EnemyInformation
@@ -7,6 +8,14 @@ public class CrawlerInformation : EnemyInformation
 
     private void Awake()
     {
+        _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+
+        if (_playerTransform == null)
+        {
+
+            Console.WriteLine("Could not find Player or Player Tag");
+        }
+
         stateMachine = new EnemyStateMachine();
 
         idleState = new CrawlerIdleState(this, stateMachine);
