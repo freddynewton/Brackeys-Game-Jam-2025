@@ -4,38 +4,40 @@ public class EnemyAnimationEvents : MonoBehaviour
 {
     [SerializeField] private IDamageable _damageable;
     [SerializeField] private Transform _damagePosition;
-    [SerializeField] private int _damage = 1;
+    [SerializeField] private int _enemyDamage = 1;
     [SerializeField] private GameObject _vFX;
     private bool _isInAnimation = false;
 
     private void Awake()
     {
-        _damage = gameObject.GetComponentInParent<EnemyInformation>().GetEnemyDamagePerAttack();
-        if(_damagePosition == null)
-        {
-            _damagePosition = GameObject.FindGameObjectWithTag("Player").transform;
-        }
-        _damageable = GameObject.FindGameObjectWithTag("Player").GetComponent<UnitStatHandler>();
+        GameObject playerTarget = GameObject.FindGameObjectWithTag("Player");
+        _damagePosition = playerTarget.transform; 
+        SetDamageable(playerTarget);
+
+        _enemyDamage = gameObject.GetComponentInParent<EnemyInformation>().GetEnemyDamagePerAttack();
     }
 
 
 
     public void Hit()
     {
-        _damageable.TakeDamage(_damage, transform.position);
+        _damageable.TakeDamage(_enemyDamage, transform.position);
     }
 
-    public void SetDamageable(GameObject damageable)
+    public bool SetDamageable(GameObject target)
     {
-        Component[] components = gameObject.GetComponents(typeof(Component));
-        foreach (Component component in components)
+        if (target == null) return false;
+
+        foreach (var component in target.GetComponents<Component>())
         {
-            if(component is IDamageable)
+            if (component is IDamageable damageable)
             {
-                _damageable = (IDamageable)component;
-                _damagePosition = component.transform;
+                _damageable = damageable;
+                return true;
             }
         }
+
+        return false;
     }
 
     public void SetAndHit(GameObject damageable)
@@ -57,7 +59,7 @@ public class EnemyAnimationEvents : MonoBehaviour
     {
         if(_damagePosition != null)
         {
-            Instantiate(_vFX, _damagePosition);
+            GameObject vfx = Instantiate(_vFX, _damagePosition);
         }
     }
 
