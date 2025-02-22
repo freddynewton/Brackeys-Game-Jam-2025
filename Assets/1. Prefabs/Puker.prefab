@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885c1243ddd0b2a4a9ce8c0b5d574b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerPosition: {fileID: 0}
+  _playerTransform: {fileID: 0}
   _detectionRange: 3
   _detectionMask:
     serializedVersion: 2
@@ -183,8 +183,8 @@ MonoBehaviour:
   zombieShuffleRange: 2
   standStillTime: 3
   _attackDamage: 1
-  _attackRange: 3
-  _timeBetweenAttack: 2.5
+  _attackRange: 2
+  _timeBetweenAttack: 3
 --- !u!114 &-6090216116401060093
 MonoBehaviour:
   m_ObjectHideFlags: 0

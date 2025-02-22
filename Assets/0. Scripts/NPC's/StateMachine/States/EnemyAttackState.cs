@@ -17,7 +17,7 @@ public class EnemyAttackState : EnemyState
     {
         base.EnterState();
 
-
+        enemyInformation.TurnTowardsAttack();
         _animator.SetTrigger("Attack");
         _currentTime = _attackTime;
 
@@ -39,6 +39,7 @@ public class EnemyAttackState : EnemyState
         }
         else if (enemyInformation.IsAttackRange() && _currentTime <= 0)
         {
+            enemyInformation.TurnTowardsAttack();
             _animator.SetTrigger("Attack");
             _currentTime = _attackTime;
             Debug.Log("bite attack 2");
