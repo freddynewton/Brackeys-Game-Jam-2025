@@ -28,7 +28,6 @@ public class DialogPanelManager : MonoBehaviour
 
     private Vector2 _barryPortraitPosition;
     private Vector2 _apprenticePortraitPosition;
-    private float _currentDialogSpeed;
 
     private bool _isTyping;
 
