@@ -25,6 +25,7 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
 
     [Header("SFX Settings")]
     [SerializeField] private bool isZombie = false;
+    [SerializeField] private bool isPlayer = false;
 
     protected int _currentHp;
 
@@ -32,11 +33,20 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
     {
         StartFlickering();
 
-        if (isZombie)
+        if (isPlayer)
         {
-            SoundManager.Instance.PlayHitSound();
+            GameFeelManager.Instance.PlayGameFeel(GameFeelType.BigShake);
+            GameFeelManager.Instance.PlayGameFeel(GameFeelType.PostProcessHit);
+            GameFeelManager.Instance.PlayGameFeel(GameFeelType.FreezeGame);
         }
 
+        if (isZombie)
+        {
+            GameFeelManager.Instance.PlayGameFeel(GameFeelType.SmallShake);
+            GameFeelManager.Instance.PlayGameFeel(GameFeelType.FreezeGame);
+        }
+
+        SoundManager.Instance.PlayHitSound();
 
         _currentHp -= damage;
 

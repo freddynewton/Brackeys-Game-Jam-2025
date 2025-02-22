@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885c1243ddd0b2a4a9ce8c0b5d574b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerPosition: {fileID: 0}
+  _playerTransform: {fileID: 0}
   _detectionRange: 3
   _detectionMask:
     serializedVersion: 2
@@ -224,6 +224,7 @@ MonoBehaviour:
   _hitVfx: {fileID: 935142836550693993, guid: 67b8f8e11280a574d94d8cf7f4f5fbb6, type: 3}
   _deathVfx: {fileID: 935142836550693993, guid: d601df50e7fc7e9459ec45b0dd2ee057, type: 3}
   isZombie: 1
+  isPlayer: 0
 --- !u!1 &7038058095555650782
 GameObject:
   m_ObjectHideFlags: 0

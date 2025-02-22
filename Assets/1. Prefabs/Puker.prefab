@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885c1243ddd0b2a4a9ce8c0b5d574b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerPosition: {fileID: 0}
+  _playerTransform: {fileID: 0}
   _detectionRange: 3
   _detectionMask:
     serializedVersion: 2
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e668b822886f67942bc8e75747c9964b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHp: 4
+  _maxHp: 10
   _deathSpriteList:
   - {fileID: 439993849, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
   - {fileID: -1710343655, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
@@ -224,6 +224,7 @@ MonoBehaviour:
   _hitVfx: {fileID: 935142836550693993, guid: 67b8f8e11280a574d94d8cf7f4f5fbb6, type: 3}
   _deathVfx: {fileID: 935142836550693993, guid: 68f7a1171225ed441b0971524cb7bbf8, type: 3}
   isZombie: 1
+  isPlayer: 0
 --- !u!1 &7038058095555650782
 GameObject:
   m_ObjectHideFlags: 0

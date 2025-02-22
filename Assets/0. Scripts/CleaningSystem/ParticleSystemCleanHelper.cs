@@ -43,7 +43,7 @@ public class ParticleSystemCleanHelper : MonoBehaviour
         // Set the collision quality to High initially
         SetCollisionQuality(particleSystems, ParticleSystemCollisionQuality.Medium);
 
-        Invoke(nameof(SetEndCollisionQuality), 1f);
+        Invoke(nameof(SetEndCollisionQuality), 0.3f);
 
         foreach (var ps in particleSystems)
         {
