@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class ZombieInformation : EnemyInformation
@@ -26,6 +27,20 @@ public class ZombieInformation : EnemyInformation
         attackState = new EnemyAttackState(this, stateMachine);
 
         stateMachine.Initialize(idleState);
+
+        // Play ambient growl sound
+        StartCoroutine(AmbientGrowl());
+    }
+
+    private IEnumerator AmbientGrowl()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(UnityEngine.Random.Range(10f, 600f));
+            SoundManager.Instance.PlayAmbientGroan(gameObject);
+
+            StartCoroutine(AmbientGrowl());
+        }
     }
 
     protected bool AttackCast()

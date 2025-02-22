@@ -54,8 +54,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Scale: 1000
-    - _Speed: 0.1
+    - _Scale: 100
+    - _Speed: 0.05
     m_Colors:
     - _Direction: {r: 1, g: -1, b: 0, a: 0}
   m_BuildTextureStacks: []
