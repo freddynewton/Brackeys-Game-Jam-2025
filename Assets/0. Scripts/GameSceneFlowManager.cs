@@ -58,7 +58,7 @@ public class GameSceneFlowManager : Singleton<GameSceneFlowManager>
         _currentScenes.Clear();
     }
 
-    public override async void Awake()
+    public override void Awake()
     {
         base.Awake();
 

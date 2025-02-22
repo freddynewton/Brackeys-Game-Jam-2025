@@ -41,6 +41,22 @@ public class InputManager : Singleton<InputManager>
         _initialize();
     }
 
+    public void SetPlayerInputActive(bool isActive)
+    {
+        if (isActive)
+        {
+            _moveAction.Enable();
+            _primaryInteractAction.Enable();
+            _secondaryInteractAction.Enable();
+        }
+        else
+        {
+            _moveAction.Disable();
+            _primaryInteractAction.Disable();
+            _secondaryInteractAction.Disable();
+        }
+    }
+
     /// <summary>
     /// Initializes the Input Manager by setting up the player input actions
     /// </summary>
