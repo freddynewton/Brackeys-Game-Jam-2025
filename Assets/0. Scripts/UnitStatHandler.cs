@@ -112,6 +112,11 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
             FindFirstObjectByType<Door>().RemoveActiveEnemy();
         }
 
+        if (isPlayer)
+        {
+            FindFirstObjectByType<GameUiManager>().
+        }
+
         Destroy(gameObject);
     }
 

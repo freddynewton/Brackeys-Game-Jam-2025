@@ -25,6 +25,15 @@ public class GameSceneFlowManager : Singleton<GameSceneFlowManager>
         _transitionAnimator.Play();
     }
 
+    public void ReloadCurrentScene()
+    {
+        _transitionAnimator.profile.invert = false;
+        _transitionAnimator.profile.duration = 2f;
+
+        // play transition animation
+        _transitionAnimator.Play();
+    }
+
     private async void OnTransitionEnd()
     {
         // Check if the scene name is already in the list of current scenes
