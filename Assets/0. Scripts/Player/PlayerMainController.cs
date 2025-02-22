@@ -11,6 +11,8 @@ public class PlayerMainController : MonoBehaviour
     private void Awake()
     {
         _unitMovementController ??= GetComponent<UnitMovementController>();
+        
+        FindAnyObjectByType<CameraFollow>().PlayerPosition = transform;
     }
 
     private void Update()

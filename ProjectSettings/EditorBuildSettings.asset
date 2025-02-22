@@ -6,11 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/6. Scenes/Levels/samleveltest.unity
-    guid: b35db798fd0cdb84dbe3f474a17f23d9
+    path: Assets/6. Scenes/_Boot.unity
+    guid: 5f3ff3765a0f23943ac6d10fcdc84d26
   - enabled: 1
-    path: Assets/6. Scenes/ProtoScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/6. Scenes/Main Menu.unity
+    guid: eda01c3645809e546b23e3d8cf684f26
+  - enabled: 1
+    path: Assets/6. Scenes/Levels/Level 1.unity
+    guid: 07f086a98057c1b428537bea3a4125e1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -5,29 +5,13 @@ public class CameraFollow : MonoBehaviour
 {
     [Header("Settings")]
     [Range(0.01f,10f)][SerializeField] private float _lerpTime = 5f;
-    private float _timePassed;
- 
+
     [Header("References")]
-    [SerializeField] private Transform _playerPosition;
-
-    void Start()
-    {
-        _playerPosition = GameObject.FindWithTag("Player").transform;
-
-        if (_playerPosition == null)
-        {
-            Console.WriteLine("Could not find Player or Player Tag");
-        }
-    }
+    public Transform PlayerPosition;
 
     void FixedUpdate()
     {
-        if (_playerPosition == null)
-        {
-            _playerPosition = FindFirstObjectByType<PlayerMainManager>().transform;
-        }
-
-        if (_playerPosition == null)
+        if (PlayerPosition == null)
         {
             return;
         }
@@ -38,8 +22,8 @@ public class CameraFollow : MonoBehaviour
     public void LerpFollowPlayer()
     {
         Vector3 temp = transform.position;
-        temp.x = Mathf.Lerp(transform.position.x, _playerPosition.position.x, Time.deltaTime * _lerpTime);
-        temp.y = Mathf.Lerp(transform.position.y, _playerPosition.position.y, Time.deltaTime * _lerpTime);
+        temp.x = Mathf.Lerp(transform.position.x, PlayerPosition.position.x, Time.deltaTime * _lerpTime);
+        temp.y = Mathf.Lerp(transform.position.y, PlayerPosition.position.y, Time.deltaTime * _lerpTime);
         transform.position = temp;
     }                   
 }
