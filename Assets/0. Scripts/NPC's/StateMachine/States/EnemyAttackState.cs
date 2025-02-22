@@ -45,4 +45,5 @@ public class EnemyAttackState : EnemyState
             Debug.Log("bite attack 2");
         }
     }
+
 }

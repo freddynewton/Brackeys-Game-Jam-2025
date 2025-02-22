@@ -1,12 +1,11 @@
 using UnityEngine;
 
-public class EnemyAnimationEvents : MonoBehaviour
+public abstract class EnemyAnimationEvents : MonoBehaviour
 {
-    [SerializeField] private IDamageable _damageable;
-    [SerializeField] private Transform _damagePosition;
-    [SerializeField] private int _enemyDamage = 1;
-    [SerializeField] private GameObject _vFX;
-    private bool _isInAnimation = false;
+    [SerializeField] protected IDamageable _damageable;
+    [SerializeField] protected Transform _damagePosition;
+    [SerializeField] protected int _enemyDamage = 1;
+    protected bool _isInAnimation = false;
 
     private void Awake()
     {
@@ -55,12 +54,5 @@ public class EnemyAnimationEvents : MonoBehaviour
         _isInAnimation = !_isInAnimation;
     }
 
-    public void DeployVFXOnTarget()
-    {
-        if(_damagePosition != null)
-        {
-            GameObject vfx = Instantiate(_vFX, _damagePosition);
-        }
-    }
 
 }

@@ -12,6 +12,7 @@ public class ZombieInformation : EnemyInformation
     private void Awake()
     {
         _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        _unitAnimator = gameObject.GetComponentInChildren<UnitAnimator>();
 
         if (_playerTransform == null)
         {

@@ -60,4 +60,10 @@ public class UnitAnimator : MonoBehaviour
 
         _animator.SetFloat(_speedHash, input.magnitude);
     }
+
+    public void TurnAround()
+    {
+        IsLookingLeft = !IsLookingLeft;
+        _animator.transform.localScale = new Vector2(IsLookingLeft ? -1 : 1, 1);
+    }
 }
