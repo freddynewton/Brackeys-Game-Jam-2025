@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      broomstickbarry_button_0: -1458019315900507011
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
