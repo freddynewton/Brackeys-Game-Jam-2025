@@ -8,8 +8,8 @@ public class PukerAnimationEvents : EnemyAnimationEvents
 
     public void Puke()
     {
-        Vector2 direction = _damagePosition.position - this.transform.position;
-        GameObject puke = Instantiate(_puke, this.transform.position + (Vector3)(direction * _pukeSpawnRange), Quaternion.identity);
+        Vector2 direction = (_damagePosition.position - this.transform.position).normalized;
+        GameObject puke = Instantiate(_puke, this.transform.position, Quaternion.identity);
         puke.GetComponent<PukeScript>().SetDamage(_enemyDamage);
         puke.GetComponent<Rigidbody2D>().AddForce(direction * _pukeForce);
         

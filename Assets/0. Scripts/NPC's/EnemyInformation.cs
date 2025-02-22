@@ -6,6 +6,7 @@ public abstract class EnemyInformation : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] protected Transform _playerTransform;
+    [SerializeField] protected UnitAnimator _unitAnimator;
 
     #region General Settings
     [Header("General Settings")]
@@ -37,6 +38,7 @@ public abstract class EnemyInformation : MonoBehaviour
     private void Awake()
     {
         _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        _unitAnimator = gameObject.GetComponentInChildren<UnitAnimator>();
 
         if (_playerTransform == null)
         {
@@ -132,8 +134,11 @@ public abstract class EnemyInformation : MonoBehaviour
     public void TurnTowardsAttack()
     {
         Vector2 direction = _playerTransform.position - this.transform.position;
-
-        this.transform.localScale = new Vector2(direction.x >= 0 ? -1:1, 1);
+        bool targetAtLeft = direction.x <= 0 ? true: false;
+        if(targetAtLeft != _unitAnimator.IsLookingLeft)
+        {
+            _unitAnimator.TurnAround();
+        }
     }
 
 }

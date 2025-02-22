@@ -48,7 +48,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362407784181840407}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -176,14 +176,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerTransform: {fileID: 0}
-  _detectionRange: 3
+  _unitAnimator: {fileID: 0}
+  _detectionRange: 10
   _detectionMask:
     serializedVersion: 2
     m_Bits: 64
   zombieShuffleRange: 2
   standStillTime: 3
   _attackDamage: 1
-  _attackRange: 2
+  _attackRange: 3.98
   _timeBetweenAttack: 3
 --- !u!114 &-6090216116401060093
 MonoBehaviour:

@@ -15,8 +15,6 @@ public class PukeScript : MonoBehaviour
             damaged.TakeDamage(_damage, this.transform.position);
         }
 
-        Debug.Log("Destroying projectile...");
-        Debug.Log("Projectile destroyed!");
             Destroy(gameObject);
     }
 
