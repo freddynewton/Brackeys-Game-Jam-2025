@@ -72,7 +72,7 @@ public class SoundManager : Singleton<SoundManager>
 
     public void PlayLevelMusic()
     {
-        _levelMusicInstance = RuntimeManager.CreateInstance("event:/Level Music 1");
+        _levelMusicInstance = RuntimeManager.CreateInstance("event:/LvlMusic1");
         _levelMusicInstance.start();
     }
 

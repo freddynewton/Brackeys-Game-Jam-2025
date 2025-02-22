@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: d171f72063d538b43b127093e3bca305
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1566376250394045338
+    second: barrytitle_0
+  - first:
+      213: 1021305563646559092
+    second: barrytitle_1
+  - first:
+      213: 3328877241594761009
+    second: barrytitle_2
+  - first:
+      213: -3353136437137657990
+    second: barrytitle_3
+  - first:
+      213: -7860414822142044551
+    second: barrytitle_4
+  - first:
+      213: 7119438128728686901
+    second: barrytitle_5
+  - first:
+      213: 4382928796707564563
+    second: barrytitle_6
+  - first:
+      213: -7268697178934235360
+    second: barrytitle_7
+  - first:
+      213: 3831893296245911507
+    second: barrytitle_8
+  - first:
+      213: 8556163410846364892
+    second: barrytitle_9
+  - first:
+      213: 6451826524341693563
+    second: barrytitle_10
+  - first:
+      213: -3383814807818838578
+    second: barrytitle_11
+  - first:
+      213: 1545994433998914709
+    second: barrytitle_12
+  - first:
+      213: 6380912275318384505
+    second: barrytitle_13
+  - first:
+      213: -5357874468678251355
+    second: barrytitle_14
+  - first:
+      213: 2341787233457478742
+    second: barrytitle_15
+  - first:
+      213: 6636035108430258455
+    second: barrytitle_16
+  - first:
+      213: 8145055633140295861
+    second: barrytitle_17
+  - first:
+      213: 6256927415741617380
+    second: barrytitle_18
+  - first:
+      213: -5234272528050069639
+    second: barrytitle_19
+  - first:
+      213: 7965718634639737733
+    second: barrytitle_20
+  - first:
+      213: 8645615304542524145
+    second: barrytitle_21
+  - first:
+      213: 407679981205756247
+    second: barrytitle_22
+  - first:
+      213: -4853016853534312402
+    second: barrytitle_23
+  - first:
+      213: 1515594771570273327
+    second: barrytitle_24
+  - first:
+      213: -7429237784792618669
+    second: barrytitle_25
+  - first:
+      213: -3289620569125572453
+    second: barrytitle_26
+  - first:
+      213: -1572743827528315610
+    second: barrytitle_27
+  - first:
+      213: 4926101338554883490
+    second: barrytitle_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: barrytitle_0
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 772
+        width: 68
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66497aa691d134ae0800000000000000
+      internalID: -1566376250394045338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_1
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 785
+        width: 59
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4738840cff76c2e00800000000000000
+      internalID: 1021305563646559092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_2
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 785
+        width: 87
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f432ec63c823e20800000000000000
+      internalID: 3328877241594761009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_3
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 785
+        width: 87
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7fadf41d244771d0800000000000000
+      internalID: -3353136437137657990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_4
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 785
+        width: 78
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97612039d523ae290800000000000000
+      internalID: -7860414822142044551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_5
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 785
+        width: 78
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 531ce37f1435dc260800000000000000
+      internalID: 7119438128728686901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_6
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 785
+        width: 78
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ca593d48a43dc30800000000000000
+      internalID: 4382928796707564563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_7
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 747
+        width: 68
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02fadbd4d66602b90800000000000000
+      internalID: -7268697178934235360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_8
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 785
+        width: 59
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df20f396ae9d2530800000000000000
+      internalID: 3831893296245911507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_9
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 785
+        width: 59
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd431b72a499db670800000000000000
+      internalID: 8556163410846364892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_10
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 673
+        width: 71
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c64d76a0e798950800000000000000
+      internalID: 6451826524341693563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_11
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 673
+        width: 15
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd504a4c564a01d0800000000000000
+      internalID: -3383814807818838578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_12
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 673
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5948c372fb9747510800000000000000
+      internalID: 1545994433998914709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_13
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 673
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977284928ed8d8850800000000000000
+      internalID: 6380912275318384505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_14
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 530
+        width: 74
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac4c47de8105a5b0800000000000000
+      internalID: -5357874468678251355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_15
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 509
+        width: 75
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c17cdd413bf7020800000000000000
+      internalID: 2341787233457478742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_16
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 503
+        width: 75
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711a10b95cee71c50800000000000000
+      internalID: 6636035108430258455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_17
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 530
+        width: 75
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b82f19a1fc090170800000000000000
+      internalID: 8145055633140295861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_18
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 518
+        width: 103
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e49ea0855215d650800000000000000
+      internalID: 6256927415741617380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_19
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 528
+        width: 66
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97f5dfb3ed02c57b0800000000000000
+      internalID: -5234272528050069639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_20
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 510
+        width: 75
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583496ed4eaeb8e60800000000000000
+      internalID: 7965718634639737733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_21
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 524
+        width: 56
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f210f320556bf770800000000000000
+      internalID: 8645615304542524145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_22
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 508
+        width: 75
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7599ecd68ce58a500800000000000000
+      internalID: 407679981205756247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_23
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 527
+        width: 75
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e287a1452ee96acb0800000000000000
+      internalID: -4853016853534312402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_24
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 494
+        width: 75
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ca2ee2a69780510800000000000000
+      internalID: 1515594771570273327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_25
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 504
+        width: 94
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 359a685b89b06e890800000000000000
+      internalID: -7429237784792618669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_26
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 514
+        width: 75
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90b373858be852d0800000000000000
+      internalID: -3289620569125572453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_27
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 509
+        width: 75
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d8c7552dd7c2ae0800000000000000
+      internalID: -1572743827528315610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrytitle_28
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 530
+        width: 85
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2add32c51170d5440800000000000000
+      internalID: 4926101338554883490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      barrytitle_0: -1566376250394045338
+      barrytitle_1: 1021305563646559092
+      barrytitle_10: 6451826524341693563
+      barrytitle_11: -3383814807818838578
+      barrytitle_12: 1545994433998914709
+      barrytitle_13: 6380912275318384505
+      barrytitle_14: -5357874468678251355
+      barrytitle_15: 2341787233457478742
+      barrytitle_16: 6636035108430258455
+      barrytitle_17: 8145055633140295861
+      barrytitle_18: 6256927415741617380
+      barrytitle_19: -5234272528050069639
+      barrytitle_2: 3328877241594761009
+      barrytitle_20: 7965718634639737733
+      barrytitle_21: 8645615304542524145
+      barrytitle_22: 407679981205756247
+      barrytitle_23: -4853016853534312402
+      barrytitle_24: 1515594771570273327
+      barrytitle_25: -7429237784792618669
+      barrytitle_26: -3289620569125572453
+      barrytitle_27: -1572743827528315610
+      barrytitle_28: 4926101338554883490
+      barrytitle_3: -3353136437137657990
+      barrytitle_4: -7860414822142044551
+      barrytitle_5: 7119438128728686901
+      barrytitle_6: 4382928796707564563
+      barrytitle_7: -7268697178934235360
+      barrytitle_8: 3831893296245911507
+      barrytitle_9: 8556163410846364892
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
