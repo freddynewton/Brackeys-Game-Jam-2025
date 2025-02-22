@@ -52,8 +52,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
+  m_Mass: 2
+  m_LinearDamping: 0.2
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -209,12 +209,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHp: 4
+  _healthRegenRate: 0
   _deathSpriteList:
   - {fileID: 439993849, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
   - {fileID: -1710343655, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
   - {fileID: 1248847017, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
   - {fileID: 471657045, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
-  _freezeTime: 0.15
   _spriteFlashTime: 0.1
   _spriteFlashLoops: 2
   _hitColor: {r: 1, g: 0, b: 0, a: 1}
@@ -222,6 +222,7 @@ MonoBehaviour:
   _hitVfx: {fileID: 935142836550693993, guid: 67b8f8e11280a574d94d8cf7f4f5fbb6, type: 3}
   _deathVfx: {fileID: 935142836550693993, guid: 67b8f8e11280a574d94d8cf7f4f5fbb6, type: 3}
   isZombie: 1
+  isPlayer: 0
 --- !u!1 &7038058095555650782
 GameObject:
   m_ObjectHideFlags: 0
