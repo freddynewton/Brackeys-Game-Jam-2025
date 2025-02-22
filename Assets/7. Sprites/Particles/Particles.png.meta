@@ -291,8 +291,8 @@ TextureImporter:
       name: Particles_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 222
+        x: 128
+        y: 254
         width: 16
         height: 16
       alignment: 0
@@ -313,8 +313,8 @@ TextureImporter:
       name: Particles_5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 222
+        x: 160
+        y: 254
         width: 16
         height: 16
       alignment: 0
@@ -335,8 +335,8 @@ TextureImporter:
       name: Particles_6
       rect:
         serializedVersion: 2
-        x: 64
-        y: 222
+        x: 192
+        y: 254
         width: 16
         height: 16
       alignment: 0
@@ -357,8 +357,8 @@ TextureImporter:
       name: Particles_7
       rect:
         serializedVersion: 2
-        x: 96
-        y: 222
+        x: 224
+        y: 254
         width: 16
         height: 16
       alignment: 0
@@ -379,7 +379,7 @@ TextureImporter:
       name: Particles_8
       rect:
         serializedVersion: 2
-        x: 128
+        x: 0
         y: 222
         width: 16
         height: 16
@@ -401,8 +401,8 @@ TextureImporter:
       name: Particles_9
       rect:
         serializedVersion: 2
-        x: 144
-        y: 206
+        x: 32
+        y: 222
         width: 16
         height: 16
       alignment: 0
@@ -423,8 +423,8 @@ TextureImporter:
       name: Particles_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 190
+        x: 64
+        y: 222
         width: 16
         height: 16
       alignment: 0
@@ -445,8 +445,8 @@ TextureImporter:
       name: Particles_11
       rect:
         serializedVersion: 2
-        x: 32
-        y: 190
+        x: 96
+        y: 222
         width: 16
         height: 16
       alignment: 0
@@ -467,8 +467,8 @@ TextureImporter:
       name: Particles_12
       rect:
         serializedVersion: 2
-        x: 64
-        y: 190
+        x: 128
+        y: 222
         width: 16
         height: 16
       alignment: 0
@@ -489,8 +489,8 @@ TextureImporter:
       name: Particles_13
       rect:
         serializedVersion: 2
-        x: 96
-        y: 190
+        x: 144
+        y: 206
         width: 16
         height: 16
       alignment: 0
@@ -512,7 +512,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 158
+        y: 190
         width: 16
         height: 16
       alignment: 0
@@ -533,8 +533,8 @@ TextureImporter:
       name: Particles_15
       rect:
         serializedVersion: 2
-        x: 16
-        y: 158
+        x: 32
+        y: 190
         width: 16
         height: 16
       alignment: 0
@@ -555,8 +555,8 @@ TextureImporter:
       name: Particles_16
       rect:
         serializedVersion: 2
-        x: 32
-        y: 158
+        x: 64
+        y: 190
         width: 16
         height: 16
       alignment: 0
@@ -577,8 +577,8 @@ TextureImporter:
       name: Particles_17
       rect:
         serializedVersion: 2
-        x: 48
-        y: 158
+        x: 96
+        y: 190
         width: 16
         height: 16
       alignment: 0
@@ -600,7 +600,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 126
+        y: 158
         width: 16
         height: 16
       alignment: 0
@@ -621,8 +621,8 @@ TextureImporter:
       name: Particles_19
       rect:
         serializedVersion: 2
-        x: 0
-        y: 94
+        x: 16
+        y: 158
         width: 16
         height: 16
       alignment: 0
@@ -643,8 +643,8 @@ TextureImporter:
       name: Particles_20
       rect:
         serializedVersion: 2
-        x: 16
-        y: 94
+        x: 32
+        y: 158
         width: 16
         height: 16
       alignment: 0
@@ -665,8 +665,8 @@ TextureImporter:
       name: Particles_21
       rect:
         serializedVersion: 2
-        x: 32
-        y: 94
+        x: 48
+        y: 158
         width: 16
         height: 16
       alignment: 0
@@ -687,8 +687,8 @@ TextureImporter:
       name: Particles_22
       rect:
         serializedVersion: 2
-        x: 48
-        y: 94
+        x: 0
+        y: 126
         width: 16
         height: 16
       alignment: 0
@@ -701,28 +701,6 @@ TextureImporter:
       bones: []
       spriteID: bf51498761d82b24d9a09328f2ba24f0
       internalID: -1047774393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Particles_23
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 94
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84b779f701c9a3045bc1162129ab06ee
-      internalID: -399485925
       vertices: []
       indices: 
       edges: []
@@ -757,7 +735,6 @@ TextureImporter:
       Particles_20: 773242631
       Particles_21: -1701668157
       Particles_22: -1047774393
-      Particles_23: -399485925
       Particles_3: 1576950596
       Particles_4: 1718084708
       Particles_5: 439993849

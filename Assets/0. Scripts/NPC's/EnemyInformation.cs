@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-using UnityEngine.Windows;
+using UnityEngine.Events;
 
 public abstract class EnemyInformation : MonoBehaviour
 {
@@ -34,15 +34,19 @@ public abstract class EnemyInformation : MonoBehaviour
 
     public Transform PlayerTransform { get => _playerTransform; private set => _playerTransform = value; }
 
+    private Door _door;
+
     private void Awake()
     {
         _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        _door = FindFirstObjectByType<Door>();
 
         if (_playerTransform == null)
         {
-
             Console.WriteLine("Could not find Player or Player Tag");
         }
+
+        _door.AddActiveEnemy();
     }
 
     protected void FixedUpdate()

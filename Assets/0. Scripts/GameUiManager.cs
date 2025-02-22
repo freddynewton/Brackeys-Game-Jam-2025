@@ -4,8 +4,6 @@ using UnityEngine.UI;
 public class GameUiManager : MonoBehaviour
 {
     [Header("Game UI Settings")]
-    [SerializeField] private GameObject _gameOverPanel;
-    [SerializeField] private GameObject _gameWinPanel;
 
     [Header("Hud")]
     [SerializeField] private GameObject _hudPanel;
@@ -13,16 +11,6 @@ public class GameUiManager : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private UnitStatHandler _playerUnitStatHandler;
-
-    public void ShowGameOverPanel()
-    {
-        _gameOverPanel.SetActive(true);
-    }
-
-    public void ShowGameWinPanel()
-    {
-        _gameWinPanel.SetActive(true);
-    }
 
     public void UpdateHealthSlider()
     {
@@ -36,8 +24,6 @@ public class GameUiManager : MonoBehaviour
 
     private void Awake()
     {
-        _gameOverPanel.SetActive(false);
-        _gameWinPanel.SetActive(false);
         _hudPanel.SetActive(true);
 
         _healthSlider.maxValue = _playerUnitStatHandler.MaxHealth;
