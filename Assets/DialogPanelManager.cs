@@ -103,6 +103,8 @@ public class DialogPanelManager : MonoBehaviour
     {
         yield return new WaitForSeconds(_startDelay);
 
+        UpdatePortraitImage();
+
         InputManager.Instance.SetPlayerInputActive(false);
         gameObject.SetActive(true);
 
@@ -129,7 +131,6 @@ public class DialogPanelManager : MonoBehaviour
             _apprenticePortrait.DOAnchorPosY(_apprenticePortraitPosition.y + 10, 3).SetEase(Ease.OutBack).SetLoops(-1, LoopType.Yoyo);
         }
 
-        UpdatePortraitImage();
     }
 
     private IEnumerator TypewriterEffect(string dialogLine)
