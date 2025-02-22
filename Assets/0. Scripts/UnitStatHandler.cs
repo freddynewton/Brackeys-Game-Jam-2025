@@ -5,15 +5,19 @@ using UnityEngine;
 
 public class UnitStatHandler : MonoBehaviour, IDamageable
 {
+    public float CurrentHealth { get => _currentHp; }
+
+    public int MaxHealth { get => _maxHp; }
+
     [Header("Stats Settings")]
     [SerializeField] private int _maxHp = 4;
+    [SerializeField] private float _healthRegenRate = 0f;
 
     [Header("Death Sprites")]
     [Tooltip("Sprites that will fly around after a thing gets destroyed")]
     [SerializeField] private List<Sprite> _deathSpriteList = new();
 
     [Header("Hit Animation Effects")]
-    [SerializeField] private float _freezeTime = 0.15f;
     [SerializeField] private float _spriteFlashTime = 0.1f;
     [SerializeField] private int _spriteFlashLoops = 2;
     [SerializeField] private Color _hitColor = Color.red;
@@ -27,7 +31,12 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
     [SerializeField] private bool isZombie = false;
     [SerializeField] private bool isPlayer = false;
 
-    protected int _currentHp;
+    protected float _currentHp;
+
+    public void AddHealth(int health)
+    {
+        _currentHp = Mathf.Clamp(_currentHp + health, 0, _maxHp);
+    }
 
     public virtual void TakeDamage(int damage, Vector3 attackerTransformPosition)
     {
@@ -134,5 +143,17 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
 
         // Using DoTween for sprite flickering
         _spriteRenderer.DOColor(_hitColor, _spriteFlashTime).OnComplete(() => _spriteRenderer.DOColor(Color.white, _spriteFlashTime)).SetLoops(_spriteFlashLoops);
+    }
+
+    private void Update()
+    {
+        // if dead, don't regen health
+        if (_currentHp <= 0)
+        {
+            return;
+        }
+
+        // Health regen
+        _currentHp = Mathf.Clamp(_currentHp + _healthRegenRate * Time.deltaTime, 0, _maxHp);
     }
 }

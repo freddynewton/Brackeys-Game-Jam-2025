@@ -595,6 +595,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Particles_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f29926ee990a14eba3f5fa8cf02658
+      internalID: -1312406131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -619,6 +641,7 @@ TextureImporter:
       Particles_15: 876359107
       Particles_16: -759915925
       Particles_17: -1709868596
+      Particles_18: -1312406131
       Particles_2: 79289646
       Particles_3: 1576950596
       Particles_4: 1718084708
