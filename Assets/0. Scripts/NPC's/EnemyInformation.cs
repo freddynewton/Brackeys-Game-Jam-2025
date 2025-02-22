@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Windows;
 
 public abstract class EnemyInformation : MonoBehaviour
 {
@@ -43,18 +44,6 @@ public abstract class EnemyInformation : MonoBehaviour
             Console.WriteLine("Could not find Player or Player Tag");
         }
     }
-
-    /*private void Awake()
-    {
-        stateMachine = new EnemyStateMachine();
-
-        idleState = new EnemyIdleState(this, stateMachine);
-        standState = new EnemyStandState(this, stateMachine);
-        chaseState = new EnemyChaseState(this, stateMachine);
-        attackState = new EnemyAttackState(this, stateMachine);
-
-        stateMachine.Initialize(idleState);
-    }*/
 
     protected void FixedUpdate()
     {
@@ -138,6 +127,13 @@ public abstract class EnemyInformation : MonoBehaviour
     public virtual float GetMoveDistance()
     {
         return 0;
+    }
+
+    public void TurnTowardsAttack()
+    {
+        Vector2 direction = _playerTransform.position - this.transform.position;
+
+        this.transform.localScale = new Vector2(direction.x >= 0 ? -1:1, 1);
     }
 
 }
