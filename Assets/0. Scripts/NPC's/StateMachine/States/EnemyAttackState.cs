@@ -42,7 +42,6 @@ public class EnemyAttackState : EnemyState
             enemyInformation.TurnTowardsAttack();
             _animator.SetTrigger("Attack");
             _currentTime = _attackTime;
-            Debug.Log("bite attack 2");
         }
     }
 
