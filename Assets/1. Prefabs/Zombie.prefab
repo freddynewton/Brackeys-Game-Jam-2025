@@ -214,10 +214,10 @@ MonoBehaviour:
   _maxHp: 4
   _healthRegenRate: 0
   _deathSpriteList:
-  - {fileID: 439993849, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
-  - {fileID: -1710343655, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
-  - {fileID: 1248847017, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
-  - {fileID: 471657045, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: -1422648809, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: -1005652920, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: -856785518, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: 1756541425, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
   _spriteFlashTime: 0.1
   _spriteFlashLoops: 2
   _hitColor: {r: 1, g: 0, b: 0, a: 1}

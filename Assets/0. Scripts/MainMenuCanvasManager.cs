@@ -45,6 +45,6 @@ public class MainMenuCanvasManager : MonoBehaviour
 
     private void OnPlayButtonClicked()
     {
-        GameSceneFlowManager.Instance.LoadScene("Level 1", true);
+        GameSceneFlowManager.Instance.LoadScene("Level 0", true);
     }
 }

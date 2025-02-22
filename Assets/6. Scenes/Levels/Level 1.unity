@@ -4258,28 +4258,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5565709775312355974, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
   m_PrefabInstance: {fileID: 3393953226822628454}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1666714562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666714558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abef2cc94d3de58409fe3cba1d3bcf01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogSpeed: 0.1
-  _dialog:
-  - This is a teset
-  - asdafafad
-  - asgsagdsdfasdfasdasdasdafsavasdbgvadsbg dsf wadsf asfw agawe gas awgeasdfasd
-    fasd fasf as
-  dialogPanel: {fileID: 1666714563}
-  arrow: {fileID: 1774234826}
-  _barryPortrait: {fileID: 208900419}
-  _dialogText: {fileID: 487828030}
 --- !u!225 &1666714563
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11968,6 +11946,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game UI
       objectReference: {fileID: 0}
+    - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
+      propertyPath: arrow
+      value: 
+      objectReference: {fileID: 1774234826}
+    - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
+      propertyPath: _dialogText
+      value: 
+      objectReference: {fileID: 487828030}
+    - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
+      propertyPath: dialogPanel
+      value: 
+      objectReference: {fileID: 1666714563}
+    - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
+      propertyPath: _barryPortrait
+      value: 
+      objectReference: {fileID: 208900419}
     - target: {fileID: 5240304729021004765, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
       propertyPath: _playerUnitStatHandler
       value: 
@@ -12093,9 +12087,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7314440801589602038, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1991152956}
-    - targetCorrespondingSourceObject: {fileID: 1386536825081868944, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1666714562}
     - targetCorrespondingSourceObject: {fileID: 1386536825081868944, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1666714563}

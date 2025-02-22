@@ -162,16 +162,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHp: 4
+  _healthRegenRate: 0
   _deathSpriteList:
-  - {fileID: 846145974, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
-  - {fileID: 876359107, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
-  - {fileID: -759915925, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
-  - {fileID: -1709868596, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
-  - {fileID: 846145974, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
-  - {fileID: 876359107, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
-  - {fileID: -759915925, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
-  - {fileID: -1709868596, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
-  _freezeTime: 0.15
+  - {fileID: -1312406131, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: 382811765, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: 773242631, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: -1701668157, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: -1312406131, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: 382811765, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: 773242631, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
+  - {fileID: -1701668157, guid: d59987cc9c7326d47a0344a4f33c05bc, type: 3}
   _spriteFlashTime: 0.1
   _spriteFlashLoops: 2
   _hitColor: {r: 1, g: 0, b: 0, a: 1}
@@ -179,6 +179,7 @@ MonoBehaviour:
   _hitVfx: {fileID: 2772245458158379256, guid: b21b12457a6583f4097cb8918d6480b2, type: 3}
   _deathVfx: {fileID: 0}
   isZombie: 0
+  isPlayer: 0
 --- !u!50 &652371387951695556
 Rigidbody2D:
   serializedVersion: 5

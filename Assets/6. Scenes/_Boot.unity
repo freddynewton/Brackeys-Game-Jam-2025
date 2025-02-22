@@ -119,7 +119,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!28 &164587405
+--- !u!28 &81456735
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -351,7 +351,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _GradientTex:
-        m_Texture: {fileID: 164587405}
+        m_Texture: {fileID: 81456735}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -619,7 +619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3850177475016227081, guid: 9ddc0d2662378f34fa2d1d42050d855d, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0
+      value: 0.0011337869
       objectReference: {fileID: 0}
     - target: {fileID: 3850177475016227081, guid: 9ddc0d2662378f34fa2d1d42050d855d, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -627,7 +627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3850177475016227081, guid: 9ddc0d2662378f34fa2d1d42050d855d, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 1
+      value: 0.99773246
       objectReference: {fileID: 0}
     - target: {fileID: 3850177475016227081, guid: 9ddc0d2662378f34fa2d1d42050d855d, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
