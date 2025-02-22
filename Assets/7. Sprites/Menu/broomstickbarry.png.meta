@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 41bb40d3599ca384aadf7377e6abde58
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8013756245172491324
+    second: broomstickbarry_0
+  - first:
+      213: -8643868509960942338
+    second: broomstickbarry_1
+  - first:
+      213: 1753233383847499847
+    second: broomstickbarry_2
+  - first:
+      213: -8279418422258449473
+    second: broomstickbarry_3
+  - first:
+      213: -2313796768438423210
+    second: broomstickbarry_4
+  - first:
+      213: 888454378116593717
+    second: broomstickbarry_5
+  - first:
+      213: 3184482610940910765
+    second: broomstickbarry_6
+  - first:
+      213: -5443706578834318895
+    second: broomstickbarry_7
+  - first:
+      213: 4961920560276430424
+    second: broomstickbarry_8
+  - first:
+      213: -5543617704539258785
+    second: broomstickbarry_9
+  - first:
+      213: -999581644913082861
+    second: broomstickbarry_10
+  - first:
+      213: 3094852615748000136
+    second: broomstickbarry_11
+  - first:
+      213: -4983815721304293377
+    second: broomstickbarry_12
+  - first:
+      213: -3934880035388407458
+    second: broomstickbarry_13
+  - first:
+      213: -4998407256558419822
+    second: broomstickbarry_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: broomstickbarry_0
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 878
+        width: 72
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a535ec972f86534ebf1ec5cae2cdb6c
+      internalID: 2091685195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: broomstickbarry_1
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 856
+        width: 73
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23af63796ab7f4f40aa8b121e8c25323
+      internalID: -826042526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: broomstickbarry_2
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 851
+        width: 73
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7567ed4559aa246b5eaf9ac43f1559
+      internalID: -2005725654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: broomstickbarry_3
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 878
+        width: 73
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b859567047da2a43a3954df0114283d
+      internalID: 1046719823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: broomstickbarry_4
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 866
+        width: 101
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c373d136ffdd444b8d258e4b5f1eecd
+      internalID: -1421860417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: broomstickbarry_5
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 875
+        width: 64
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de0ceee9b882454f8141c9be3b51354
+      internalID: 879273324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: broomstickbarry_6
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 858
+        width: 73
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c290da676fc32fd43aa2d997be92a8a5
+      internalID: 1722664198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: broomstickbarry_7
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 871
+        width: 52
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01cf0f3443543544998571276bab5873
+      internalID: 269600927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: broomstickbarry_8
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 855
+        width: 72
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69cccca87057ed8469f0ed228a9ee771
+      internalID: -1472757345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: broomstickbarry_9
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 875
+        width: 73
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff414188ca1ed0498c214ec6beb8421
+      internalID: -2135038595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: broomstickbarry_10
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 841
+        width: 73
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e228505df65b2b247ba113f7de97d97f
+      internalID: 744319559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: broomstickbarry_11
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 851
+        width: 92
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2f9f730db3ff94386b5351d8141c1d
+      internalID: 1187197571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: broomstickbarry_12
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 861
+        width: 73
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57625d3a4684bff49a488e1628d0f4bc
+      internalID: 2104191066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: broomstickbarry_13
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 856
+        width: 73
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54604277e0bead47aa5589731ebf4b7
+      internalID: 1931486683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: broomstickbarry_14
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 878
+        width: 83
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dda9861dac464142b5cc60ae4cba6bb
+      internalID: 760419112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4b6db128007b0f74d9fbac2bdca3297d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      broomstickbarry_0: 2091685195
+      broomstickbarry_1: -826042526
+      broomstickbarry_10: 744319559
+      broomstickbarry_11: 1187197571
+      broomstickbarry_12: 2104191066
+      broomstickbarry_13: 1931486683
+      broomstickbarry_14: 760419112
+      broomstickbarry_2: -2005725654
+      broomstickbarry_3: 1046719823
+      broomstickbarry_4: -1421860417
+      broomstickbarry_5: 879273324
+      broomstickbarry_6: 1722664198
+      broomstickbarry_7: 269600927
+      broomstickbarry_8: -1472757345
+      broomstickbarry_9: -2135038595
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
