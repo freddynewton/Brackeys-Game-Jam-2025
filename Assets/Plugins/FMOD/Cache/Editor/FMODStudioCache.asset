@@ -1,32 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8548786696522873845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MenuMusic
-  m_EditorClassIdentifier: 
-  Path: event:/MenuMusic
-  Guid:
-    Data1: -730985837
-    Data2: 1319690259
-    Data3: -756393086
-    Data4: 546405904
-  Banks:
-  - {fileID: 9077090317329131467}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-8154963715341668688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,6 +27,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &-7983853435763860921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Menu Music
+  m_EditorClassIdentifier: 
+  Path: event:/Menu Music
+  Guid:
+    Data1: 879754644
+    Data2: 1219347504
+    Data3: 359670204
+    Data4: -929452239
+  Banks:
+  - {fileID: 9077090317329131467}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -461515369212443794}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 49901
 --- !u!114 &-5430923774528993785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,10 +96,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638758993169647356
+  lastModified: 638759024433648376
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 1504
   Exists: 1
 --- !u!114 &-4146519779874520708
 MonoBehaviour:
@@ -197,10 +198,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638758993169677380
+  lastModified: 638759024433890220
   FileSizes:
   - Name: Desktop
-    Value: 1524
+    Value: 1688
   Exists: 1
 --- !u!114 &-988770553720050270
 MonoBehaviour:
@@ -229,6 +230,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-461515369212443794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menu Music/Parameter 3
+  m_EditorClassIdentifier: 
+  Name: Parameter 3
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1423371781
+    data2: 1201583742
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - In Menu
+  - Entering Game
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,17 +284,17 @@ MonoBehaviour:
   - {fileID: -2569359753617292510}
   - {fileID: -8154963715341668688}
   - {fileID: 3859235912820600988}
-  - {fileID: -8548786696522873845}
   - {fileID: 357585043825623162}
   - {fileID: 4249096387864551545}
   - {fileID: 8504162790915336651}
   - {fileID: 432175805486568121}
+  - {fileID: -7983853435763860921}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4922079742125809127}
   StringsBanks:
   - {fileID: -1365551632758491640}
-  cacheTime: 638758993171330759
+  cacheTime: 638759024436316961
   cacheVersion: 131623
 --- !u!114 &357585043825623162
 MonoBehaviour:
@@ -365,7 +392,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638758993171330759
+  lastModified: 638759024436316961
   FileSizes:
   - Name: Desktop
     Value: 1788512
@@ -574,8 +601,8 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638758993171130580
+  lastModified: 638759024435955415
   FileSizes:
   - Name: Desktop
-    Value: 15957376
+    Value: 19780032
   Exists: 1
