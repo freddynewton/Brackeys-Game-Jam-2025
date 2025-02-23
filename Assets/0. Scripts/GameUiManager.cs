@@ -102,9 +102,6 @@ public class GameUiManager : MonoBehaviour
 
     private void ShowGameOverScreen()
     {
-        _gameOverCanvasGroup.alpha = 1;
-        _gameOverCanvasGroup.interactable = true;
-        _gameOverCanvasGroup.blocksRaycasts = true;
-        Time.timeScale = 0;
+        GameSceneFlowManager.Instance.ReloadCurrentScene();
     }
 }

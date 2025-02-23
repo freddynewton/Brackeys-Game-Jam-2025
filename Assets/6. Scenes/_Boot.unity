@@ -305,7 +305,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _GradientTex:
-        m_Texture: {fileID: 1704966743}
+        m_Texture: {fileID: 1816948191}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -458,7 +458,7 @@ Transform:
   - {fileID: 383677220}
   m_Father: {fileID: 1436683772}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!28 &1704966743
+--- !u!28 &1816948191
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -586,6 +586,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1060969288570230692}
   - component: {fileID: 3885629832852073958}
+  - component: {fileID: 3885629832852073959}
   m_Layer: 0
   m_Name: SoundLogic
   m_TagString: Untagged
@@ -603,6 +604,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 406bd80321773964895a53a167640e68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3885629832852073959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3885629832852073957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556340a71033976439f778c30d88b78e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &4352797119101503156

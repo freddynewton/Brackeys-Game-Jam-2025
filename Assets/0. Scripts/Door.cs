@@ -48,6 +48,7 @@ public class Door : MonoBehaviour
         if (collision.CompareTag("Player") && !isDooActivated)
         {
             GameSceneFlowManager.Instance.LoadScene(sceneToLoad, true, 2f);
+            SoundManager.Instance.SetLevelWon();
             isDooActivated = true;
         }
     }

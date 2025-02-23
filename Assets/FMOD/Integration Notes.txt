@@ -8,4 +8,9 @@ Fmod Integration Notes
 "Normal Growl" - Triggers when regular type zombie gets close, distance is up to you (Will only play sound some of the time)
 "Player footsteps" - Start event when player is walking, stop in any other event (Let me know when this one is implemented so I can fine tune the speed)
 "Zombie attack" - Trigger when zombie attacks
-"LvlMusic1" - Start event when level begins, stop when level ends
+"LvlMusic1" - Start event when level begins, stop when level ends. Define Parameter for "dead" and "alive". Music will fade out on death
+"LvlMusic2" - Same as LvlMusic1
+"Dan Talk" - Trigger every time a certain amount of letters are typed while Dan is talking
+"Ap Talk" - Trigger every time a certain amount of letters are typed while Apprentice is talking
+"PlayerDmg" - Trigger when the player is hit
+"Spitter" - Trigger when the spitter zombie attacks

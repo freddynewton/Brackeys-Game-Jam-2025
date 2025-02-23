@@ -4,6 +4,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Linq;
 using UnityEngine.UI;
+using System.Threading.Tasks;
 
 public class DialogPanelManager : MonoBehaviour
 {
@@ -28,8 +29,9 @@ public class DialogPanelManager : MonoBehaviour
 
     private Vector2 _barryPortraitPosition;
     private Vector2 _apprenticePortraitPosition;
+    private int _currentDialogIndex;
 
-    private bool _isTyping;
+    private Task _typeWriterTask;
 
     private void Awake()
     {
@@ -51,19 +53,21 @@ public class DialogPanelManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.anyKeyDown && !_isTyping)
+        if (Input.anyKeyDown && _typeWriterTask.IsCompleted)
         {
-            if (_dialog.Count > 0)
+            if (_currentDialogIndex < _dialog.Count)
             {
                 UpdatePortraitImage();
 
                 StartCoroutine(FadeCanvasGroup(arrow, 0, 0.5f));
-                StartCoroutine(TypewriterEffect(_dialog[0].Dialog));
+                _typeWriterTask = TypewriterEffectAsync(_dialog[_currentDialogIndex].Dialog);
             }
             else
             {
                 StartCoroutine(FadeCanvasGroup(dialogPanel, 0, 0.5f));
                 InputManager.Instance.SetPlayerInputActive(true);
+
+                SoundManager.Instance.SetLevelMusicVolume(0.1f);
 
                 if (_LoadSceneOnEnd)
                 {
@@ -76,12 +80,12 @@ public class DialogPanelManager : MonoBehaviour
 
     private void UpdatePortraitImage()
     {
-        if (_dialog.Count == 0)
+        if (_currentDialogIndex >= _dialog.Count)
         {
             return;
-        } 
+        }
 
-        if (_dialog[0].Character == DialogCharacter.Barry)
+        if (_dialog[_currentDialogIndex].Character == DialogCharacter.Barry)
         {
             _nameText.text = "Broomstick Barry";
 
@@ -90,8 +94,10 @@ public class DialogPanelManager : MonoBehaviour
 
             _barryPortrait.GetComponent<Image>().color = new Color(1, 1, 1, 1);
             _apprenticePortrait.GetComponent<Image>().color = new Color(1, 1, 1, 0.5f);
+
+            SoundManager.Instance.PlayDanTalk();
         }
-        else if (_dialog[0].Character == DialogCharacter.Apprentice)
+        else if (_dialog[_currentDialogIndex].Character == DialogCharacter.Apprentice)
         {
             _nameText.text = "Dirty Dan";
 
@@ -119,9 +125,11 @@ public class DialogPanelManager : MonoBehaviour
 
         _dialog = dialog;
 
+        SoundManager.Instance.SetLevelMusicVolume(0.00f);
+
         // Custom tweening alpha
         StartCoroutine(FadeCanvasGroup(dialogPanel, 1, 3f));
-        StartCoroutine(TypewriterEffect(dialog[0].Dialog));
+        _typeWriterTask = TypewriterEffectAsync(dialog[0].Dialog);
 
         // Check if the Character is in the dialog with linq
         if (dialog.Any(dialog => dialog.Character == DialogCharacter.Barry))
@@ -142,24 +150,32 @@ public class DialogPanelManager : MonoBehaviour
 
     }
 
-    private IEnumerator TypewriterEffect(string dialogLine)
+    private async Task TypewriterEffectAsync(string dialogLine)
     {
         _dialogText.text = "";
-        _dialog.RemoveAt(0);
-
-        _isTyping = true;
-
         // Append one character at a time to simulate typing
         foreach (char c in dialogLine)
         {
             _dialogText.text += c;
-            yield return new WaitForSeconds(dialogSpeed);
+            await Task.Delay((int)(dialogSpeed * 1000));
+
+            if (_dialog[_currentDialogIndex].Character == DialogCharacter.Apprentice)
+            {
+                SoundManager.Instance.PlayApTalk();
+            }
+            else
+            {
+                SoundManager.Instance.PlayDanTalk();
+            }
+
+            // Show the arrow
+            StartCoroutine(FadeCanvasGroup(arrow, 1, 1f));
         }
 
-        // Show the arrow
-        StartCoroutine(FadeCanvasGroup(arrow, 1, 1f));
+        _currentDialogIndex++;
 
-        _isTyping = false;
+        // return the task
+        return;
     }
 
     private IEnumerator FadeCanvasGroup(CanvasGroup canvasGroup, float targetAlpha, float duration)
