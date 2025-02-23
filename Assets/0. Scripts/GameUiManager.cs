@@ -27,6 +27,11 @@ public class GameUiManager : MonoBehaviour
 
     public void UpdateHealthSlider()
     {
+        if (_playerUnitStatHandler == null)
+        {
+            return;
+        }
+
         _healthSlider.value = _playerUnitStatHandler.CurrentHealth;
     }
 
@@ -37,6 +42,11 @@ public class GameUiManager : MonoBehaviour
 
     private void Update()
     {
+        if (_playerUnitStatHandler == null)
+        {
+            return;
+        }
+
         UpdateHealthSlider();
 
         if (Input.GetKeyDown(KeyCode.Escape))

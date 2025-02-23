@@ -76,6 +76,11 @@ public class DialogPanelManager : MonoBehaviour
 
     private void UpdatePortraitImage()
     {
+        if (_dialog.Count == 0)
+        {
+            return;
+        } 
+
         if (_dialog[0].Character == DialogCharacter.Barry)
         {
             _nameText.text = "Broomstick Barry";
