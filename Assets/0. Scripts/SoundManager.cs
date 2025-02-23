@@ -35,7 +35,7 @@ public class SoundManager : Singleton<SoundManager>
     {
         RuntimeManager.PlayOneShot("event:/Killshot");
     }
-    
+
     public void PlayNormalGrowl(GameObject zombie)
     {
         EventInstance normalGrowlInstance = RuntimeManager.CreateInstance("event:/Normal Growl");
@@ -53,6 +53,7 @@ public class SoundManager : Singleton<SoundManager>
         }
 
         _playerFootstepsInstance = RuntimeManager.CreateInstance("event:/Player footsteps");
+        _playerFootstepsInstance.setVolume(0.5f); // Set volume to half
         _playerFootstepsInstance.start();
     }
 
@@ -91,5 +92,36 @@ public class SoundManager : Singleton<SoundManager>
             _levelMusicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             _levelMusicInstance.release();
         }
+    }
+
+    public void PlayDanTalk()
+    {
+        EventInstance danTalkInstance = RuntimeManager.CreateInstance("event:/Dan Talk");
+        danTalkInstance.setVolume(0.5f);
+        danTalkInstance.start();
+        danTalkInstance.release();
+    }
+
+    public void PlayApTalk()
+    {
+        EventInstance apTalkInstance = RuntimeManager.CreateInstance("event:/Ap Talk");
+        apTalkInstance.setVolume(0.5f);
+        apTalkInstance.start();
+        apTalkInstance.release();
+    }
+
+    public void PlayPlayerDmg()
+    {
+        RuntimeManager.PlayOneShot("event:/PlayerDmg");
+    }
+
+    public void PlaySpitter()
+    {
+        RuntimeManager.PlayOneShot("event:/Spitter");
+    }
+
+    public void SetVolume(float volume)
+    {
+        RuntimeManager.GetBus("bus:/").setVolume(volume);
     }
 }

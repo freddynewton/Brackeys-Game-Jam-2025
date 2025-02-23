@@ -40,6 +40,8 @@ public class Door : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
 
+        SoundManager.Instance.PlayLevelMusic();
+
         SetDoorActive(false);
     }
 
@@ -48,6 +50,7 @@ public class Door : MonoBehaviour
         if (collision.CompareTag("Player") && !isDooActivated)
         {
             GameSceneFlowManager.Instance.LoadScene(sceneToLoad, true, 2f);
+            SoundManager.Instance.SetLevelWon();
             isDooActivated = true;
         }
     }

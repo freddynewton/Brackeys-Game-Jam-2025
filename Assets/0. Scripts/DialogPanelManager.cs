@@ -28,6 +28,7 @@ public class DialogPanelManager : MonoBehaviour
 
     private Vector2 _barryPortraitPosition;
     private Vector2 _apprenticePortraitPosition;
+    private int _currentDialogIndex;
 
     private bool _isTyping;
 
@@ -53,12 +54,12 @@ public class DialogPanelManager : MonoBehaviour
     {
         if (Input.anyKeyDown && !_isTyping)
         {
-            if (_dialog.Count > 0)
+            if (_currentDialogIndex < _dialog.Count)
             {
                 UpdatePortraitImage();
 
                 StartCoroutine(FadeCanvasGroup(arrow, 0, 0.5f));
-                StartCoroutine(TypewriterEffect(_dialog[0].Dialog));
+                StartCoroutine(TypewriterEffect(_dialog[_currentDialogIndex].Dialog));
             }
             else
             {
@@ -76,12 +77,12 @@ public class DialogPanelManager : MonoBehaviour
 
     private void UpdatePortraitImage()
     {
-        if (_dialog.Count == 0)
+        if (_currentDialogIndex >= _dialog.Count)
         {
             return;
-        } 
+        }
 
-        if (_dialog[0].Character == DialogCharacter.Barry)
+        if (_dialog[_currentDialogIndex].Character == DialogCharacter.Barry)
         {
             _nameText.text = "Broomstick Barry";
 
@@ -90,8 +91,10 @@ public class DialogPanelManager : MonoBehaviour
 
             _barryPortrait.GetComponent<Image>().color = new Color(1, 1, 1, 1);
             _apprenticePortrait.GetComponent<Image>().color = new Color(1, 1, 1, 0.5f);
+
+            SoundManager.Instance.PlayDanTalk();
         }
-        else if (_dialog[0].Character == DialogCharacter.Apprentice)
+        else if (_dialog[_currentDialogIndex].Character == DialogCharacter.Apprentice)
         {
             _nameText.text = "Dirty Dan";
 
@@ -145,8 +148,6 @@ public class DialogPanelManager : MonoBehaviour
     private IEnumerator TypewriterEffect(string dialogLine)
     {
         _dialogText.text = "";
-        _dialog.RemoveAt(0);
-
         _isTyping = true;
 
         // Append one character at a time to simulate typing
@@ -154,12 +155,23 @@ public class DialogPanelManager : MonoBehaviour
         {
             _dialogText.text += c;
             yield return new WaitForSeconds(dialogSpeed);
+
+            if (_dialog[_currentDialogIndex].Character == DialogCharacter.Apprentice)
+            {
+                SoundManager.Instance.PlayApTalk();
+            }
+            else
+            {
+                SoundManager.Instance.PlayDanTalk();
+            }
+
+            // Show the arrow
+            StartCoroutine(FadeCanvasGroup(arrow, 1, 1f));
+
+            _isTyping = false;
         }
 
-        // Show the arrow
-        StartCoroutine(FadeCanvasGroup(arrow, 1, 1f));
-
-        _isTyping = false;
+        _currentDialogIndex++;
     }
 
     private IEnumerator FadeCanvasGroup(CanvasGroup canvasGroup, float targetAlpha, float duration)
