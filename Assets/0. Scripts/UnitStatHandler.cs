@@ -110,8 +110,6 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
         if (isZombie)
         {
             SoundManager.Instance.PlayKillshot();
-
-            FindFirstObjectByType<Door>().RemoveActiveEnemy();
         }
 
         if (isPlayer)

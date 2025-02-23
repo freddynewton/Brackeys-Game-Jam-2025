@@ -47,8 +47,6 @@ public abstract class EnemyInformation : MonoBehaviour
         {
             Console.WriteLine("Could not find Player or Player Tag");
         }
-
-        _door.AddActiveEnemy();
     }
 
     protected void FixedUpdate()
