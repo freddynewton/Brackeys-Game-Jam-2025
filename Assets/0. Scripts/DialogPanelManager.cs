@@ -99,7 +99,7 @@ public class DialogPanelManager : MonoBehaviour
         }
         else if (_dialog[_currentDialogIndex].Character == DialogCharacter.Apprentice)
         {
-            _nameText.text = "Dirty Dan";
+            _nameText.text = "Dustpan Dan";
 
             _apprenticePortrait.DOScale(Vector3.one * 1.2f, 0.33f).SetEase(Ease.OutBack);
             _barryPortrait.DOScale(Vector3.one, 0.33f).SetEase(Ease.OutBack);
