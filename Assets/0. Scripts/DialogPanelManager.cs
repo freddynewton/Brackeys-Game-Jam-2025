@@ -5,6 +5,7 @@ using System.Collections;
 using System.Linq;
 using UnityEngine.UI;
 using System.Threading.Tasks;
+using TMPro;
 
 public class DialogPanelManager : MonoBehaviour
 {
@@ -20,8 +21,8 @@ public class DialogPanelManager : MonoBehaviour
     [SerializeField] private RectTransform _barryPortrait;
     [SerializeField] private RectTransform _apprenticePortrait;
 
-    [SerializeField] private TMPro.TextMeshProUGUI _nameText;
-    [SerializeField] private TMPro.TextMeshProUGUI _dialogText;
+    [SerializeField] private TextMeshProUGUI _nameText;
+    [SerializeField] private TextMeshProUGUI _dialogText;
 
     [Header("Extra Settings")]
     [SerializeField] private bool _LoadSceneOnEnd;
@@ -31,10 +32,53 @@ public class DialogPanelManager : MonoBehaviour
     private Vector2 _apprenticePortraitPosition;
     private int _currentDialogIndex;
 
+    private Image _barryPortraitImage;
+    private Image _apprenticePortraitImage;
+
     private Task _typeWriterTask;
 
     private void Awake()
     {
+        if (dialogPanel == null)
+        {
+            Debug.LogError("dialogPanel is not assigned.");
+            return;
+        }
+
+        if (arrow == null)
+        {
+            Debug.LogError("arrow is not assigned.");
+            return;
+        }
+
+        if (_barryPortrait == null)
+        {
+            Debug.LogError("_barryPortrait is not assigned.");
+            return;
+        }
+
+        if (_apprenticePortrait == null)
+        {
+            Debug.LogError("_apprenticePortrait is not assigned.");
+            return;
+        }
+
+        if (_nameText == null)
+        {
+            Debug.LogError("_nameText is not assigned.");
+            return;
+        }
+
+        if (_dialogText == null)
+        {
+            Debug.LogError("_dialogText is not assigned.");
+            return;
+        }
+
+
+        _barryPortraitImage = _barryPortrait.GetComponent<Image>();
+        _apprenticePortraitImage = _apprenticePortrait.GetComponent<Image>();
+
         dialogPanel.alpha = 0;
         dialogPanel.interactable = false;
         dialogPanel.blocksRaycasts = false;
@@ -53,6 +97,12 @@ public class DialogPanelManager : MonoBehaviour
 
     private void Update()
     {
+        if (_typeWriterTask == null)
+        {
+            Debug.LogError("_typeWriterTask is null.");
+            return;
+        }
+
         if (Input.anyKeyDown && _typeWriterTask.IsCompleted)
         {
             if (_currentDialogIndex < _dialog.Count)
@@ -67,7 +117,7 @@ public class DialogPanelManager : MonoBehaviour
                 StartCoroutine(FadeCanvasGroup(dialogPanel, 0, 0.5f));
                 InputManager.Instance.SetPlayerInputActive(true);
 
-                SoundManager.Instance.SetLevelMusicVolume(0.1f);
+                SoundManager.Instance.SetLevelMusicVolume(0.3f);
 
                 if (_LoadSceneOnEnd)
                 {
@@ -89,23 +139,29 @@ public class DialogPanelManager : MonoBehaviour
         {
             _nameText.text = "Broomstick Barry";
 
+            _barryPortrait.DOKill();
+            _apprenticePortrait.DOKill();
+
             _barryPortrait.DOScale(Vector3.one * 1.2f, 0.33f).SetEase(Ease.OutBack);
             _apprenticePortrait.DOScale(Vector3.one, 0.33f).SetEase(Ease.OutBack);
 
-            _barryPortrait.GetComponent<Image>().color = new Color(1, 1, 1, 1);
-            _apprenticePortrait.GetComponent<Image>().color = new Color(1, 1, 1, 0.5f);
+            _barryPortraitImage.color = new Color(1, 1, 1, 1);
+            _apprenticePortraitImage.color = new Color(1, 1, 1, 0.5f);
 
             SoundManager.Instance.PlayDanTalk();
         }
         else if (_dialog[_currentDialogIndex].Character == DialogCharacter.Apprentice)
         {
-            _nameText.text = "Dirty Dan";
+            _nameText.text = "Dustpan Dan";
+
+            _barryPortrait.DOKill();
+            _apprenticePortrait.DOKill();
 
             _apprenticePortrait.DOScale(Vector3.one * 1.2f, 0.33f).SetEase(Ease.OutBack);
             _barryPortrait.DOScale(Vector3.one, 0.33f).SetEase(Ease.OutBack);
 
-            _apprenticePortrait.GetComponent<Image>().color = new Color(1, 1, 1, 1);
-            _barryPortrait.GetComponent<Image>().color = new Color(1, 1, 1, 0.5f);
+            _apprenticePortraitImage.color = new Color(1, 1, 1, 1);
+            _barryPortraitImage.color = new Color(1, 1, 1, 0.5f);
         }
     }
 
@@ -134,14 +190,21 @@ public class DialogPanelManager : MonoBehaviour
         // Check if the Character is in the dialog with linq
         if (dialog.Any(dialog => dialog.Character == DialogCharacter.Barry))
         {
+            _barryPortrait.DOKill();
+            _apprenticePortrait.DOKill();
+
             _barryPortrait.anchoredPosition = new Vector2(_barryPortraitPosition.x - 500, _barryPortraitPosition.y);
             _barryPortrait.gameObject.SetActive(true);
+
             _barryPortrait.DOAnchorPos(_barryPortraitPosition, 2).SetEase(Ease.OutBack);
             _barryPortrait.DOAnchorPosY(_barryPortraitPosition.y + 10, 3).SetEase(Ease.OutBack).SetLoops(-1, LoopType.Yoyo);
         }
 
         if (dialog.Any(dialog => dialog.Character == DialogCharacter.Apprentice))
         {
+            _barryPortrait.DOKill();
+            _apprenticePortrait.DOKill();
+
             _apprenticePortrait.anchoredPosition = new Vector2(_apprenticePortraitPosition.x + 500, _apprenticePortraitPosition.y);
             _apprenticePortrait.gameObject.SetActive(true);
             _apprenticePortrait.DOAnchorPos(_apprenticePortraitPosition, 2).SetEase(Ease.OutBack);

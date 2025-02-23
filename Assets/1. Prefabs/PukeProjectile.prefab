@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8048670602320701877}
   - component: {fileID: 1089410042702254962}
   - component: {fileID: -3103487048805560185}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PukeProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.3
+  m_Radius: 0.1
 --- !u!50 &1089410042702254962
 Rigidbody2D:
   serializedVersion: 5

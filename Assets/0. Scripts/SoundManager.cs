@@ -74,7 +74,7 @@ public class SoundManager : Singleton<SoundManager>
     public void PlayLevelMusic()
     {
         _levelMusicInstance = RuntimeManager.CreateInstance("event:/LvlMusic1");
-        _levelMusicInstance.setVolume(0.2f); // Set volume to 0.2
+        _levelMusicInstance.setVolume(0.5f); // Set volume to 0.2
         _levelMusicInstance.start();
     }
 

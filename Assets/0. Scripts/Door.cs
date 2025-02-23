@@ -1,4 +1,7 @@
 using NUnit.Framework;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Door : MonoBehaviour
@@ -11,22 +14,20 @@ public class Door : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider;
-    private int _currentActiveEnemies;
 
     private bool isDooActivated;
 
-    public void AddActiveEnemy()
+    // Check every second
+    public IEnumerator OpenDoor()
     {
-        _currentActiveEnemies++;
-    }
-
-    public void RemoveActiveEnemy()
-    {
-        _currentActiveEnemies--;
-        if (_currentActiveEnemies <= 0)
+        while (FindAnyObjectByType<EnemyInformation>())
         {
-            SetDoorActive(true);
+            yield return new WaitForSecondsRealtime(0.5f);
         }
+
+        isDooActivated = true;
+
+        SetDoorActive(true);
     }
 
     public void SetDoorActive(bool active)
@@ -41,12 +42,31 @@ public class Door : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
 
         SetDoorActive(false);
+
+        StartCoroutine(OpenDoor());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && !isDooActivated)
+        if (collision.CompareTag("Player") && isDooActivated)
         {
+            // Find All DeathSprites and Particle Systems and Delete them
+            // DeathSprites are the sprites with the Name DeathSprite
+
+            var particles = FindObjectsOfType<ParticleSystem>();
+
+            foreach (var particle in particles)
+            {
+                Destroy(particle.gameObject);
+            }
+
+            var deathSprites = FindObjectsOfType<SpriteRenderer>().Where(x => x.name == "DeathSprite");
+
+            foreach (var sprite in deathSprites)
+            {
+                Destroy(sprite.gameObject);
+            }
+
             GameSceneFlowManager.Instance.LoadScene(sceneToLoad, true, 2f);
             SoundManager.Instance.SetLevelWon();
             isDooActivated = true;
