@@ -14,3 +14,4 @@ Fmod Integration Notes
 "Ap Talk" - Trigger every time a certain amount of letters are typed while Apprentice is talking
 "PlayerDmg" - Trigger when the player is hit
 "Spitter" - Trigger when the spitter zombie attacks
+"Menu Music" - Start on enter game, Define paramater for 'In Menu' and 'Entering game', will fade out once parameter is fulfilled
