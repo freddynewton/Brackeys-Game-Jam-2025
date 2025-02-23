@@ -114,7 +114,7 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
 
         if (isPlayer)
         {
-            FindFirstObjectByType<GameUiManager>().
+            FindFirstObjectByType<GameUiManager>();
         }
 
         Destroy(gameObject);
