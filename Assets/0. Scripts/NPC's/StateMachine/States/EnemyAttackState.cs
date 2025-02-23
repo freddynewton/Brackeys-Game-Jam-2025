@@ -20,8 +20,6 @@ public class EnemyAttackState : EnemyState
         enemyInformation.TurnTowardsAttack();
         _animator.SetTrigger("Attack");
         _currentTime = _attackTime;
-
-        SoundManager.Instance.PlayNormalGrowl(_animator.gameObject);
     }
 
     public override void Exitstate()
