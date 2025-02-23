@@ -67,7 +67,7 @@ public class DialogPanelManager : MonoBehaviour
                 StartCoroutine(FadeCanvasGroup(dialogPanel, 0, 0.5f));
                 InputManager.Instance.SetPlayerInputActive(true);
 
-                SoundManager.Instance.SetLevelMusicVolume(0.1f);
+                SoundManager.Instance.SetLevelMusicVolume(0.3f);
 
                 if (_LoadSceneOnEnd)
                 {

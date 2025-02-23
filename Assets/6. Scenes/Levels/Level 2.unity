@@ -17575,6 +17575,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
+      propertyPath: _LoadSceneOnEnd
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
       propertyPath: _dialog.Array.size
       value: 3
       objectReference: {fileID: 0}
