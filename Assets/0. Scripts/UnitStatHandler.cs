@@ -47,6 +47,8 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
             GameFeelManager.Instance.PlayGameFeel(GameFeelType.BigShake);
             GameFeelManager.Instance.PlayGameFeel(GameFeelType.PostProcessHit);
             GameFeelManager.Instance.PlayGameFeel(GameFeelType.FreezeGame);
+
+            SoundManager.Instance.PlayPlayerDmg();
         }
 
         if (isZombie)

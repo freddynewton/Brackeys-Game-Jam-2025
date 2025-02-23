@@ -4,6 +4,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Linq;
 using UnityEngine.UI;
+using System.Threading.Tasks;
 
 public class DialogPanelManager : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class DialogPanelManager : MonoBehaviour
     private Vector2 _apprenticePortraitPosition;
     private int _currentDialogIndex;
 
-    private bool _isTyping;
+    private Task _typeWriterTask;
 
     private void Awake()
     {
@@ -52,19 +53,21 @@ public class DialogPanelManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.anyKeyDown && !_isTyping)
+        if (Input.anyKeyDown && _typeWriterTask.IsCompleted)
         {
             if (_currentDialogIndex < _dialog.Count)
             {
                 UpdatePortraitImage();
 
                 StartCoroutine(FadeCanvasGroup(arrow, 0, 0.5f));
-                StartCoroutine(TypewriterEffect(_dialog[_currentDialogIndex].Dialog));
+                _typeWriterTask = TypewriterEffectAsync(_dialog[_currentDialogIndex].Dialog);
             }
             else
             {
                 StartCoroutine(FadeCanvasGroup(dialogPanel, 0, 0.5f));
                 InputManager.Instance.SetPlayerInputActive(true);
+
+                SoundManager.Instance.SetLevelMusicVolume(0.1f);
 
                 if (_LoadSceneOnEnd)
                 {
@@ -122,9 +125,11 @@ public class DialogPanelManager : MonoBehaviour
 
         _dialog = dialog;
 
+        SoundManager.Instance.SetLevelMusicVolume(0.00f);
+
         // Custom tweening alpha
         StartCoroutine(FadeCanvasGroup(dialogPanel, 1, 3f));
-        StartCoroutine(TypewriterEffect(dialog[0].Dialog));
+        _typeWriterTask = TypewriterEffectAsync(dialog[0].Dialog);
 
         // Check if the Character is in the dialog with linq
         if (dialog.Any(dialog => dialog.Character == DialogCharacter.Barry))
@@ -145,16 +150,14 @@ public class DialogPanelManager : MonoBehaviour
 
     }
 
-    private IEnumerator TypewriterEffect(string dialogLine)
+    private async Task TypewriterEffectAsync(string dialogLine)
     {
         _dialogText.text = "";
-        _isTyping = true;
-
         // Append one character at a time to simulate typing
         foreach (char c in dialogLine)
         {
             _dialogText.text += c;
-            yield return new WaitForSeconds(dialogSpeed);
+            await Task.Delay((int)(dialogSpeed * 1000));
 
             if (_dialog[_currentDialogIndex].Character == DialogCharacter.Apprentice)
             {
@@ -167,11 +170,12 @@ public class DialogPanelManager : MonoBehaviour
 
             // Show the arrow
             StartCoroutine(FadeCanvasGroup(arrow, 1, 1f));
-
-            _isTyping = false;
         }
 
         _currentDialogIndex++;
+
+        // return the task
+        return;
     }
 
     private IEnumerator FadeCanvasGroup(CanvasGroup canvasGroup, float targetAlpha, float duration)

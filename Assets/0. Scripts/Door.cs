@@ -40,8 +40,6 @@ public class Door : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
 
-        SoundManager.Instance.PlayLevelMusic();
-
         SetDoorActive(false);
     }
 

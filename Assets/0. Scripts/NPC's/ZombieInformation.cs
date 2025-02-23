@@ -37,7 +37,7 @@ public class ZombieInformation : EnemyInformation
     {
         while (true)
         {
-            yield return new WaitForSeconds(UnityEngine.Random.Range(10f, 600f));
+            yield return new WaitForSeconds(UnityEngine.Random.Range(10f, 120f));
             SoundManager.Instance.PlayAmbientGroan(gameObject);
 
             StartCoroutine(AmbientGrowl());
@@ -56,6 +56,11 @@ public class ZombieInformation : EnemyInformation
 
     protected float CheckDistance()
     {
+        if (PlayerTransform == null)
+        {
+            return 0;
+        }
+
         return Vector2.Distance(transform.position, PlayerTransform.position);
     }
 
