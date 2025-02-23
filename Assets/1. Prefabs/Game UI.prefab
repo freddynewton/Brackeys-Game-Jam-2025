@@ -1066,7 +1066,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Broomstick Barry
+  m_text: Dustpan Dan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30e7a9e8dca024241ae125a6f979c84c, type: 2}
   m_sharedMaterial: {fileID: -5873026860097695684, guid: 30e7a9e8dca024241ae125a6f979c84c, type: 2}

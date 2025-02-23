@@ -12,4 +12,9 @@ public class ZombieAnimationEvents : EnemyAnimationEvents
             GameObject vfx = Instantiate(_vFX, _damagePosition);
         }
     }
+
+    public void PlayBiteSound()
+    {
+        SoundManager.Instance.PlayZombieAttack();
+    }
 }
