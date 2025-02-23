@@ -118,6 +118,7 @@ public class UnitStatHandler : MonoBehaviour, IDamageable
         }
 
         Destroy(gameObject);
+        Debug.Log("Dead");
     }
 
     protected void CreateDeathSprites()
