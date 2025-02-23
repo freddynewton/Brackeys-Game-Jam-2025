@@ -8853,11 +8853,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
       propertyPath: _dialog.Array.data[2].Dialog
-      value: You made one heck of a mess, Dan.
+      value: Sorry about that.
       objectReference: {fileID: 0}
     - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
       propertyPath: _dialog.Array.data[3].Dialog
-      value: Come on, pick your broom up. We've got a lot of cleaning to do.
+      value: You made one heck of a mess, Dan.
       objectReference: {fileID: 0}
     - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
       propertyPath: _dialog.Array.data[4].Dialog
@@ -8881,7 +8881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
       propertyPath: _dialog.Array.data[2].Character
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
       propertyPath: _dialog.Array.data[3].Character
