@@ -13,6 +13,8 @@ public class Door : MonoBehaviour
     private BoxCollider2D boxCollider;
     private int _currentActiveEnemies;
 
+    private bool isDooActivated;
+
     public void AddActiveEnemy()
     {
         _currentActiveEnemies++;
@@ -41,12 +43,12 @@ public class Door : MonoBehaviour
         SetDoorActive(false);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.CompareTag("Player") && !isDooActivated)
         {
             GameSceneFlowManager.Instance.LoadScene(sceneToLoad, true, 2f);
-            gameObject.SetActive(false);
+            isDooActivated = true;
         }
     }
 }

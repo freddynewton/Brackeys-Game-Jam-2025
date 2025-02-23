@@ -105,6 +105,11 @@ public class DialogPanelManager : MonoBehaviour
 
     public IEnumerator Show(List<DialogElement> dialog)
     {
+        if (_dialog.Count == 0)
+        {
+            yield break;
+        }
+
         yield return new WaitForSeconds(_startDelay);
 
         UpdatePortraitImage();

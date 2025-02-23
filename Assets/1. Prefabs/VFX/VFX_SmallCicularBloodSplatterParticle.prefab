@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8268672244057964404}
   - component: {fileID: 8398401068434943339}
   m_Layer: 12
-  m_Name: VFX_BigCicularBloodSplatterParticle
+  m_Name: VFX_SmallCicularBloodSplatterParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -172,8 +172,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 10
-      minScalar: 5
+      scalar: 5
+      minScalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -983,7 +983,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 100
+        scalar: 20
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -5091,7 +5091,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 15
+      scalar: 5
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -5902,8 +5902,8 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 3
-        scalar: 15
-        minScalar: 12
+        scalar: 8
+        minScalar: 5
         maxCurve:
           serializedVersion: 2
           m_Curve:
@@ -9912,7 +9912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
       propertyPath: TrailModule.sizeAffectsLifetime
@@ -9956,7 +9956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1055312378118410404, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
       propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
-      value: 500
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2726435185296325012, guid: e88c38a2c4fad4246ae62302dbef4ec2, type: 3}
       propertyPath: m_LocalPosition.x

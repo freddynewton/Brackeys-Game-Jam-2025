@@ -11456,19 +11456,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
       propertyPath: _dialog.Array.size
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
       propertyPath: _dialog.Array.data[0].Dialog
-      value: 0
+      value: So, I leave the kid alone for one minute...
       objectReference: {fileID: 0}
     - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
       propertyPath: _dialog.Array.data[1].Dialog
-      value: 0
+      value: ...and suddenly, we're in the middle of a zombie apocalypse!
       objectReference: {fileID: 0}
     - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
       propertyPath: _dialog.Array.data[2].Dialog
-      value: 0
+      value: Guess it's time to clean up this mess and bring the kid back.
       objectReference: {fileID: 0}
     - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
       propertyPath: _dialog.Array.data[3].Dialog
@@ -11476,6 +11476,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
       propertyPath: _dialog.Array.data[4].Dialog
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
+      propertyPath: _dialog.Array.data[0].Character
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946046374021503526, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
+      propertyPath: _dialog.Array.data[2].Character
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4141227556858786614, guid: 015391c8c8136ce4faace7a10fed71af, type: 3}
