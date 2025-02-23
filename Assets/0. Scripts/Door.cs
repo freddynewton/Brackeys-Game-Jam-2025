@@ -25,6 +25,8 @@ public class Door : MonoBehaviour
             yield return new WaitForSecondsRealtime(0.5f);
         }
 
+        isDooActivated = true;
+
         SetDoorActive(true);
     }
 
@@ -46,7 +48,7 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && !isDooActivated)
+        if (collision.CompareTag("Player") && isDooActivated)
         {
             // Find All DeathSprites and Particle Systems and Delete them
             // DeathSprites are the sprites with the Name DeathSprite
