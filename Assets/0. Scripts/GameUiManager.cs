@@ -11,13 +11,13 @@ public class GameUiManager : MonoBehaviour
     [SerializeField] private Slider _healthSlider;
 
     [Header("Menu")]
-    [SerializeField] private CanvasGroup _menuCanvasGroup;
+    [SerializeField] private GameObject _menuPanel;
     [SerializeField] private Button _resumeButton;
     [SerializeField] private Button _quitButton;
     [SerializeField] private Button _MainMenuButton;
 
     [Header("Game Over")]
-    [SerializeField] private CanvasGroup _gameOverCanvasGroup;
+    [SerializeField] private GameObject _gameOverPanel;
     [SerializeField] private Button _restartGameOverButton;
     [SerializeField] private Button _backToMenuButton;
     [SerializeField] private Button _quitGameOverButton;
@@ -37,7 +37,7 @@ public class GameUiManager : MonoBehaviour
 
     public void ShowGameOver()
     {
-        _gameOverCanvasGroup.alpha = 1;
+        _gameOverPanel.SetActive(true);
     }
 
     private void Update()
@@ -51,9 +51,7 @@ public class GameUiManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            _menuCanvasGroup.alpha = 1;
-            _menuCanvasGroup.interactable = true;
-            _menuCanvasGroup.blocksRaycasts = true;
+            _menuPanel.SetActive(true);
             Time.timeScale = 0;
         }
 
@@ -66,6 +64,8 @@ public class GameUiManager : MonoBehaviour
     private void Awake()
     {
         _hudPanel.SetActive(true);
+        _menuPanel.SetActive(false);
+        _gameOverPanel.SetActive(false);
 
         _healthSlider.maxValue = _playerUnitStatHandler.MaxHealth;
         _healthSlider.value = _playerUnitStatHandler.CurrentHealth;
@@ -93,15 +93,12 @@ public class GameUiManager : MonoBehaviour
 
     private void ResumeGame()
     {
-        _menuCanvasGroup.alpha = 0;
-        _menuCanvasGroup.interactable = false;
-        _menuCanvasGroup.blocksRaycasts = false;
-
+        _menuPanel.SetActive(false);
         Time.timeScale = 1;
     }
 
     private void ShowGameOverScreen()
     {
-        GameSceneFlowManager.Instance.ReloadCurrentScene();
+        _gameOverPanel.SetActive(true);
     }
 }

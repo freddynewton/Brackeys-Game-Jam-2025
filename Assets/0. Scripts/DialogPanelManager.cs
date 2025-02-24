@@ -39,43 +39,6 @@ public class DialogPanelManager : MonoBehaviour
 
     private void Awake()
     {
-        if (dialogPanel == null)
-        {
-            Debug.LogError("dialogPanel is not assigned.");
-            return;
-        }
-
-        if (arrow == null)
-        {
-            Debug.LogError("arrow is not assigned.");
-            return;
-        }
-
-        if (_barryPortrait == null)
-        {
-            Debug.LogError("_barryPortrait is not assigned.");
-            return;
-        }
-
-        if (_apprenticePortrait == null)
-        {
-            Debug.LogError("_apprenticePortrait is not assigned.");
-            return;
-        }
-
-        if (_nameText == null)
-        {
-            Debug.LogError("_nameText is not assigned.");
-            return;
-        }
-
-        if (_dialogText == null)
-        {
-            Debug.LogError("_dialogText is not assigned.");
-            return;
-        }
-
-
         _barryPortraitImage = _barryPortrait.GetComponent<Image>();
         _apprenticePortraitImage = _apprenticePortrait.GetComponent<Image>();
 
@@ -99,7 +62,6 @@ public class DialogPanelManager : MonoBehaviour
     {
         if (_typeWriterTask == null)
         {
-            Debug.LogError("_typeWriterTask is null.");
             return;
         }
 
@@ -181,7 +143,7 @@ public class DialogPanelManager : MonoBehaviour
 
         _dialog = dialog;
 
-        SoundManager.Instance.SetLevelMusicVolume(0.00f);
+        SoundManager.Instance.SetLevelMusicVolume(0.05f);
 
         // Custom tweening alpha
         StartCoroutine(FadeCanvasGroup(dialogPanel, 1, 3f));
@@ -193,7 +155,7 @@ public class DialogPanelManager : MonoBehaviour
             _barryPortrait.DOKill();
             _apprenticePortrait.DOKill();
 
-            _barryPortrait.anchoredPosition = new Vector2(_barryPortraitPosition.x - 500, _barryPortraitPosition.y);
+            //_barryPortrait.anchoredPosition = new Vector2(_barryPortraitPosition.x - 500, _barryPortraitPosition.y);
             _barryPortrait.gameObject.SetActive(true);
 
             _barryPortrait.DOAnchorPos(_barryPortraitPosition, 2).SetEase(Ease.OutBack);
@@ -205,7 +167,7 @@ public class DialogPanelManager : MonoBehaviour
             _barryPortrait.DOKill();
             _apprenticePortrait.DOKill();
 
-            _apprenticePortrait.anchoredPosition = new Vector2(_apprenticePortraitPosition.x + 500, _apprenticePortraitPosition.y);
+            // _apprenticePortrait.anchoredPosition = new Vector2(_apprenticePortraitPosition.x + 500, _apprenticePortraitPosition.y);
             _apprenticePortrait.gameObject.SetActive(true);
             _apprenticePortrait.DOAnchorPos(_apprenticePortraitPosition, 2).SetEase(Ease.OutBack);
             _apprenticePortrait.DOAnchorPosY(_apprenticePortraitPosition.y + 10, 3).SetEase(Ease.OutBack).SetLoops(-1, LoopType.Yoyo);
