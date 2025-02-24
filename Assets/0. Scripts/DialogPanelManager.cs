@@ -97,13 +97,12 @@ public class DialogPanelManager : MonoBehaviour
             return;
         }
 
+        _barryPortrait.DOKill(true);
+        _apprenticePortrait.DOKill(true);
+
         if (_dialog[_currentDialogIndex].Character == DialogCharacter.Barry)
         {
             _nameText.text = "Broomstick Barry";
-
-            _barryPortrait.DOKill();
-            _apprenticePortrait.DOKill();
-
             _barryPortrait.DOScale(Vector3.one * 1.2f, 0.33f).SetEase(Ease.OutBack);
             _apprenticePortrait.DOScale(Vector3.one, 0.33f).SetEase(Ease.OutBack);
 
@@ -115,9 +114,6 @@ public class DialogPanelManager : MonoBehaviour
         else if (_dialog[_currentDialogIndex].Character == DialogCharacter.Apprentice)
         {
             _nameText.text = "Dustpan Dan";
-
-            _barryPortrait.DOKill();
-            _apprenticePortrait.DOKill();
 
             _apprenticePortrait.DOScale(Vector3.one * 1.2f, 0.33f).SetEase(Ease.OutBack);
             _barryPortrait.DOScale(Vector3.one, 0.33f).SetEase(Ease.OutBack);
@@ -149,11 +145,12 @@ public class DialogPanelManager : MonoBehaviour
         StartCoroutine(FadeCanvasGroup(dialogPanel, 1, 3f));
         _typeWriterTask = TypewriterEffectAsync(dialog[0].Dialog);
 
+        _barryPortrait.DOKill(true);
+        _apprenticePortrait.DOKill(true);
+
         // Check if the Character is in the dialog with linq
         if (dialog.Any(dialog => dialog.Character == DialogCharacter.Barry))
         {
-            _barryPortrait.DOKill();
-            _apprenticePortrait.DOKill();
 
             //_barryPortrait.anchoredPosition = new Vector2(_barryPortraitPosition.x - 500, _barryPortraitPosition.y);
             _barryPortrait.gameObject.SetActive(true);
@@ -164,9 +161,6 @@ public class DialogPanelManager : MonoBehaviour
 
         if (dialog.Any(dialog => dialog.Character == DialogCharacter.Apprentice))
         {
-            _barryPortrait.DOKill();
-            _apprenticePortrait.DOKill();
-
             // _apprenticePortrait.anchoredPosition = new Vector2(_apprenticePortraitPosition.x + 500, _apprenticePortraitPosition.y);
             _apprenticePortrait.gameObject.SetActive(true);
             _apprenticePortrait.DOAnchorPos(_apprenticePortraitPosition, 2).SetEase(Ease.OutBack);

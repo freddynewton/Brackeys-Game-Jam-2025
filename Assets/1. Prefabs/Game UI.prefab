@@ -464,8 +464,8 @@ MonoBehaviour:
   _apprenticePortrait: {fileID: 7247814037035299292}
   _nameText: {fileID: 6035438099799062235}
   _dialogText: {fileID: 457241269768414617}
-  _LoadSceneOnEnd: 0
-  _sceneToLoad: 
+  _LoadSceneOnEnd: 1
+  _sceneToLoad: Level 1
 --- !u!225 &6432641804677645130
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -474,7 +474,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386536825081868944}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -855,11 +855,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hudPanel: {fileID: 7314440801589602038}
   _healthSlider: {fileID: 9138808371027387622}
-  _menuCanvasGroup: {fileID: 6203592126641858723}
+  _menuPanel: {fileID: 4601218493022404286}
   _resumeButton: {fileID: 4633091463599640541}
   _quitButton: {fileID: 4271448079562433070}
   _MainMenuButton: {fileID: 456023149918471599}
-  _gameOverCanvasGroup: {fileID: 5086998980241911621}
+  _gameOverPanel: {fileID: 8679228494070640180}
   _restartGameOverButton: {fileID: 626829989916207043}
   _backToMenuButton: {fileID: 3590418240952961459}
   _quitGameOverButton: {fileID: 2199188103721486823}
