@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e668b822886f67942bc8e75747c9964b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHp: 10
+  _maxHp: 5
   _healthRegenRate: 0
   _deathSpriteList: []
   _spriteFlashTime: 0.1
