@@ -57,15 +57,14 @@ public abstract class EnemyInformation : MonoBehaviour
     #region Detection
     protected bool DetectionCast()
     {
-        Collider2D[] collderArray = Physics2D.OverlapCircleAll(transform.position, _detectionRange, _detectionMask);
-        foreach(Collider2D collider2D in collderArray)
-        {
-            if (collider2D.gameObject.tag == "Player")
-            {
-                return true;
-            }
+        Collider2D collder = Physics2D.OverlapCircle(transform.position, _detectionRange, _detectionMask);
+        
+         if (collder.gameObject.tag == "Player")
+         {
+             return true;
+         }
             
-        }
+        
         return false;
     }
     private bool AttackCast()
@@ -95,11 +94,7 @@ public abstract class EnemyInformation : MonoBehaviour
 
     public bool IsAggroRange()
     {
-        if (DetectionCast())
-        {
-            return true;
-        }
-        return false;
+        return DetectionCast();
     }
 
     public virtual bool IsAttackRange()
