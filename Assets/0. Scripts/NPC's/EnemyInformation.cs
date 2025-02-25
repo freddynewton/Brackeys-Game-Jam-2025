@@ -59,7 +59,7 @@ public abstract class EnemyInformation : MonoBehaviour
     {
         Collider2D collder = Physics2D.OverlapCircle(transform.position, _detectionRange, _detectionMask);
         
-         if (collder.gameObject.tag == "Player")
+         if (collder != null && collder.gameObject.tag == "Player")
          {
              return true;
          }
